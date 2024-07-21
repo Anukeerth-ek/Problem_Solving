@@ -55,9 +55,74 @@
 
 // Using let and const is generally preferred over var due to their block scope, which helps prevent bugs related to variable hoisting and re-declaration.
 
-
+// _____________________________________________________________
 // 3. How does hoisting work in JavaScript?
 // a. What is hoisting? 
 // ans: Hoisting means if try to access the variable of object before intialisation we get different warnings or errors
 // if we use let or const for declaring that variable we will reference error cannot access variable before intialisation
-// but if we use var to declare that variable we will get undefined
+// but if we use var to declare that variable we will get undefined.
+// Everything inside javascript is happens in a execution context.
+// firstly javascript look for is there any variable or function that is declared? if yes then the javascript firstly take that to a memory phase. now if we initalise a variable with a value, it won't assigned that first time, so when we console log that it will gives us reference error if we used let or const and undefined in var.
+// _____________________________________________________________
+
+
+// ________________________________________________________________
+// 4. Describe the concept of closures.
+// ans: When an inner function can access the values from an outer function is called as closures.
+
+// const getUserDetailOuter = (userName) => {
+//     console.log("From outer function", userName);
+//     const getUserDetailInner = () => {
+//         console.log("From inner function", userName);
+//     };
+//     return getUserDetailInner;
+// }
+
+// const userDetail = getUserDetailOuter("Kevin");
+// userDetail(); // This will log: From inner function Kevin
+// This is what that meant by closures that, the inner function that a function inside a function can access the values of the outer function. 
+// ________________________________________________________________
+
+
+// 5. What are all the looping structures in JavaScript ?
+// ans: 1. While-loop
+//      2. Do-While-loop
+//      3. For-Loop
+// while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+// for loop:  A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
+// do while: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+
+// ________________________________________________________________
+
+// 6. How can the style/class of an element be changed?
+// ans: Let say that we have a div and we need to change the class and style of that div.
+
+{/* <div class="div">
+Hello
+</div> */}
+
+// const result = document.getElementById('div').style.fontSize = "6rem"
+// From the above we can change the font size of that div
+
+// lets change the className of that div
+
+// const result = document.getElementById('div').className = "new-div"
+
+// ________________________________________________________________
+
+
+// 7. What is called Variable typing in JavaScript ?
+// ans: Lets say we have created a variable in javascript and named it to
+
+// let value = "null"
+
+// console.log(typeof value);
+
+// value = 12
+
+// console.log(typeof value);
+
+// we can change the type of the variable in javascript. And we won't get any errors while changing the type.  
+
+// ________________________________________________________________
+
