@@ -126,3 +126,32 @@ Hello
 
 // ________________________________________________________________
 
+// 8. Write a JavaScript program to find the maximum number in an array. 
+// ans: const arr = [1, 2, 3, 4, 5, 6, 10]
+// let newValue = Math.max(...arr);
+// console.log(typeof newValue)
+
+// ________________________________________________________________
+
+// 9. What is Spread and Rest operator?
+// ans: Spread operator: is used when we need to add a two arrays value to another array we can do that very easily
+
+// let arr1 = [1, 2, 3, 4]
+// let arr2 = [5, 6, 7, 8]
+
+// let arr3 = [...arr1, ...arr2]
+// console.log(arr3) // we are getting whole array ie, [1, 2, 3, 4, 5, 6, 7, 8]
+
+// Rest Operator: When we are getting more parameters. we can use spread operator. spread operator is too looking like rest operator. 
+ //
+
+ const getUserDetails = (...details)=> {
+    console.log(details)
+    let userName = [details[0]]
+    console.log(userName)
+ }  
+
+ getUserDetails("kevin", 22, "Software Engineer", '6LPA')
+
+//  No we are getting all these values, simply we need to do is just put three dots and a name. Then all the values will be in that name.
+//  If we need to take the values of on a separate variable we can do that by just putting the like I put in line no. 150.
