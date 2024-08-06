@@ -145,13 +145,34 @@ Hello
 // Rest Operator: When we are getting more parameters. we can use spread operator. spread operator is too looking like rest operator. 
  //
 
- const getUserDetails = (...details)=> {
-    console.log(details)
-    let userName = [details[0]]
-    console.log(userName)
- }  
+//  const getUserDetails = (...details)=> {
+//     console.log(details)
+//     let userName = [details[0]]
+//     console.log(userName)
+//  }  
 
- getUserDetails("kevin", 22, "Software Engineer", '6LPA')
+//  getUserDetails("kevin", 22, "Software Engineer", '6LPA')
 
 //  No we are getting all these values, simply we need to do is just put three dots and a name. Then all the values will be in that name.
 //  If we need to take the values of on a separate variable we can do that by just putting the like I put in line no. 150.
+
+// ________________________________________________________________
+
+// 10. Explain what is callback function is and explain with an example?
+// ans: A callback function is a function that is passsed to a function's argument. 
+// eg is 
+
+// const handleResult = (number, showResult)=> {
+//     console.log("started")
+//     showResult()
+//     return number * 2
+
+// }
+
+// const showResult = ()=> {
+//     console.log("finished")
+// }
+// const getResult = handleResult(2, showResult)
+// console.log(getResult)
+
+// ________________________________________________________________
