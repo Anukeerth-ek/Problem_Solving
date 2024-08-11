@@ -208,3 +208,54 @@ Hello
 // console.log(isAcronym);
 
 // ________________________________________________________________
+
+// 13. You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
+
+// For each index i, names[i] and heights[i] denote the name and height of the ith person.
+
+// Return names sorted in descending order by the people's heights.
+
+// ans -
+// var sortPeople = function(names, heights) {
+//     console.log(names, heights)
+
+// };
+
+// sortPeople(["Mary","John","Emma"], [180,165,170])
+
+// ________________________________________________________________
+
+// 14. You are given a positive integer array nums.
+
+// The element sum is the sum of all the elements in nums.
+// The digit sum is the sum of all the digits (not necessarily distinct) that appear in nums.
+// Return the absolute difference between the element sum and digit sum of nums.
+
+// Note that the absolute difference between two integers x and y is defined as |x - y|.
+
+// const differenceOfSum = function (...nums) {
+//      const sumOfNums = nums.reduce((acc, curr) => acc + curr, 0);
+
+//      const numsToString = nums.toString().replace(/,/g, "");
+//      const stringToNum = numsToString.split("");
+
+//      let emptyArr = [];
+//      for (let i = 0; i < stringToNum.length; i++) {
+//           emptyArr.push(numsToString.charAt(i));
+//      }
+//      const finalRes = emptyArr.toString();
+   
+     
+//      const stringArray = finalRes.split(',');
+
+//      // Step 2: Convert each substring to a number
+//      const numberArray = stringArray.map(Number);
+     
+//      // Output the result
+//      const result = numberArray.reduce((acc, curr)=> acc + curr, 0)
+//   return sumOfNums - result
+// }
+
+// differenceOfSum(1, 15, 6, 3);
+
+// ________________________________________________________________
