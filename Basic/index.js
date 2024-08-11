@@ -81,6 +81,7 @@
 // This is what that meant by closures that, the inner function that a function inside a function can access the values of the outer function.
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 5. What are all the looping structures in JavaScript ?
 // ans: 1. While-loop
 //      2. Do-While-loop
@@ -88,9 +89,9 @@
 // while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
 // for loop:  A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
 // do while: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 6. How can the style/class of an element be changed?
 // ans: Let say that we have a div and we need to change the class and style of that div.
 
@@ -106,9 +107,9 @@ Hello
 // lets change the className of that div
 
 // const result = document.getElementById('div').className = "new-div"
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 7. What is called Variable typing in JavaScript ?
 // ans: Lets say we have created a variable in javascript and named it to
 
@@ -121,16 +122,16 @@ Hello
 // console.log(typeof value);
 
 // we can change the type of the variable in javascript. And we won't get any errors while changing the type.
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 8. Write a JavaScript program to find the maximum number in an array.
 // ans: const arr = [1, 2, 3, 4, 5, 6, 10]
 // let newValue = Math.max(...arr);
 // console.log(typeof newValue)
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 9. What is Spread and Rest operator?
 // ans: Spread operator: is used when we need to add a two arrays value to another array we can do that very easily
 
@@ -153,9 +154,9 @@ Hello
 
 //  No we are getting all these values, simply we need to do is just put three dots and a name. Then all the values will be in that name.
 //  If we need to take the values of on a separate variable we can do that by just putting the like I put in line no. 150.
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 10. Explain what is callback function is and explain with an example?
 // ans: A callback function is a function that is passsed to a function's argument.
 // eg is
@@ -172,6 +173,7 @@ Hello
 // }
 // const getResult = handleResult(2, showResult)
 // console.log(getResult)
+// ________________________________________________________________
 
 // ________________________________________________________________
 // 11. Question is we are passing an array of number, we need to add the number and return like, if we are passing the input as [1, 2, 3, 4, 5] we need the output of [1, 3, 6, 10]
@@ -190,9 +192,9 @@ Hello
 // };
 
 // const output = runningSum([1, 2, 3, 4]);
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 12. The question is return true if the words first letter in the words array and value in s variable are same otherwise return false
 
 // const isAcronym = function (words, s) {
@@ -206,9 +208,9 @@ Hello
 // };
 // isAcronym(["alice", "bob", "charlie"], "abc");
 // console.log(isAcronym);
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 13. You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
 
 // For each index i, names[i] and heights[i] denote the name and height of the ith person.
@@ -222,9 +224,9 @@ Hello
 // };
 
 // sortPeople(["Mary","John","Emma"], [180,165,170])
-
 // ________________________________________________________________
 
+// ________________________________________________________________
 // 14. You are given a positive integer array nums.
 
 // The element sum is the sum of all the elements in nums.
@@ -244,18 +246,39 @@ Hello
 //           emptyArr.push(numsToString.charAt(i));
 //      }
 //      const finalRes = emptyArr.toString();
-   
-     
+
 //      const stringArray = finalRes.split(',');
 
 //      // Step 2: Convert each substring to a number
 //      const numberArray = stringArray.map(Number);
-     
+
 //      // Output the result
 //      const result = numberArray.reduce((acc, curr)=> acc + curr, 0)
 //   return sumOfNums - result
 // }
 
 // differenceOfSum(1, 15, 6, 3);
+// ________________________________________________________________
 
+// ________________________________________________________________
+// 15. Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+
+// A string is represented by an array if the array elements concatenated in order forms the string.
+
+// ans:
+// const arrayStringsAreEqual = function (word1, word2) {
+//      let left = (right = "");
+
+//      for (let i = 0; i < word1.length; i++) {
+//           left += word1[i];
+//      }
+
+//      for (let i = 0; i < word2.length; i++) {
+//           right += word2[i];
+//      }
+
+//      return left === right;
+// };
+
+// const result = arrayStringsAreEqual(["ab", "c"], ["a", "bc"]);
 // ________________________________________________________________
