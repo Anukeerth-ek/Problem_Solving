@@ -1,9 +1,9 @@
 // 1. What is JavaScript?
-//JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS)
+//JavaScript is a scripting or programming language that allows you to implement compleresult features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboresultes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS)
 
 // ____________________________
 
-// 2. Explain the difference between let, const, and var ?
+// 2. Eresultplain the difference between let, const, and var ?
 // let and const is a local scoped variable declaration and var is global scoped variable decalaration.
 
 // const checkerFunction = ()=> {
@@ -60,13 +60,13 @@
 // ans: Hoisting means if try to access the variable of object before intialisation we get different warnings or errors
 // if we use let or const for declaring that variable we will reference error cannot access variable before intialisation
 // but if we use var to declare that variable we will get undefined.
-// Everything inside javascript is happens in a execution context.
-// firstly javascript look for is there any variable or function that is declared? if yes then the javascript firstly take that to a memory phase. now if we initalise a variable with a value, it won't assigned that first time, so when we console log that it will gives us reference error if we used let or const and undefined in var.
+// Everything inside javascript is happens in a eresultecution conteresultt.
+// firstly javascript look for is there any variable or function that is declared? if yes then the javascript firstly take that to a memory phase. now if we initalise a variable with a result, it won't assigned that first time, so when we console log that it will gives us reference error if we used let or const and undefined in var.
 // _____________________________________________________________
 
 // ________________________________________________________________
 // 4. Describe the concept of closures.
-// ans: When an inner function can access the values from an outer function is called as closures.
+// ans: When an inner function can access the results from an outer function is called as closures.
 
 // const getUserDetailOuter = (userName) => {
 //     console.log("From outer function", userName);
@@ -78,7 +78,7 @@
 
 // const userDetail = getUserDetailOuter("Kevin");
 // userDetail(); // This will log: From inner function Kevin
-// This is what that meant by closures that, the inner function that a function inside a function can access the values of the outer function.
+// This is what that meant by closures that, the inner function that a function inside a function can access the results of the outer function.
 // ________________________________________________________________
 
 // ________________________________________________________________
@@ -86,9 +86,9 @@
 // ans: 1. While-loop
 //      2. Do-While-loop
 //      3. For-Loop
-// while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
+// while loop: A while loop is a control flow statement that allows code to be eresultecuted repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement.
 // for loop:  A for loop provides a concise way of writing the loop structure. Unlike a while loop, for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
-// do while: A do-while loop is similar to while loop with the only difference that it checks the condition after executing the statements, and therefore is an example of Exit Control Loop.
+// do while: A do-while loop is similar to while loop with the only difference that it checks the condition after eresultecuting the statements, and therefore is an eresultample of Eresultit Control Loop.
 // ________________________________________________________________
 
 // ________________________________________________________________
@@ -113,27 +113,27 @@ Hello
 // 7. What is called Variable typing in JavaScript ?
 // ans: Lets say we have created a variable in javascript and named it to
 
-// let value = "null"
+// let result = "null"
 
-// console.log(typeof value);
+// console.log(typeof result);
 
-// value = 12
+// result = 12
 
-// console.log(typeof value);
+// console.log(typeof result);
 
 // we can change the type of the variable in javascript. And we won't get any errors while changing the type.
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 8. Write a JavaScript program to find the maximum number in an array.
+// 8. Write a JavaScript program to find the maresultimum number in an array.
 // ans: const arr = [1, 2, 3, 4, 5, 6, 10]
-// let newValue = Math.max(...arr);
-// console.log(typeof newValue)
+// let newresult = Math.maresult(...arr);
+// console.log(typeof newresult)
 // ________________________________________________________________
 
 // ________________________________________________________________
 // 9. What is Spread and Rest operator?
-// ans: Spread operator: is used when we need to add a two arrays value to another array we can do that very easily
+// ans: Spread operator: is used when we need to add a two arrays result to another array we can do that very easily
 
 // let arr1 = [1, 2, 3, 4]
 // let arr2 = [5, 6, 7, 8]
@@ -152,12 +152,12 @@ Hello
 
 //  getUserDetails("kevin", 22, "Software Engineer", '6LPA')
 
-//  No we are getting all these values, simply we need to do is just put three dots and a name. Then all the values will be in that name.
-//  If we need to take the values of on a separate variable we can do that by just putting the like I put in line no. 150.
+//  No we are getting all these results, simply we need to do is just put three dots and a name. Then all the results will be in that name.
+//  If we need to take the results of on a separate variable we can do that by just putting the like I put in line no. 150.
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 10. Explain what is callback function is and explain with an example?
+// 10. Eresultplain what is callback function is and eresultplain with an eresultample?
 // ans: A callback function is a function that is passsed to a function's argument.
 // eg is
 
@@ -195,13 +195,13 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 12. The question is return true if the words first letter in the words array and value in s variable are same otherwise return false
+// 12. The question is return true if the words first letter in the words array and result in s variable are same otherwise return false
 
 // const isAcronym = function (words, s) {
-//      const value = words.map((item) => {
+//      const result = words.map((item) => {
 //           return item.charAt(0);
 //      });
-//      const result = value.toString().replace(/,/g, "");
+//      const result = result.toString().replace(/,/g, "");
 //      let finalRes;
 //      result === s ? (finalRes = true) : (finalRes = false);
 //      return finalRes;
@@ -213,7 +213,7 @@ Hello
 // ________________________________________________________________
 // 13. You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
 
-// For each index i, names[i] and heights[i] denote the name and height of the ith person.
+// For each inderesult i, names[i] and heights[i] denote the name and height of the ith person.
 
 // Return names sorted in descending order by the people's heights.
 
@@ -233,7 +233,7 @@ Hello
 // The digit sum is the sum of all the digits (not necessarily distinct) that appear in nums.
 // Return the absolute difference between the element sum and digit sum of nums.
 
-// Note that the absolute difference between two integers x and y is defined as |x - y|.
+// Note that the absolute difference between two integers result and y is defined as |result - y|.
 
 // const differenceOfSum = function (...nums) {
 //      const sumOfNums = nums.reduce((acc, curr) => acc + curr, 0);
@@ -281,4 +281,41 @@ Hello
 // };
 
 // const result = arrayStringsAreEqual(["ab", "c"], ["a", "bc"]);
+// ________________________________________________________________
+
+// ________________________________________________________________
+// 16. There is a programming language with only four operations and one variable result:
+
+// ++result and result++ increments the result of the variable result by 1.
+// --result and result-- decrements the result of the variable result by 1.
+// Initially, the result of result is 0.
+
+// Given an array of strings operations containing a list of operations, return the final result of result after performing all the operations.
+
+// ans:
+// var finalresultAfterOperations = function (operations) {
+//      let value = 0;
+
+//      operations.forEach((item) => {
+//           switch (item) {
+//                case "--X":
+//                case "X--":
+//                     value = value - 1;
+//                     break;
+
+//                case "X++":
+//                case "++X":
+//                     value = value + 1;
+//                     break;
+
+//                default:
+//                     break;
+//           }
+
+//           return "";
+//      });
+//      return value;
+// };
+
+// const answer = finalresultAfterOperations(["--X", "X++", "X++"]);
 // ________________________________________________________________
