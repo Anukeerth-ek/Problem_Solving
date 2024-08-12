@@ -319,3 +319,30 @@ Hello
 
 // const answer = finalresultAfterOperations(["--X", "X++", "X++"]);
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 17. A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+
+// You are given an array of strings sentences, where each sentences[i] represents a single sentence.
+
+// Return the maximum number of words that appear in a single sentence.
+
+// ans:
+// var mostWordsFound = function (sentences) {
+//      let newArr = [];
+//      let highestValue;
+//      let firstVal, secondVal;
+//      for (let i = 0; i < sentences.length; i++) {
+//           let res = sentences[i].split();
+//           newArr.push(res);
+
+//           highestValue = newArr[i];
+
+//           firstVal = newArr.toString().length;
+//           if (firstVal >= secondVal) highestValue = firstVal.length;
+//      }
+
+//      return highestValue.toString().split(' ').length
+// };
+// mostWordsFound(["alice and bob love leetcode", "i think so too", "this is great thanks very much"]);
+// ________________________________________________________________
