@@ -346,3 +346,47 @@ Hello
 // };
 // mostWordsFound(["alice and bob love leetcode", "i think so too", "this is great thanks very much"]);
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 18. Given a string array words, return an array of all characters that show up in all strings within the words (including duplicates). You may return the answer in any order.
+// ans:
+// var commonChars = function(words) {
+  
+//      if (words.length === 0) return [];
+
+//      // Initialize the common character count based on the first string
+//      let commonCount = {};
+//      for (let char of words[0]) {
+//          commonCount[char] = (commonCount[char] || 0) + 1;
+//      }
+ 
+//      // Intersect with the counts from the other strings
+//      for (let i = 1; i < words.length; i++) {
+//          let currentCount = {};
+//          for (let char of words[i]) {
+//              currentCount[char] = (currentCount[char] || 0) + 1;
+//          }
+ 
+//          // Update commonCount to keep only minimum frequencies
+//          for (let char in commonCount) {
+//              if (currentCount[char] !== undefined) {
+//                  commonCount[char] = Math.min(commonCount[char], currentCount[char]);
+//              } else {
+//                  // If a character is not in the current string, remove it from commonCount
+//                  delete commonCount[char];
+//              }
+//          }
+//      }
+ 
+//      // Construct the result array based on commonCount
+//      let result = [];
+//      for (let char in commonCount) {
+//          for (let i = 0; i < commonCount[char]; i++) {
+//              result.push(char);
+//          }
+//      }
+ 
+//      return result;
+// };
+
+// commonChars(["bella","label","roller"])
