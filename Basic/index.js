@@ -351,7 +351,7 @@ Hello
 // 18. Given a string array words, return an array of all characters that show up in all strings within the words (including duplicates). You may return the answer in any order.
 // ans:
 // var commonChars = function(words) {
-  
+
 //      if (words.length === 0) return [];
 
 //      // Initialize the common character count based on the first string
@@ -359,14 +359,14 @@ Hello
 //      for (let char of words[0]) {
 //          commonCount[char] = (commonCount[char] || 0) + 1;
 //      }
- 
+
 //      // Intersect with the counts from the other strings
 //      for (let i = 1; i < words.length; i++) {
 //          let currentCount = {};
 //          for (let char of words[i]) {
 //              currentCount[char] = (currentCount[char] || 0) + 1;
 //          }
- 
+
 //          // Update commonCount to keep only minimum frequencies
 //          for (let char in commonCount) {
 //              if (currentCount[char] !== undefined) {
@@ -377,7 +377,7 @@ Hello
 //              }
 //          }
 //      }
- 
+
 //      // Construct the result array based on commonCount
 //      let result = [];
 //      for (let char in commonCount) {
@@ -385,8 +385,41 @@ Hello
 //              result.push(char);
 //          }
 //      }
- 
+
 //      return result;
 // };
 
 // commonChars(["bella","label","roller"])
+// ________________________________________________________________
+
+// ________________________________________________________________
+// 19. You are given a 0-indexed array words consisting of distinct strings.
+
+// The string words[i] can be paired with the string words[j] if:
+
+// The string words[i] is equal to the reversed string of words[j].
+// 0 <= i < j < words.length.
+// Return the maximum number of pairs that can be formed from the array words.
+
+// Note that each string can belong in at most one pair.
+
+// ans:
+
+var maximumNumberOfStringPairs = function (words) {
+     let count = 0
+     let seen = new Set(); // To track seen words
+    
+     for (let i = 0; i < words.length; i++) {
+         let reversed = words[i].split('').reverse().join(''); // Reverse the current word
+         if (seen.has(reversed)) {
+             count++;
+             seen.delete(reversed); // Remove the reversed word from the set
+         } else {
+             seen.add(words[i]); // Add the current word to the set
+         }
+     }
+     return count;
+};
+
+maximumNumberOfStringPairs(["cd", "ac", "dc", "ca", "zz"]);
+// ________________________________________________________________
