@@ -1,8 +1,20 @@
-<Welcome to the JavaScript Interview Questions Repository! This repository aims to provide a comprehensive collection of JavaScript interview questions and answers to help you prepare for technical interviews effectively./>
+# LeetCode Questions Repository
 
-________Purpose__________
-The primary goal of this repository is to assist JavaScript developers in:
+Welcome to the LeetCode Questions repository! This project is a collection of LeetCode problems and solutions written in JavaScript. Whether you're preparing for coding interviews or just practicing algorithmic challenges, this repo provides a range of problems with detailed solutions.
 
-*Understanding fundamental JavaScript concepts.
-*Practicing coding problems commonly asked in technical interviews.
-*Exploring advanced topics and best practices in JavaScript development
+
+## Features
+
+- **Diverse Problem Set:** Includes a variety of LeetCode problems ranging from easy to hard.
+- **JavaScript Solutions:** Solutions are implemented in JavaScript to cater to those focusing on this language.
+- **Detailed Explanations:** Each solution comes with comments and explanations to help you understand the approach.
+- **Regular Updates:** The repository is updated regularly with new problems and solutions.
+
+## Getting Started
+
+To get started with this repository:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/leetcode-questions.git
