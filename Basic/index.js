@@ -405,21 +405,42 @@ Hello
 
 // ans:
 
-var maximumNumberOfStringPairs = function (words) {
-     let count = 0
-     let seen = new Set(); // To track seen words
+// var maximumNumberOfStringPairs = function (words) {
+//      let count = 0
+//      let seen = new Set(); // To track seen words
     
-     for (let i = 0; i < words.length; i++) {
-         let reversed = words[i].split('').reverse().join(''); // Reverse the current word
-         if (seen.has(reversed)) {
-             count++;
-             seen.delete(reversed); // Remove the reversed word from the set
-         } else {
-             seen.add(words[i]); // Add the current word to the set
-         }
-     }
-     return count;
+//      for (let i = 0; i < words.length; i++) {
+//          let reversed = words[i].split('').reverse().join(''); // Reverse the current word
+//          if (seen.has(reversed)) {
+//              count++;
+//              seen.delete(reversed); // Remove the reversed word from the set
+//          } else {
+//              seen.add(words[i]); // Add the current word to the set
+//          }
+//      }
+//      return count;
+// };
+
+// maximumNumberOfStringPairs(["cd", "ac", "dc", "ca", "zz"]);
+// ________________________________________________________________
+
+// ________________________________________________________________
+// 20. Given an array of strings words and a character separator, split each string in words by separator.
+
+// Return an array of strings containing the new strings formed after the splits, excluding empty strings.
+
+// Notes
+
+// separator is used to determine where the split should occur, but it is not included as part of the resulting strings.
+// A split may result in more than two strings.
+// The resulting strings must maintain the same order as they were initially given.
+
+// ans:
+var splitWordsBySeparator = function(words, separator) {
+    console.log(words.toString().split('').toString().replace('.', ''))
+
 };
 
-maximumNumberOfStringPairs(["cd", "ac", "dc", "ca", "zz"]);
+splitWordsBySeparator(["one.two.three","four.five","six"], ".")
+
 // ________________________________________________________________
