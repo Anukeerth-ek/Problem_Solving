@@ -408,7 +408,7 @@ Hello
 // var maximumNumberOfStringPairs = function (words) {
 //      let count = 0
 //      let seen = new Set(); // To track seen words
-    
+
 //      for (let i = 0; i < words.length; i++) {
 //          let reversed = words[i].split('').reverse().join(''); // Reverse the current word
 //          if (seen.has(reversed)) {
@@ -436,11 +436,22 @@ Hello
 // The resulting strings must maintain the same order as they were initially given.
 
 // ans:
-var splitWordsBySeparator = function(words, separator) {
-    console.log(words.toString().split('').toString().replace('.', ''))
+// var splitWordsBySeparator = function (words, separator) {
+//     let newArr = []
 
-};
+//     for(let word of words) {
+//         let parts = word.split(separator)
 
-splitWordsBySeparator(["one.two.three","four.five","six"], ".")
+//         for(let part of parts)
+//             if(part.length > 0) {
+//                 newArr.push(part)
+//             }
+//     }
+//     return newArr
+// };
+
+// splitWordsBySeparator(["$easy$", "$problem$"], "$");
+// output = [ 'easy', 'problem' ]
+// ________________________________________________________________
 
 // ________________________________________________________________
