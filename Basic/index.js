@@ -455,3 +455,16 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
+// 21. You are given a string allowed consisting of distinct characters and an array of strings words. A string is consistent if all characters in the string appear in the string allowed.
+// Return the number of consistent strings in the array words.
+// ans:
+// var countConsistentStrings = function (allowed, words) {
+//      const allowedSet = new Set(allowed);
+//      console.log(allowedSet)
+
+//      const result = words.filter((word) => [...word].every((char) => allowedSet.has(char)));
+
+//      return result.length;
+// };
+// countConsistentStrings("ab", ["ad", "bd", "aaab", "baa", "badab"]);
+// ________________________________________________________________
