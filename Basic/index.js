@@ -468,3 +468,20 @@ Hello
 // };
 // countConsistentStrings("ab", ["ad", "bd", "aaab", "baa", "badab"]);
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 22. You are given an integer array nums. In one operation, you can add or subtract 1 from any element of nums.
+// Return the minimum number of operations to make all elements of nums divisible by 3.
+
+// ans:
+// var minimumOperations = function (...nums) {
+//      let count = 0;
+//      for (let num of nums) {
+//           if (num % 3 == 1) count +=1;
+//           else if (num % 3 > 1) count += 1;
+//      }
+//      return count;
+// };
+// const result = minimumOperations(3,6,9);
+// console.log(result);  //output -  0
+// ________________________________________________________________
