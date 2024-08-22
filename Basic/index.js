@@ -1,10 +1,12 @@
 // 1. What is JavaScript?
-//JavaScript is a scripting or programming language that allows you to implement compleresult features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboresultes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS)
+//JavaScript is a scripting or programming language that allows you to implement complex features on web pages. Whenever a web page does more than just display static information—such as 
+// updating content in real-time, providing interactive maps, creating animated 2D/3D graphics, or enabling scrolling video jukeboxes—JavaScript is likely involved. 
+// It is considered the third layer in the standard web technologies stack, complementing HTML and CSS.
 
 // ____________________________
 
-// 2. Eresultplain the difference between let, const, and var ?
-// let and const is a local scoped variable declaration and var is global scoped variable decalaration.
+// 2. Explain  the difference between let, const, and var ?
+// let and const is a local scoped variable declaration or block level scoped  and var is function scoped variable decalaration.
 
 // const checkerFunction = ()=> {
 
@@ -25,10 +27,10 @@
 
 // }
 // console.log(variable)  // first const
-// __________const section___________
+// // __________const section___________
 
-// __________let section___________
-// let variable = "first let"
+// // __________let section___________
+// // let variable = "first let"
 
 // if(true) {
 //     let variable = "second let"
@@ -57,11 +59,12 @@
 // _____________________________________________________________
 // 3. How does hoisting work in JavaScript?
 // a. What is hoisting?
-// ans: Hoisting means if try to access the variable of object before intialisation we get different warnings or errors
-// if we use let or const for declaring that variable we will reference error cannot access variable before intialisation
-// but if we use var to declare that variable we will get undefined.
-// Everything inside javascript is happens in a eresultecution conteresultt.
-// firstly javascript look for is there any variable or function that is declared? if yes then the javascript firstly take that to a memory phase. now if we initalise a variable with a result, it won't assigned that first time, so when we console log that it will gives us reference error if we used let or const and undefined in var.
+// ans: 
+//  Hoisting means that if you try to access a variable before initialization, you will get different warnings or errors depending on the
+//  declaration type: if you use let or const, you will get a ReferenceError saying "Cannot access variable before initialization," but if you use var, you will get undefined.
+//  Everything in JavaScript happens during the execution phase. First, JavaScript looks for any variables or functions that are declared and hoists them to memory. 
+//  However, when you initialize a variable with a value, it won’t be assigned during the hoisting phase, so if you try to access it before its initialization,
+//  you'll get a ReferenceError with let or const, and undefined with var.
 // _____________________________________________________________
 
 // ________________________________________________________________
@@ -125,9 +128,9 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 8. Write a JavaScript program to find the maresultimum number in an array.
+// 8. Write a JavaScript program to find the maximum number in an array.
 // ans: const arr = [1, 2, 3, 4, 5, 6, 10]
-// let newresult = Math.maresult(...arr);
+// let newresult = Math.max(...arr);
 // console.log(typeof newresult)
 // ________________________________________________________________
 
@@ -153,11 +156,11 @@ Hello
 //  getUserDetails("kevin", 22, "Software Engineer", '6LPA')
 
 //  No we are getting all these results, simply we need to do is just put three dots and a name. Then all the results will be in that name.
-//  If we need to take the results of on a separate variable we can do that by just putting the like I put in line no. 150.
+//  If we need to take the results of on a separate variable we can do that by just putting the like I put in line no. 152.
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 10. Eresultplain what is callback function is and eresultplain with an eresultample?
+// 10. Explain what is callback function?
 // ans: A callback function is a function that is passsed to a function's argument.
 // eg is
 
@@ -483,5 +486,28 @@ Hello
 //      return count;
 // };
 // const result = minimumOperations(3,6,9);
-// console.log(result);  //output -  0
+// console.log(result);  //output =  0
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 23. You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
+// For each index i, names[i] and heights[i] denote the name and height of the ith person.
+// Return names sorted in descending order by the people's heights.
+
+// ans: var sortPeople = function (names, heights) {
+//      const obj = {};
+//      let j;
+//      for (let i = 0; i < names.length; i++) {
+//           for (j = 0; j < heights.length; j++) {
+//                // console.log(heights[height]);
+//                // console.log(heights[j]);
+//                // obj.names[i] = heights[j];
+//                console.log(names[i]);
+//                console.log(names[j]);
+//           }
+//      }
+//      console.log(obj);
+// };
+
+// sortPeople(["Mary", "John", "Emma"], [180, 165, 170]);
+
