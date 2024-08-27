@@ -1,6 +1,6 @@
 // 1. What is JavaScript?
-//JavaScript is a scripting or programming language that allows you to implement complex features on web pages. Whenever a web page does more than just display static information—such as 
-// updating content in real-time, providing interactive maps, creating animated 2D/3D graphics, or enabling scrolling video jukeboxes—JavaScript is likely involved. 
+//JavaScript is a scripting or programming language that allows you to implement complex features on web pages. Whenever a web page does more than just display static information—such as
+// updating content in real-time, providing interactive maps, creating animated 2D/3D graphics, or enabling scrolling video jukeboxes—JavaScript is likely involved.
 // It is considered the third layer in the standard web technologies stack, complementing HTML and CSS.
 
 // ____________________________
@@ -59,10 +59,10 @@
 // _____________________________________________________________
 // 3. How does hoisting work in JavaScript?
 // a. What is hoisting?
-// ans: 
+// ans:
 //  Hoisting means that if you try to access a variable before initialization, you will get different warnings or errors depending on the
 //  declaration type: if you use let or const, you will get a ReferenceError saying "Cannot access variable before initialization," but if you use var, you will get undefined.
-//  Everything in JavaScript happens during the execution phase. First, JavaScript looks for any variables or functions that are declared and hoists them to memory. 
+//  Everything in JavaScript happens during the execution phase. First, JavaScript looks for any variables or functions that are declared and hoists them to memory.
 //  However, when you initialize a variable with a value, it won’t be assigned during the hoisting phase, so if you try to access it before its initialization,
 //  you'll get a ReferenceError with let or const, and undefined with var.
 // _____________________________________________________________
@@ -508,6 +508,27 @@ Hello
 //      }
 //      console.log(obj);
 // };
-
 // sortPeople(["Mary", "John", "Emma"], [180, 165, 170]);
+// ________________________________________________________________
 
+// ________________________________________________________________
+// 24. You are given a 0-indexed array of string words and two integers left and right.
+// A string is called a vowel string if it starts with a vowel character and ends with a vowel character where vowel characters are 'a', 'e', 'i', 'o', and 'u'.
+// Return the number of vowel strings words[i] where i belongs to the inclusive range [left, right].
+// ans: var vowelStrings = function (words, left, right) {
+//      const isVowel = (char) => "aeiou".includes(char);
+
+//      let count = 0;
+
+//      for (let i = left; i <= right; i++) {
+//           const word = words[i];
+
+//           if (word.length > 0 && isVowel(word[0]) && isVowel(word[word.length - 1])) {
+//                count++;
+//           }
+//      }
+
+//      return count;
+// };
+// vowelStrings(["hey", "aeo", "mu", "ooo", "artro"], 1, 4);
+// ________________________________________________________________
