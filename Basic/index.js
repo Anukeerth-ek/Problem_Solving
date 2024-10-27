@@ -570,15 +570,15 @@ Hello
 // where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
 // ans:
-const merge = (nums1, m, nums2, n) => {
-     for (let i = 0; i < n; i++) {
-          nums1[i + m] = nums2[i];
-     }
+// const merge = (nums1, m, nums2, n) => {
+//      for (let i = 0; i < n; i++) {
+//           nums1[i + m] = nums2[i];
+//      }
 
-     nums1.sort((a, b) => a - b);
-     return nums1;
-};
+//      nums1.sort((a, b) => a - b);
+//      return nums1;
+// };
 
-console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+// console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
 // ________________________________________________________________
