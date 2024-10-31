@@ -582,3 +582,25 @@ Hello
 // console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
 
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 27. Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be
+// if it were inserted in order.
+// You must write an algorithm with O(log n) runtime complexity.
+
+// ans:
+
+// const searchInsert = (nums, target) => {
+//      console.log(nums, target)
+//      for (let i = 0; i < nums.length; i++) {
+//           if (nums[i] >= target) {
+//               return i;
+//           }
+//       }
+//       return nums.length;
+// };
+// console.log(searchInsert([1, 3, 5, 6], 3)); //  This should have the result if we the targeted number is present in the array, then just return the index
+// and if not present in that array then return
+// the index where  it would be if it were inserted in order.
+
+// ________________________________________________________________
