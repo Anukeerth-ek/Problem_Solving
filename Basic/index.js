@@ -692,3 +692,12 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
+//33. Example function simulating an API call with a delay
+// function fetchData() {
+//      return new Promise(resolve => {
+//        setTimeout(() => {
+//          resolve('Data fetched successfully!');
+//        }, 2000);
+//      });
+//    }
+   
