@@ -629,3 +629,13 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
+//29.  Function to normalize scores between 0 and 100
+// function normalizeScores(scores) {
+//      const maxScore = Math.max(...scores);
+//      const minScore = Math.min(...scores);
+   
+//      return scores.map(score => {
+//        return ((score - minScore) / (maxScore - minScore)) * 100;
+//      });
+//    }
+// ________________________________________________________________
