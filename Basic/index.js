@@ -673,3 +673,22 @@ Hello
 // const result = users.filter(user=> user.age >= 30)
 // console.log(result)  // Output: [ { name: 'Bob', age: 30 }, { name: 'Charlie', age: 35 } ]
 // ________________________________________________________________
+
+// ________________________________________________________________
+
+// 32.const originalObject = {
+//   name: 'Alice',
+//   address: { city: 'New York', country: 'USA' }
+// };
+// Deep clone the object
+
+// ans:
+// const clonedObject = JSON.parse(JSON.stringify(originalObject));
+
+// clonedObject.address.city = 'Los Angeles';
+
+// console.log(originalObject.address.city);  // Output: 'New York'
+// console.log(clonedObject.address.city);    // Output: 'Los Angeles'
+// ________________________________________________________________
+
+// ________________________________________________________________
