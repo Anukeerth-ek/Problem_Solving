@@ -639,3 +639,20 @@ Hello
 //      });
 //    }
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 30. Function to estimate overall performance based on normalized scores
+// function estimatePerformance(normalizedScores) {
+//      const average = normalizedScores.reduce((acc, score) => acc + score, 0) / normalizedScores.length;
+     
+//      if (average >= 90) {
+//        return 'Excellent';
+//      } else if (average >= 70) {
+//        return 'Good';
+//      } else if (average >= 50) {
+//        return 'Average';
+//      } else {
+//        return 'Poor';
+//      }
+//    }
+// ________________________________________________________________
