@@ -656,3 +656,20 @@ Hello
 //      }
 //    }
 // ________________________________________________________________
+
+// ________________________________________________________________
+
+// 31.
+//  const users = [
+//      { name: 'Alice', age: 25 },
+//      { name: 'Bob', age: 30 },
+//      { name: 'Charlie', age: 35 },
+//      { name: 'David', age: 20 }
+//    ];
+   
+   // Filter users who are 30 or older
+
+//    ans: 
+// const result = users.filter(user=> user.age >= 30)
+// console.log(result)  // Output: [ { name: 'Bob', age: 30 }, { name: 'Charlie', age: 35 } ]
+// ________________________________________________________________
