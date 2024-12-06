@@ -719,3 +719,24 @@ Hello
 // }
 // console.log(findMax([1, 5, 3, 9, 2])); // Output: 9
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 36.FizzBuzz Problem: Print numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; 
+// and for multiples of both, print "FizzBuzz."
+
+// ans:
+// const returnFizzBuzz = ()=> {
+//    for(let i = 1; i <= 100; i++) {
+//       if(i % 3 === 0) 
+//          console.log( "Fizz")
+//       else if(i % 5 === 0) 
+//          console.log( "Buzz")
+//       else if(i % 3 === 0 && i % 5 === 0)
+//          console.log( "FizzBuzz")
+//       else 
+//       console.log("Other options")
+//    }
+// }
+
+// console.log(returnFizzBuzz())
+// ________________________________________________________________
