@@ -711,3 +711,11 @@ Hello
 // console.log(reverseString("hello")); // Output: "olleh"
 // ________________________________________________________________
    
+// ________________________________________________________________
+// 35. Check if a String is a Palindrome:
+// ans:
+// function findMax(arr) {
+//    return Math.max(...arr);
+// }
+// console.log(findMax([1, 5, 3, 9, 2])); // Output: 9
+// ________________________________________________________________
