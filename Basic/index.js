@@ -740,3 +740,14 @@ Hello
 
 // console.log(returnFizzBuzz())
 // ________________________________________________________________
+
+// ________________________________________________________________
+// Two Sum Problem: Find two numbers in an array that add up to a target sum.
+// ans:
+
+const returnTwoSum = (arr, target)=> {
+   // console.log(arr)
+   
+}
+
+console.log(returnTwoSum([2, 7, 11, 15], 9))
