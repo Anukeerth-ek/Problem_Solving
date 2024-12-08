@@ -764,8 +764,30 @@ Hello
 // Given an array of numbers, return the largest number.
 
 // ans:
-function findLargest(arr) {
-const largestNumber = Math.max(...arr)
-return largestNumber
-}
-console.log(findLargest([10, 20, 5, 15]));  // 20
+
+// function findLargest(arr) {
+ // _______________________First Approach _______________________
+
+//    let largestNumber = arr[0];
+//  for(let i = 1; i < arr.length; i++) {
+//   if(arr[i] > largestNumber) {
+//    largestNumber = arr[i]
+//   }
+//  }
+//  return largestNumber;
+
+// _______________________Second Approach_______________________
+
+// return arr.reduce((max, current) => max > current ? max : current , arr[0]);
+
+// _______________________Third Approach_______________________
+
+// return Math.max(...arr)
+
+// _______________________Fourth Approach_______________________
+
+// return arr.sort((a, b)=> b - a)[0]
+
+// }
+
+// console.log(findLargest([10, 20, 5, 15]));  // 20
