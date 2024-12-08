@@ -606,22 +606,21 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 28. Implement a function makeCounter that accepts an optional integer value and returns a function. When the returned function is called initially, 
-// it returns the initial value if provided, otherwise 0. The returned function can be called repeatedly to return 1 more than the return value of the 
+// 28. Implement a function makeCounter that accepts an optional integer value and returns a function. When the returned function is called initially,
+// it returns the initial value if provided, otherwise 0. The returned function can be called repeatedly to return 1 more than the return value of the
 // previous invocation.
-// ans: 
+// ans:
 // export default function makeCounter(initialValue = 0) {
 //      return function counterValue() {
 //        let variableName = initialValue
-     
+
 //           initialValue +=1
 //         return  variableName
-       
+
 //      };
-     
-     
+
 //    }
-   
+
 //    const counter = makeCounter(0)
 //    counter()
 //    counter()
@@ -633,7 +632,7 @@ Hello
 // function normalizeScores(scores) {
 //      const maxScore = Math.max(...scores);
 //      const minScore = Math.min(...scores);
-   
+
 //      return scores.map(score => {
 //        return ((score - minScore) / (maxScore - minScore)) * 100;
 //      });
@@ -644,7 +643,7 @@ Hello
 // 30. Function to estimate overall performance based on normalized scores
 // function estimatePerformance(normalizedScores) {
 //      const average = normalizedScores.reduce((acc, score) => acc + score, 0) / normalizedScores.length;
-     
+
 //      if (average >= 90) {
 //        return 'Excellent';
 //      } else if (average >= 70) {
@@ -666,10 +665,10 @@ Hello
 //      { name: 'Charlie', age: 35 },
 //      { name: 'David', age: 20 }
 //    ];
-   
-   // Filter users who are 30 or older
 
-//    ans: 
+// Filter users who are 30 or older
+
+//    ans:
 // const result = users.filter(user=> user.age >= 30)
 // console.log(result)  // Output: [ { name: 'Bob', age: 30 }, { name: 'Charlie', age: 35 } ]
 // ________________________________________________________________
@@ -710,7 +709,7 @@ Hello
 // }
 // console.log(reverseString("hello")); // Output: "olleh"
 // ________________________________________________________________
-   
+
 // ________________________________________________________________
 // 35. Check if a String is a Palindrome:
 // ans:
@@ -721,19 +720,19 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
-// 36.FizzBuzz Problem: Print numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; 
+// 36.FizzBuzz Problem: Print numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz";
 // and for multiples of both, print "FizzBuzz."
 
 // ans:
 // const returnFizzBuzz = ()=> {
 //    for(let i = 1; i <= 100; i++) {
-//       if(i % 3 === 0) 
+//       if(i % 3 === 0)
 //          console.log( "Fizz")
-//       else if(i % 5 === 0) 
+//       else if(i % 5 === 0)
 //          console.log( "Buzz")
 //       else if(i % 3 === 0 && i % 5 === 0)
 //          console.log( "FizzBuzz")
-//       else 
+//       else
 //       console.log("Other options")
 //    }
 // }
@@ -766,7 +765,7 @@ Hello
 // ans:
 
 // function findLargest(arr) {
- // _______________________First Approach _______________________
+// _______________________First Approach _______________________
 
 //    let largestNumber = arr[0];
 //  for(let i = 1; i < arr.length; i++) {
@@ -801,19 +800,19 @@ Hello
 
 // function reverseString(str) {
 
-   // _______________________First Approach_______________________
+// _______________________First Approach_______________________
 
-   // return str.split('').reverse().join('')
+// return str.split('').reverse().join('')
 
-   // _______________________Second Approach_______________________
- 
-   // let newArr = []
-   // const arr = str.split('')
-   
-   // for(let i = 0; i < arr.length; i++) {
-   //    newArr.unshift(arr[i])
-   // }
-   // return newArr.join('')
+// _______________________Second Approach_______________________
+
+// let newArr = []
+// const arr = str.split('')
+
+// for(let i = 0; i < arr.length; i++) {
+//    newArr.unshift(arr[i])
+// }
+// return newArr.join('')
 // }
 // console.log(reverseString("hello")); // "olleh"
 // ________________________________________________________________
