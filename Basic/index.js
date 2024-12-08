@@ -791,3 +791,16 @@ Hello
 // }
 
 // console.log(findLargest([10, 20, 5, 15]));  // 20
+// ________________________________________________________________
+
+// ________________________________________________________________
+// 39. Reverse a String
+// Write a function that takes a string as input and returns the reversed string.
+
+// ans:
+
+function reverseString(str) {
+   return str.split('').reverse().join('')
+}
+console.log(reverseString("hello")); // "olleh"
+// ________________________________________________________________
