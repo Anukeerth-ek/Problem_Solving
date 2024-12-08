@@ -799,20 +799,21 @@ Hello
 // ans:
 
 // function reverseString(str) {
-
 // _______________________First Approach_______________________
-
 // return str.split('').reverse().join('')
-
 // _______________________Second Approach_______________________
-
 // let newArr = []
 // const arr = str.split('')
-
 // for(let i = 0; i < arr.length; i++) {
 //    newArr.unshift(arr[i])
 // }
 // return newArr.join('')
+// _______________________Third Approach_______________________
+//   let newString = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//        newString += str[i];
+//   }
+//   return newString;
 // }
 // console.log(reverseString("hello")); // "olleh"
 // ________________________________________________________________
