@@ -799,7 +799,7 @@ Hello
 
 // ans:
 
-function reverseString(str) {
+// function reverseString(str) {
 
    // _______________________First Approach_______________________
 
@@ -814,6 +814,6 @@ function reverseString(str) {
    //    newArr.unshift(arr[i])
    // }
    // return newArr.join('')
-}
+// }
 // console.log(reverseString("hello")); // "olleh"
 // ________________________________________________________________
