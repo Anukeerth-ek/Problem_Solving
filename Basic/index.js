@@ -742,7 +742,7 @@ Hello
 // ________________________________________________________________
 
 // ________________________________________________________________
-// Two Sum Problem: Find two numbers in an array that add up to a target sum.
+// 37. Two Sum Problem: Find two numbers in an array that add up to a target sum.
 // ans:
 
 // function twoSum(nums, target) {
@@ -758,3 +758,14 @@ Hello
 
 // console.log(twoSum([2, 7, 11, 15], 9));
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 38. Find the Largest Number in an Array
+// Given an array of numbers, return the largest number.
+
+// ans:
+function findLargest(arr) {
+const largestNumber = Math.max(...arr)
+return largestNumber
+}
+console.log(findLargest([10, 20, 5, 15]));  // 20
