@@ -817,3 +817,21 @@ Hello
 // }
 // console.log(reverseString("hello")); // "olleh"
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 40. Palindrome Checker
+//    Write a function to check if a given string is a palindrome.
+
+// function isPalindrome(str) {
+//      //  First approach
+//      const palindrome = str.split("").reverse().join("");
+//      if (str === palindrome) return true;
+//      else return false;
+// }
+// console.log(isPalindrome("racecar")); // true
+// console.log(isPalindrome("radar")); // true
+// console.log(isPalindrome("toot")); // true
+// console.log(isPalindrome("madam")); // true
+// console.log(isPalindrome("hello")); // false
+// console.log(isPalindrome("TAKE U FORWARD")); // false
+// ________________________________________________________________
