@@ -835,3 +835,16 @@ Hello
 // console.log(isPalindrome("hello")); // false
 // console.log(isPalindrome("TAKE U FORWARD")); // false
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 41. Sum of Array Elements
+// Write a function that takes an array of numbers and returns the sum of all the elements.
+// ans:
+
+// function arraySum(arr) {
+//      // _______________________First Approach_______________________
+//      // const sum = arr.reduce((acc, curr) => acc + curr, 0);
+//      // return sum;
+// }
+// console.log(arraySum([1, 2, 3, 4])); // 10
+// ________________________________________________________________
