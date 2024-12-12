@@ -848,3 +848,16 @@ Hello
 // }
 // console.log(arraySum([1, 2, 3, 4])); // 10
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 42.Count Vowels and Consonants
+//    Write a function to count the number of vowels and consonants in a string.
+// ans:
+function countVowelsAndConsonants(str) {
+     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+     const result = str.split('')
+     const finalRes = vowels.find((element)=> element == str)
+     console.log(finalRes)
+ }
+ console.log(countVowelsAndConsonants("hello")); // { vowels: 2, consonants: 3 }
+// ________________________________________________________________
