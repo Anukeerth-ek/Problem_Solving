@@ -856,10 +856,10 @@ Hello
 // function countVowelsAndConsonants(str) {
 //      const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 //      const result = str.split(''); // Split the string into characters
- 
+
 //      let vowelCount = 0;
 //      let consonantCount = 0;
- 
+
 //      // Loop through each character in the result array
 //      result.forEach((char) => {
 //          if (vowels.find((element) => element === char)) {
@@ -868,11 +868,30 @@ Hello
 //              consonantCount++; // Increment consonant count if it's a letter but not a vowel
 //          }
 //      });
- 
+
 //      console.log({ vowels: vowelCount, consonants: consonantCount });
 //      return { vowels: vowelCount, consonants: consonantCount };
 //  }
- 
+
 //  console.log(countVowelsAndConsonants("hello")); // { vowels: 2, consonants: 3 }
- 
+
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 43. Find Duplicates in an Array
+//    Given an array, return all the duplicate elements.
+// ans:
+// function findDuplicates(arr) {
+//      let newArr = [];
+
+//      for (let i = 0; i < arr.length; i++) {
+//           for(let j = i+1; j < arr.length; j++) {
+//                if(arr[i] === arr[j]) {
+//                     newArr.push(arr[i])
+//                }
+//           }
+//      }
+//      return newArr
+// }
+// console.log(findDuplicates([1, 2, 3, 2, 4, 5, 2, 5])); // [2, 5]
+// // ________________________________________________________________
