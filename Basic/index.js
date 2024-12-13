@@ -882,27 +882,27 @@ Hello
 //    Given an array, return all the duplicate elements.
 // ans:
 // function findDuplicates(arr) {
-     // _______________________First Approach_______________________
-     //      let newArr = [];
-     //      for (let i = 0; i < arr.length; i++) {
-     //           for(let j = i+1; j < arr.length; j++) {
-     //                if(arr[i] === arr[j]) {
-     //                     newArr.push(arr[i])
-     //                }
-     //           }
-     //      }
-     //      return newArr
-     // _______________________Second Approach_______________________
-     const seen = new Set();
-     const duplicates = new Set();
-     for (let num of arr) {
-          if (seen.has(num)) {
-               duplicates.add(num);
-          } else {
-               seen.add(num);
-          }
-     }
-     return Array.from(duplicates);
+// _______________________First Approach_______________________
+//      let newArr = [];
+//      for (let i = 0; i < arr.length; i++) {
+//           for(let j = i+1; j < arr.length; j++) {
+//                if(arr[i] === arr[j]) {
+//                     newArr.push(arr[i])
+//                }
+//           }
+//      }
+//      return newArr
+// _______________________Second Approach_______________________
+// const seen = new Set();
+// const duplicates = new Set();
+// for (let num of arr) {
+//      if (seen.has(num)) {
+//           duplicates.add(num);
+//      } else {
+//           seen.add(num);
+//      }
+// }
+// return Array.from(duplicates);
 // }
 // console.log(findDuplicates([1, 2, 3, 2, 4, 5, 2, 5])); // [2, 5]
 // // ________________________________________________________________
