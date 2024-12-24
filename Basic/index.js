@@ -906,3 +906,22 @@ Hello
 // }
 // console.log(findDuplicates([1, 2, 3, 2, 4, 5, 2, 5])); // [2, 5]
 // // ________________________________________________________________
+
+// // ________________________________________________________________
+// 44. Convert the below array into arrays, by the length of the string
+
+// const arr = ["str", "hello", "Joseph", "name", "ram", "token"];
+
+// const handleArrayLength = (arr) => {
+     
+//      const sampleArr = []
+//      for(let i = 0; i < arr.length; i++) {
+          
+//           sampleArr.push(arr[i])
+//           console.log(sampleArr)
+//      }
+// };
+
+// console.log(handleArrayLength(["str", "hello", "Joseph", "name", "ram", "token"]));
+
+// // ________________________________________________________________
