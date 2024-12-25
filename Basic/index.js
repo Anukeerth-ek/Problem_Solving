@@ -930,12 +930,10 @@ Hello
 // 45. Program to find longest word in a given sentence ?
 
 // ans:
+// _________________________________________________________
+// This will return largest word from the sentence
 
 // const getLongestWord = (words) => {
-
-// ________________________________________________________________
-// This will return largest sentence
-
 //      const wordsArr = words.split(" ");
 //      let largestWord = "";
 //      let smallestWord = "";
@@ -948,6 +946,35 @@ Hello
 //      }
 //      return largestWord;
 // };
-// console.log(getLongestWord("Program to find longest word in a given sentence")); // sentence
-// console.log(getLongestWord("Here is a simple JavaScript program that finds the longest word in a given sentence")) // JavaScript
+
+// _________________________________________________________
+// This will return shortest word from the sentence
+
+const getLongestWord = (words) => {
+     const wordsArr = words.split(" ");
+
+     // ____________This is a first approach__________
+     // let smallestWord = wordsArr[0];
+
+     // for (let i = 1; i < wordsArr.length; i++) {
+     //      if(wordsArr[i].length <= smallestWord.length) {
+     //           smallestWord = wordsArr[i]
+     //      }
+     // }
+     // return smallestWord;
+
+     // __________This is a Second approach__________
+     // const smallestWord = wordsArr.reduce((current, word) => {
+     //      return current.length <= word.length ? current : word;
+     // });
+     // return smallestWord;
+
+     // __________This is a Third approach__________
+     // const smallestWord = wordsArr.sort((first, second) => first.length - second.length)[0];
+     // return smallestWord
+     
+};
+// console.log(getLongestWord("Program to find longest word in a given sentence")); // a
+// console.log(getLongestWord("Here is an simple JavaScript program that finds the longest word in an given sentence")) // an
+// console.log(getLongestWord("repo provides abb range of problems with detailed solutions.")) // of
 // ________________________________________________________________
