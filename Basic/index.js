@@ -972,7 +972,10 @@ const getLongestWord = (words) => {
      // __________This is a Third approach__________
      // const smallestWord = wordsArr.sort((first, second) => first.length - second.length)[0];
      // return smallestWord
-     
+
+     // __________This is a Fourth approach__________
+     // const minLength = Math.min(...wordsArr.map(word => word.length));
+     // return wordsArr.find(word => word.length === minLength);
 };
 // console.log(getLongestWord("Program to find longest word in a given sentence")); // a
 // console.log(getLongestWord("Here is an simple JavaScript program that finds the longest word in an given sentence")) // an
