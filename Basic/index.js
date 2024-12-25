@@ -981,3 +981,18 @@ Hello
 // console.log(getLongestWord("Here is an simple JavaScript program that finds the longest word in an given sentence")) // an
 // console.log(getLongestWord("repo provides abb range of problems with detailed solutions.")) // of
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 46. How to check whether a string is palindrome or not ?
+// ans:
+const handleIsPalindrome = (string)=> {
+     // const isPalindromeString = string.toLowerCase();
+     // const reversedString = string.split('').reverse().join('').toLowerCase()
+     
+     // return isPalindromeString === reversedString ? true : false
+}
+
+console.log(handleIsPalindrome('Racecar'))  // true
+console.log(handleIsPalindrome('palindrome'))  // false
+console.log(handleIsPalindrome('madam'))  // true
+// ________________________________________________________________
