@@ -913,10 +913,10 @@ Hello
 // const arr = ["str", "hello", "Joseph", "name", "ram", "token"];
 
 // const handleArrayLength = (arr) => {
-     
+
 //      const sampleArr = []
 //      for(let i = 0; i < arr.length; i++) {
-          
+
 //           sampleArr.push(arr[i])
 //           console.log(sampleArr)
 //      }
@@ -925,3 +925,29 @@ Hello
 // console.log(handleArrayLength(["str", "hello", "Joseph", "name", "ram", "token"]));
 
 // // ________________________________________________________________
+
+// ________________________________________________________________
+// 45. Program to find longest word in a given sentence ?
+
+// ans:
+
+// const getLongestWord = (words) => {
+
+// ________________________________________________________________
+// This will return largest sentence
+
+//      const wordsArr = words.split(" ");
+//      let largestWord = "";
+//      let smallestWord = "";
+
+//      for (let i = 0; i < wordsArr.length; i++) {
+//           if(wordsArr[i].length >= largestWord.length) {
+//                largestWord = wordsArr[i]
+//           }
+
+//      }
+//      return largestWord;
+// };
+// console.log(getLongestWord("Program to find longest word in a given sentence")); // sentence
+// console.log(getLongestWord("Here is a simple JavaScript program that finds the longest word in a given sentence")) // JavaScript
+// ________________________________________________________________
