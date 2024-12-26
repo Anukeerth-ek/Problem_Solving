@@ -985,14 +985,24 @@ Hello
 // ________________________________________________________________
 // 46. How to check whether a string is palindrome or not ?
 // ans:
-const handleIsPalindrome = (string)=> {
-     // const isPalindromeString = string.toLowerCase();
-     // const reversedString = string.split('').reverse().join('').toLowerCase()
-     
-     // return isPalindromeString === reversedString ? true : false
-}
+// const handleIsPalindrome = (string)=> {
 
-console.log(handleIsPalindrome('Racecar'))  // true
-console.log(handleIsPalindrome('palindrome'))  // false
-console.log(handleIsPalindrome('madam'))  // true
+// ____________This is a First approach____________
+// const isPalindromeString = string.toLowerCase();
+// const reversedString = string.split('').reverse().join('').toLowerCase()
+
+// return isPalindromeString === reversedString ? true : false
+
+// ___________This is a Second approach____________
+// const isPalindromeString = string.toLowerCase();
+// let newArr = [];
+// for(let i = string.length - 1; i >= 0 ; i--) {
+//      newArr.push(string[i])
+// }
+// return isPalindromeString === newArr.join('').toLowerCase() ? true : false
+// }
+
+// console.log(handleIsPalindrome('RacecaR'))  // true
+// console.log(handleIsPalindrome('palindrome'))  // false
+// console.log(handleIsPalindrome('madam'))  // true
 // ________________________________________________________________
