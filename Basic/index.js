@@ -1006,3 +1006,16 @@ Hello
 // console.log(handleIsPalindrome('palindrome'))  // false
 // console.log(handleIsPalindrome('madam'))  // true
 // ________________________________________________________________
+
+// ________________________________________________________________
+
+//47. Write a program to remove duplicates from an array ?
+// ans:
+
+const handleArrayDuplicate = (arr)=> {
+     
+}
+
+console.log(handleArrayDuplicate([1, 3, 4, 2, 1, 3]))
+
+// ________________________________________________________________
