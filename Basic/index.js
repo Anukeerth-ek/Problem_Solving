@@ -1013,7 +1013,15 @@ Hello
 // ans:
 
 const handleArrayDuplicate = (arr)=> {
-     
+     const newArr = []
+    for(let i = 0; i < arr.length; i++) {
+     for(let j = i+1; j < arr.length; j++) {
+          if(arr[i] !== arr[j]) {
+               newArr.push(arr[i])
+          }    
+     }
+    }
+    return newArr;
 }
 
 console.log(handleArrayDuplicate([1, 3, 4, 2, 1, 3]))
