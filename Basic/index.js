@@ -1012,13 +1012,22 @@ Hello
 //47. Write a program to remove duplicates from an array ?
 // ans:
 
-const handleArrayDuplicate = (arr) => {
-     const newArr = arr.filter((item, index) => {
-          return arr.indexOf(item) === index;
-     });
-     return newArr;
+// const handleArrayDuplicate = (arr) => {
+
+     // First Approach
+
+     // const newArr = arr.filter((item, index) => {
+     //      return arr.indexOf(item) === index;
+     // });
+     // return newArr;
+
+     
+     // Second Approach
+
+
+
 };
 
-console.log(handleArrayDuplicate([1, 1, 3, 4, 2, 1, 3]));
+// console.log(handleArrayDuplicate([1, 1, 3, 4, 2, 1, 3]));
 
 // ________________________________________________________________
