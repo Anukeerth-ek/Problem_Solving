@@ -1042,6 +1042,11 @@ Hello
 //      return newArr.toString().replaceAll(",", "");
 
 // ___________This is a Second approach____________
+// let newArr = [];
+// const reversedString = string.reverse();
+// for(let letter of reversedString ) {
+//      console.log('letter', letter)
+// }
 
 // };
 
