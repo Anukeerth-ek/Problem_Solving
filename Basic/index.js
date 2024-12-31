@@ -1030,14 +1030,14 @@ Hello
 // ________________________________________________________________
 // 48. Program to find Reverse of a string without using built-in method ?
 // ans:
-const getReversedString = (string) => {
-     let newArr = [];
-     for (let letter = string.length - 1; letter >= 0; letter--) {
-          newArr.push(string[letter]);
-     }
-     return newArr.toString().replaceAll(",", "");
-};
+// const getReversedString = (string) => {
+//      let newArr = [];
+//      for (let letter = string.length - 1; letter >= 0; letter--) {
+//           newArr.push(string[letter]);
+//      }
+//      return newArr.toString().replaceAll(",", "");
+// };
 
-console.log(getReversedString("Hello"));
+// console.log(getReversedString("Hello"));
 
 // ________________________________________________________________
