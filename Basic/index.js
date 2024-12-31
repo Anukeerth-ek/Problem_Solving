@@ -1014,14 +1014,14 @@ Hello
 
 // const handleArrayDuplicate = (arr) => {
 
-// First Approach
+// ___________This is a First approach____________
 
 // const newArr = arr.filter((item, index) => {
 //      return arr.indexOf(item) === index;
 // });
 // return newArr;
 
-// Second Approach
+// ___________This is a Second approach____________
 
 // };
 
