@@ -2,14 +2,24 @@
 
 // So our task is to return the maximum consecutive 1's in an array.
 
-const getMaxConsecutiveOnes = (arr)=> {
-    let newArr = []
-    for(let i = 0; i < arr.length; i++) {
-        
-    }
-}
+const getMaxConsecutiveOnes = (arr) => {
+     let newArr = [];
+     let arrayLength ;
+     for (let i = 0; i < arr.length; i++) {
+          for (let j = i; j <=i; j++) {
+               if (arr[i] === 1) {
+                    newArr.push(arr[i]);
+                    arrayLength = newArr.length;
+               } else {
+                newArr = []
+                break;
+               }
+          }
+     }
+    return newArr.length
+};
 
-console.log(getMaxConsecutiveOnes([1, 1, 2, 3, 4, 1, 1, 1]))
 
 // node maxConsecutiveNumber
 
+export {getMaxConsecutiveOnes}
