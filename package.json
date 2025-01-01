@@ -8,6 +8,9 @@
     "test": "jest",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env"
