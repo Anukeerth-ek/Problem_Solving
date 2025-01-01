@@ -31,6 +31,7 @@
     "lint-staged": "^15.3.0"
   },
   "jest": {
+    "collectCoverage": true,
     "transform": {
       "^.+\\.(js|mjs)$": "babel-jest"
     }
