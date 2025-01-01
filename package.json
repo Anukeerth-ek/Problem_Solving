@@ -13,7 +13,7 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env" 
+      "@babel/preset-env"
     ]
   },
   "keywords": [],
@@ -34,5 +34,8 @@
     "transform": {
       "^.+\\.(js|mjs)$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "js-algorithms": "^1.9.2"
   }
 }
