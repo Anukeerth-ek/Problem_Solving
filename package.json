@@ -5,7 +5,8 @@
   "description": "Welcome to the LeetCode Questions repository! This project is a collection of LeetCode problems and solutions written in JavaScript. Whether you're preparing for coding interviews or just practicing algorithmic challenges, this repo provides a range of problems with detailed solutions.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "babel": {
     "presets": [
