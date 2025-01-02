@@ -1,0 +1,30 @@
+name: Node.js CI
+
+# Trigger this workflow on push or pull request events for the main branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    # Run the job on the latest Ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js with the latest LTS version
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      # Step 3: Install dependencies
+      - run: npm install
+
+      # Step 4: Run the tests
+      - run: npm test
