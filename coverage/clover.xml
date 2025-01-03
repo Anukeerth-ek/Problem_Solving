@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1735928438821" clover="3.2.0">
-  <project timestamp="1735928438821" name="All files">
-    <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="20" coveredelements="20" complexity="0" loc="16" ncloc="16" packages="1" files="2" classes="2"/>
+<coverage generated="1735928834788" clover="3.2.0">
+  <project timestamp="1735928834788" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="factorial.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\factorial.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="15" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-    </file>
-    <file name="maxConsecutiveNumber.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\maxConsecutiveNumber.js">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="5" count="1" type="stmt"/>
-      <line num="6" count="14" type="stmt"/>
-      <line num="8" count="14" type="stmt"/>
-      <line num="9" count="79" type="stmt"/>
-      <line num="10" count="79" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="52" type="stmt"/>
-      <line num="12" count="52" type="stmt"/>
-      <line num="14" count="27" type="stmt"/>
-      <line num="15" count="27" type="stmt"/>
-      <line num="19" count="14" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="10" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

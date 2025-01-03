@@ -9,6 +9,4 @@ const calculateFactorial = (number) => {
      return sum;
 };
 
-console.log(calculateFactorial(5));
-
 export {calculateFactorial}
