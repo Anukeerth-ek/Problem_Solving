@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1735928834788" clover="3.2.0">
-  <project timestamp="1735928834788" name="All files">
+<coverage generated="1735929264676" clover="3.2.0">
+  <project timestamp="1735929264676" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="factorial.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\factorial.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="10" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
+      <line num="5" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="64" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
     </file>
   </project>
 </coverage>
