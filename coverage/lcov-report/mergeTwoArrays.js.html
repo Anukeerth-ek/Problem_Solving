@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for maxConsecutiveNumber.js</title>
+    <title>Code coverage report for mergeTwoArrays.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> maxConsecutiveNumber.js</h1>
+        <h1><a href="index.html">All files</a> mergeTwoArrays.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -84,65 +84,56 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">79x</span>
-<span class="cline-any cline-yes">79x</span>
-<span class="cline-any cline-yes">52x</span>
-<span class="cline-any cline-yes">52x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Problem: Find the max count of consecutive 1’s in an array ?
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Problem: Given 2 arrays that are sorted [0,3,4,31] and [4,6,30]. Merge them and sort [0,3,4,4,6,30,31]
 &nbsp;
-// So our task is to return the maximum consecutive 1's in an array.
-&nbsp;
-const getMaxConsecutiveOnes = (arr) =&gt; {
-     let newArr = [];
-     let arrayLength ;
-     for (let i = 0; i &lt; arr.length; i++) {
-          for (let j = i; j &lt;=i; j++) {
-               if (arr[i] === 1) {
-                    newArr.push(arr[i]);
-                    arrayLength = newArr.length;
-               } else {
-                newArr = []
-                break;
-               }
-          }
-     }
-    return newArr.length
+const handleMergeSortedArray = (arr1, arr2) =&gt; {
+     const mergeArray = [...arr1, ...arr2];
+    //  let newArr = [];
+    //  for (let i = 0; i &lt; mergeArray.length; i++) {
+    //       for (let j = i + 1; j &lt;= mergeArray.length; j++) {
+    //            if (mergeArray[i] &gt; mergeArray[j]) {
+    //                 newArr.push(mergeArray[i]);
+    //            } else {
+    //                 continue
+    //            }
+    //       }
+    //  }
+    //  console.log("result", newArr);
+    const sortedArray = mergeArray.sort((first, second)=&gt; first - second)
+    // console.log("sro", sortedArray)
+    return sortedArray;
 };
+console.log(handleMergeSortedArray([1, 5, 9], [2, 6, 10]));
 &nbsp;
-&nbsp;
-// node maxConsecutiveNumber
-&nbsp;
-export {getMaxConsecutiveOnes}</pre></td></tr></table></pre>
+export {handleMergeSortedArray}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-05T12:22:51.054Z
+                at 2025-01-05T12:30:02.357Z
             </div>
         <script src="prettify.js"></script>
         <script>

@@ -13,7 +13,10 @@ const handleMergeSortedArray = (arr1, arr2) => {
     //       }
     //  }
     //  console.log("result", newArr);
-    const sortedArray = mergeArray.sort((first, second)=> second - first)
-    console.log("sro", sortedArray)
+    const sortedArray = mergeArray.sort((first, second)=> first - second)
+    // console.log("sro", sortedArray)
+    return sortedArray;
 };
-console.log(handleMergeSortedArray([0, 3, 4, 31], [4, 6, 30]));
+console.log(handleMergeSortedArray([1, 5, 9], [2, 6, 10]));
+
+export {handleMergeSortedArray}
