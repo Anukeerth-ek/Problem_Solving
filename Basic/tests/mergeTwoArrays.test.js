@@ -20,4 +20,8 @@ describe("Merge and sort the array", ()=> {
         expect(handleMergeSortedArray(largeInput)).toEqual(largeInput);
       });
 
+      test('Sort list with negative numbers', () => {
+        expect(handleMergeSortedArray([3, -2, 1, -5, 0])).toEqual([-5, -2, 0, 1, 3]);
+      });
+
 })
