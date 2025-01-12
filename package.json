@@ -9,7 +9,16 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "**/*.{css,scss}": [
+      "stylelint --fix"
+    ],
+    "**/*.{ts,tsx}": [
+      "bash -c tsc --noEmit"
+    ]
   },
   "babel": {
     "presets": [
