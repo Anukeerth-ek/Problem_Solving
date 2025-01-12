@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for maxConsecutiveNumber.js</title>
+    <title>Code coverage report for findCorrespondingArraySquare.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> maxConsecutiveNumber.js</h1>
+        <h1><a href="index.html">All files</a> findCorrespondingArraySquare.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">23.07% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>3/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>2/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">27.27% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>3/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -90,52 +90,52 @@
 <a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">79x</span>
-<span class="cline-any cline-yes">79x</span>
-<span class="cline-any cline-yes">52x</span>
-<span class="cline-any cline-yes">52x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Problem: Find the max count of consecutive 1’s in an array ?
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// problem: Create a function which will accepts two arrays arr1 and arr2. The function should return true if every value in arr1 has its
+// corresponding value squared in array2. The frequency of values must be same.
 &nbsp;
-// So our task is to return the maximum consecutive 1's in an array.
+const findCorresspondingArraySquare = (arr, arr1) =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if(!arr.length || <span class="branch-1 cbranch-no" title="branch not covered" >!arr1.length)</span> {
+        return undefined
+    }
+     const firstArraySquare = <span class="cstat-no" title="statement not covered" >arr.map(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; <span class="cstat-no" title="statement not covered" >item * item)</span>;</span>
+<span class="cstat-no" title="statement not covered" >     console.log(firstArraySquare);</span>
+<span class="cstat-no" title="statement not covered" >     console.log(arr1);</span>
+    let flag
+<span class="cstat-no" title="statement not covered" >     for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; arr1.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >        if(arr1[i] === firstArraySquare[i]) {</span>
+<span class="cstat-no" title="statement not covered" >            flag = true</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            return false</span>
 &nbsp;
-const getMaxConsecutiveOnes = (arr) =&gt; {
-     let newArr = [];
-     let arrayLength ;
-     for (let i = 0; i &lt; arr.length; i++) {
-          for (let j = i; j &lt;=i; j++) {
-               if (arr[i] === 1) {
-                    newArr.push(arr[i]);
-                    arrayLength = newArr.length;
-               } else {
-                newArr = []
-                break;
-               }
-          }
+        }
      }
-    return newArr.length
+<span class="cstat-no" title="statement not covered" >     return flag</span>
 };
 &nbsp;
-&nbsp;
-// node maxConsecutiveNumber
-&nbsp;
-export {getMaxConsecutiveOnes}</pre></td></tr></table></pre>
+export {findCorresspondingArraySquare}
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
