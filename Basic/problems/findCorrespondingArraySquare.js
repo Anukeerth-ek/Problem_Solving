@@ -5,9 +5,11 @@ const findCorresspondingArraySquare = (arr, arr1) => {
     if(!arr.length || !arr1.length) {
         return undefined
     }
-     const firstArraySquare = arr.map((item) => item * item);
-     console.log(firstArraySquare);
-     console.log(arr1);
+    // const mergedArry = [...arr, ...arr1]
+    //  const firstArraySquare = mergedArry.map((item) => item * item);
+    //  return firstArraySquare
+    //  console.log(firstArraySquare);
+    //  console.log(arr1);
     let flag
      for (let i = 0; i < arr1.length; i++) {
         if(arr1[i] === firstArraySquare[i]) {
@@ -20,5 +22,5 @@ const findCorresspondingArraySquare = (arr, arr1) => {
      }
      return flag
 };
-
-export {findCorresspondingArraySquare}
+console.log(findCorresspondingArraySquare([1, 2, 3, 4], [1, 2, 3, 0]))
+// export {findCorresspondingArraySquare}

@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736703784139" clover="3.2.0">
-  <project timestamp="1736703784139" name="All files">
-    <metrics statements="31" coveredstatements="23" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="5" elements="45" coveredelements="32" complexity="0" loc="31" ncloc="31" packages="1" files="4" classes="4"/>
-    <file name="factorial.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\factorial.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="5" type="stmt"/>
-      <line num="6" count="5" type="stmt"/>
-      <line num="7" count="64" type="stmt"/>
-      <line num="9" count="5" type="stmt"/>
-    </file>
+<coverage generated="1736800875693" clover="3.2.0">
+  <project timestamp="1736800875693" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="19" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="findCorrespondingArraySquare.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\findCorrespondingArraySquare.js">
-      <metrics statements="11" coveredstatements="3" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <metrics statements="11" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="5" count="2" type="cond" truecount="4" falsecount="0"/>
       <line num="6" count="1" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="12" count="0" type="stmt"/>
-      <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="14" count="0" type="stmt"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-    </file>
-    <file name="maxConsecutiveNumber.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\maxConsecutiveNumber.js">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="14" type="stmt"/>
-      <line num="8" count="14" type="stmt"/>
-      <line num="9" count="79" type="stmt"/>
-      <line num="10" count="79" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="52" type="stmt"/>
-      <line num="12" count="52" type="stmt"/>
-      <line num="14" count="27" type="stmt"/>
-      <line num="15" count="27" type="stmt"/>
-      <line num="19" count="14" type="stmt"/>
-    </file>
-    <file name="mergeTwoArrays.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\mergeTwoArrays.js">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="6" type="stmt"/>
-      <line num="6" count="32" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
+      <line num="8" count="4" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
       <line num="10" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
