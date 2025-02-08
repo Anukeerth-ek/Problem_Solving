@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1736800875693" clover="3.2.0">
-  <project timestamp="1736800875693" name="All files">
-    <metrics statements="11" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="19" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="findCorrespondingArraySquare.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\Basic\problems\findCorrespondingArraySquare.js">
-      <metrics statements="11" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="2" type="cond" truecount="4" falsecount="0"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
+<coverage generated="1738982768139" clover="3.2.0">
+  <project timestamp="1738982768140" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="25" coveredelements="25" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="Keyboard_Row.js" path="C:\Users\anuke\OneDrive\Desktop\Interview Preparation\JavaScript\DSA\Arrays\Keyboard_Row.js">
+      <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="8" count="23" type="stmt"/>
+      <line num="10" count="23" type="stmt"/>
+      <line num="15" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="18" count="20" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="56" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="4" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
