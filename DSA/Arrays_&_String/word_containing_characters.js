@@ -4,10 +4,22 @@
 
 // Note that the returned array may be in any order.
 
-var findWordsContaining = function(words, x) {
-    // with using es6 feature
-   const result = words.map((word, index) => word.includes(x) ? index : -1).filter((index)=> index!== - 1);
-   console.log('res', result)
-};  
+var findWordsContaining = function (words, x) {
+     // with using es6 feature
+     const result = words.map((word, index) => (word.includes(x) ? index : -1)).filter((index) => index !== -1);
+     //    console.log('res', result)
 
-console.log(findWordsContaining(["leet","code"],"a"))
+     // without using es6 feature
+     let resultArr = [];
+     for (let i = 0; i < words.length; i++) {
+          for (let j = 0; j < words[i].length; j++) {
+               if (words[i][j] === x) {
+                    resultArr.push(i);
+                    break;
+               }
+          }
+     }
+     return resultArr;
+};
+
+console.log(findWordsContaining(["leet", "code"], "e"));
