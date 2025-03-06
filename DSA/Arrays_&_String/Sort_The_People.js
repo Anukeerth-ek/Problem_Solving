@@ -7,131 +7,14 @@
 // ans
 
 var sortPeople = function (names, heights) {
-     let resultArr = [];
+     let people = names.map((name, index) => ({ name: name, height: heights[index] }));
+     const results = people.sort((a, b) => b.height - a.height);
+     const finalResult = [];
 
-     const arrayLength = names.length;
-     for (let i = 0; i < arrayLength; i++) {
-          resultArr[names[i]] = heights[i];
+     for (let result of results) {
+          finalResult.push(result.name);
      }
-     const sortedResult = resultArr.sort()
-     console.log(resultArr)
-
-     const finalResult = Object.values(sortedResult);
-    return finalResult;
+     return finalResult;
 };
 
-sortPeople(["Mary", "John", "Emma"], [180, 165, 170])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sortPeople(["Mary", "John", "Emma"], [180, 165, 170]);
