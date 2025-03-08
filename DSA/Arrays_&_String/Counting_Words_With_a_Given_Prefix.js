@@ -5,10 +5,15 @@
 // A prefix of a string s is any leading contiguous substring of s
 
 // ans:
-
 var prefixCount = function(words, pref) {
+
+    let count = 0;
+
+    for(let i = 0; i < words.length; i++) {
+        if(words[i].startsWith( pref)) count++;
+    }
+    return count;
     
-    console.log("w", words, pref)
 };
 
-prefixCount(["pay","attention","practice","attend"], "at")
+console.log(prefixCount(["pay","attention","practice","attend"], "at"))
