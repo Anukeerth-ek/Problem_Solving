@@ -13,10 +13,7 @@
 // Return the number of different transformations among all words we have.
 
 var uniqueMorseRepresentations = function(words) {
-    console.log(words)
-    const alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", 
-        "w", "x", "y", "z"]
-        
+
 };
 
 console.log(uniqueMorseRepresentations(["gin","zen","gig","msg"]));
