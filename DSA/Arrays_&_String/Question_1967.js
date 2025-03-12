@@ -4,8 +4,14 @@
 
 // ans:
 
-var numOfStrings = function(patterns, word) {
-    console.log(patterns, word)
+var numOfStrings = function (patterns, word) {
+     let outputResult = 0;
+     for (let i = 0; i < patterns.length; i++) {
+          if (word.includes(patterns[i])) {
+               outputResult++;
+          }
+     }
+     return outputResult;
 };
 
-console.log(numOfStrings(["a","abc","bc","d"], "abc"))
+console.log(numOfStrings(["a", "abc", "bc", "d"], "abc"));
