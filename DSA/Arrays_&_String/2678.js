@@ -1,4 +1,4 @@
-// You are given a 0-indexed array of strings details. Each element of details provides information about a given passenger compressed into a 
+// You are given a 0-indexed array of strings details. Each element of details provides information about a given passenger compressed into a
 // string of length 15. The system is such that:
 
 // The first ten characters consist of the phone number of passengers.
@@ -9,8 +9,16 @@
 
 // ans:
 
-var countSeniors = function(details) {
-   
+var countSeniors = function (details) {
+     let count = 0;
+     for (let i = 0; i < details.length; i++) {
+          let age = details[i].slice(11, 13);
+
+          if (age > 60) {
+               count++;
+          }
+     }
+     return count;
 };
 
-console.log(countSeniors(["7868190130M7522","5303914400F9211","9273338290F4010"]))
+console.log(countSeniors(["7868190130M7522", "5303914400F9211", "9273338290F4010"]));
