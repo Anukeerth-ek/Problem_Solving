@@ -5,6 +5,15 @@
 // ans:
 
 var destCity = function(paths) {
+
+    let destination;
+    for(let i = 0; i < paths.length; i++) {
+        const arrayLastIndex = paths[paths.length - 1];
+        destination = arrayLastIndex[arrayLastIndex.length - 1]
+    }
+    return destination;
 };
 
-console.log(destCity([["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]))
+console.log(destCity([["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]])) // Sao Paulo
+console.log(destCity([["B","C"],["D","B"],["C","A"]])) // A
+console.log(destCity([["A","Z"]])) // Z
