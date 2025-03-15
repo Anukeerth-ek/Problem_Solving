@@ -9,15 +9,15 @@
 // ans:
 
 var finalValueAfterOperations = function (operations) {
-     let value = 0;
-     for (let x = 0; x < operations.length; x++) {
-          if (operations[x] === "++X" || operations[x] === "X++") {
-               value = value + 1;
-          } else if (operations[x] === "--X" || operations[x] === "X--") {
-               value = value - 1;
-          }
-        }
-     return value;
+    let value = 0;
+    for (let x = 0; x < operations.length; x++) {
+         if (operations[x] === "++X" || operations[x] === "X++") {
+              value = value + 1;
+         } else if (operations[x] === "--X" || operations[x] === "X--") {
+              value = value - 1;
+         }
+       }
+    return value;
 };
 
 console.log(finalValueAfterOperations(["--X", "X++", "X++"]));
