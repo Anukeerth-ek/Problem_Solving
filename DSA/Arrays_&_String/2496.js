@@ -5,3 +5,8 @@
 // The length of the string, otherwise.
 // Given an array strs of alphanumeric strings, return the maximum value of any string in strs.
 
+// ans:
+
+var maximumValue = function(strs) {
+
+};
