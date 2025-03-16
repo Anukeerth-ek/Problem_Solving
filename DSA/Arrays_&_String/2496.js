@@ -8,5 +8,15 @@
 // ans:
 
 var maximumValue = function(strs) {
+    let maxVal = 0;
 
+    for (let str of strs) {
+        if (/^\d+$/.test(str)) {  // If the string contains only digits
+            maxVal = Math.max(maxVal, Number(str));
+        } else {  // If it contains letters
+            maxVal = Math.max(maxVal, str.length);
+        }
+    }
+
+    return maxVal;
 };
