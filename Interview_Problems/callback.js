@@ -37,3 +37,16 @@
 
 // console.log(filterArray([1, 2, 3, 4], num => num % 2 === 0)); // [2, 4]
 // _______________________________________________________________
+
+// _______________________________________________________________
+// Asynchronous Map Function
+// Write a function asyncMap that takes an array and a callback function, then applies the callback asynchronously to each element with a 1-second delay.
+
+function asyncMap(arr, callback) {
+return arr.forEach((num, index)=> (
+    setTimeout(()=> callback(num), 1000*(index+1))
+))
+}
+
+asyncMap([1, 2, 3], num => console.log(num * 2));
+// _______________________________________________________________
