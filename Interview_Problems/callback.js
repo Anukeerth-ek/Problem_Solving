@@ -25,3 +25,15 @@
 
 // console.log(calculator(5, 3, add)); // 8
 // _______________________________________________________________
+
+// _______________________________________________________________
+// 3. Filtering an Array
+// Implement a function filterArray that takes an array and a callback function, returning a new array with elements that satisfy the callback condition.
+// ans:
+
+// function filterArray(arr, callback) {
+//     return arr.filter(callback)
+// }
+
+// console.log(filterArray([1, 2, 3, 4], num => num % 2 === 0)); // [2, 4]
+// _______________________________________________________________
