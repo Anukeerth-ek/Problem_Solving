@@ -15,13 +15,13 @@
 // Q. Create a function calculator that takes three parameters: two numbers and a callback function to perform an operation (add, subtract, multiply, 
 // or divide).
 // ans:
-function calculator(a, b, operation) {
-    return operation(a, b)
-}
+// function calculator(a, b, operation) {
+//     return operation(a, b)
+// }
 
-function add(x, y) {
-    return x + y;
-}
+// function add(x, y) {
+//     return x + y;
+// }
 
-console.log(calculator(5, 3, add)); // 8
+// console.log(calculator(5, 3, add)); // 8
 // _______________________________________________________________
