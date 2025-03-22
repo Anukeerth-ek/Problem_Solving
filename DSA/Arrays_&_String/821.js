@@ -8,6 +8,15 @@
 // ans:
 
 var shortestToChar = function(s, c) {
+    let newArr = [];
+
+    for(let i = 0; i < s.length; i++) {
+       if(s[i] === c) {
+           console.log( i)
+       }
+    }
+    // console.log(s)
 };
 
+console.log("hello")
 console.log(shortestToChar("loveleetcode", 'e'))
