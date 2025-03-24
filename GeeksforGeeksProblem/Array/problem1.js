@@ -9,7 +9,21 @@
 // ans:
 
 const subarraySum = (arr, target) => {
+    let arrLength = arr.length;
+    let result = 0;
 
+    for (let i = 1; i <= arrLength; i++) {
+         for (let j = i; j <= arr.length; j++) {
+              result = result + arr[j];
+
+            //    console.log(result)
+              if (result > target) {
+                   break;
+              } else if (result === target) {
+                   console.log("Helo", j);
+              }
+         }
+    }
 };
 
-console.log([1, 2, 3, 7, 5], 12);
+console.log(subarraySum([1, 2, 3, 7, 5], 12));
