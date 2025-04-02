@@ -91,24 +91,59 @@
 // Given two integers n and m (m != 0). Find the number closest to n and divisible by m. If there is more than one such number, then output the one
 // having maximum absolute value.
 
-const handleMaxDivisibleNumber = (n, m) => {
-    // Calculate the closest lower and upper multiples of m
-    const lowerMultiple = Math.floor(n / m) * m;
-    const upperMultiple = Math.ceil(n / m) * m;
+// const handleMaxDivisibleNumber = (n, m) => {
+//     // Calculate the closest lower and upper multiples of m
+//     const lowerMultiple = Math.floor(n / m) * m;
+//     const upperMultiple = Math.ceil(n / m) * m;
 
-    // Calculate the distances from n
-    const distanceToLower = Math.abs(n - lowerMultiple);
-    const distanceToUpper = Math.abs(n - upperMultiple);
+//     // Calculate the distances from n
+//     const distanceToLower = Math.abs(n - lowerMultiple);
+//     const distanceToUpper = Math.abs(n - upperMultiple);
 
-    // Determine which multiple is closer or has a greater absolute value
-    if (distanceToLower < distanceToUpper) {
-        return lowerMultiple;
-    } else if (distanceToUpper < distanceToLower) {
-        return upperMultiple;
-    } else {
-       // If both distances are equal, return the one with the maximum absolute value
-        return Math.abs(lowerMultiple) > Math.abs(upperMultiple) ? lowerMultiple : upperMultiple;
-    }
-};
+//     // Determine which multiple is closer or has a greater absolute value
+//     if (distanceToLower < distanceToUpper) {
+//         return lowerMultiple;
+//     } else if (distanceToUpper < distanceToLower) {
+//         return upperMultiple;
+//     } else {
+//        // If both distances are equal, return the one with the maximum absolute value
+//         return Math.abs(lowerMultiple) > Math.abs(upperMultiple) ? lowerMultiple : upperMultiple;
+//     }
+// };
 
-console.log(handleMaxDivisibleNumber(13, 4));
+// console.log(handleMaxDivisibleNumber(13, 4));
+// ______________________________________________________________________________________________________
+
+// ______________________________________________________________________________________________________
+
+
+// The dice problem
+
+// You are given a cubic dice with 6 faces. All the individual faces have a number printed on them. The numbers are in the range of 1 to 6, like any ordinary dice. You will be provided with a face of this cube, your task is to guess the number on the opposite face of the cube.
+
+// Examples:
+
+// Input: n = 2
+// Output: 5
+// Explanation: For dice facing number 5 opposite face will have the number 2.
+
+
+// Input: 6 = 6
+// Output: 1
+// Explanation: For dice facing number 6 opposite face will have the number 1.
+
+// ans: 
+
+const handleDiceProblem = (number) => {
+    //  FIRST APPROACH ______________________
+    //  return 7 - number
+    
+    //  SECOND APPROACH ______________________
+
+}
+
+console.log(handleDiceProblem(3))
+// ______________________________________________________________________________________________________
+
+// ______________________________________________________________________________________________________
+
