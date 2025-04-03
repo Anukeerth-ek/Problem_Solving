@@ -116,7 +116,7 @@
 
 // ______________________________________________________________________________________________________
 
-// The dice problem
+// 6. The dice problem
 
 // You are given a cubic dice with 6 faces. All the individual faces have a number printed on them. The numbers are in the range of 1 to 6, like any ordinary dice. You will be provided with a face of this cube, your task is to guess the number on the opposite face of the cube.
 
@@ -145,7 +145,7 @@
 
 // ______________________________________________________________________________________________________
 
-// Nth term of AP from First Two Terms
+// 7. Nth term of AP from First Two Terms
 
 // Given two integers a1 and a2, the first and second terms of an Arithmetic Series respectively, the problem is to find the nth term of
 // the series.
@@ -161,14 +161,34 @@
 
 // ans:
 
-function nthTermOfAP(number1, number2, nthNumber) {
-     let sum = number1;
-     for (let i = 1; i < nthNumber; i++) {
-          sum += number2 - number1;
-     }
-     return sum;
-}
+// function nthTermOfAP(number1, number2, nthNumber) {
+//      let sum = number1;
+//      for (let i = 1; i < nthNumber; i++) {
+//           sum += number2 - number1;
+//      }
+//      return sum;
+// }
 
-console.log(nthTermOfAP(1, 3, 10));
-console.log(nthTermOfAP(2, 3, 4));
+// console.log(nthTermOfAP(1, 3, 10));
+// console.log(nthTermOfAP(2, 3, 4));
+// ______________________________________________________________________________________________________
+
+// ______________________________________________________________________________________________________
+
+// 8. Sum of Digits of a Number
+
+// Given a number n, find the sum of its digits.
+
+// Examples : 
+
+// Input: n = 687
+// Output: 21
+// Explanation: The sum of its digits are: 6 + 8 + 7 = 21
+
+
+// Input: n = 12
+// Output: 3
+// Explanation: The sum of its digits are: 1 + 2 = 3
+// ______________________________________________________________________________________________________
+
 // ______________________________________________________________________________________________________
