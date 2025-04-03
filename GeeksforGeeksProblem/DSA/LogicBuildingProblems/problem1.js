@@ -116,7 +116,6 @@
 
 // ______________________________________________________________________________________________________
 
-
 // The dice problem
 
 // You are given a cubic dice with 6 faces. All the individual faces have a number printed on them. The numbers are in the range of 1 to 6, like any ordinary dice. You will be provided with a face of this cube, your task is to guess the number on the opposite face of the cube.
@@ -127,18 +126,17 @@
 // Output: 5
 // Explanation: For dice facing number 5 opposite face will have the number 2.
 
-
 // Input: 6 = 6
 // Output: 1
 // Explanation: For dice facing number 6 opposite face will have the number 1.
 
-// ans: 
+// ans:
 
 // const handleDiceProblem = (number) => {
-    //  FIRST APPROACH ______________________
-    //  return 7 - number
-    
-    //  SECOND APPROACH ______________________
+//  FIRST APPROACH ______________________
+//  return 7 - number
+
+//  SECOND APPROACH ______________________
 
 // }
 
@@ -149,13 +147,13 @@
 
 // Nth term of AP from First Two Terms
 
-// Given two integers a1 and a2, the first and second terms of an Arithmetic Series respectively, the problem is to find the nth term of 
-// the series. 
+// Given two integers a1 and a2, the first and second terms of an Arithmetic Series respectively, the problem is to find the nth term of
+// the series.
 // Examples :
 
 // Input : a1 = 2,  a2 = 3,  n = 4
 // Output : 5
-// Explanation : The series is 2, 3, 4, 5, 6, ....   , thus the 4th term is 5. 
+// Explanation : The series is 2, 3, 4, 5, 6, ....   , thus the 4th term is 5.
 
 // Input : a1 = 1, a2 = 3, n = 10
 // Output : 19
@@ -163,9 +161,14 @@
 
 // ans:
 
-function nthTermOfAP(number1, number2, nthNumber){
-    console.log(number1, number2, nthNumber)
+function nthTermOfAP(number1, number2, nthNumber) {
+     let sum = number1;
+     for (let i = 1; i < nthNumber; i++) {
+          sum += number2 - number1;
+     }
+     return sum;
 }
 
-console.log(nthTermOfAP(2, 4, 5))
+console.log(nthTermOfAP(1, 3, 10));
+console.log(nthTermOfAP(2, 3, 4));
 // ______________________________________________________________________________________________________
