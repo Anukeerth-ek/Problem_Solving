@@ -179,16 +179,44 @@
 
 // Given a number n, find the sum of its digits.
 
-// Examples : 
+// Examples :
 
 // Input: n = 687
 // Output: 21
 // Explanation: The sum of its digits are: 6 + 8 + 7 = 21
 
-
 // Input: n = 12
 // Output: 3
 // Explanation: The sum of its digits are: 1 + 2 = 3
+
+const handleSumOfDigits = (digit) => {
+     // _________________________________
+     // FIRST APPROACH
+
+     //  const slicedDigit = String(digit).split("");
+     //  let sum = 0;
+     //  for (let i = 0; i < slicedDigit.length; i++) {
+     //       sum += Number(slicedDigit[i]);
+     //  }
+     //  return sum;
+
+     // _________________________________
+     // SECOND APPROACH
+     
+    //  let sum = 0;
+
+    //  while(digit !== 0) {
+    //     let lastDigit = digit % 10;
+        
+    //     sum += lastDigit;
+
+    //    digit = Math.floor(digit / 10)
+    //  }
+    //  return sum;
+};
+
+console.log(handleSumOfDigits(687));
+console.log(handleSumOfDigits(12));
 // ______________________________________________________________________________________________________
 
 // ______________________________________________________________________________________________________
