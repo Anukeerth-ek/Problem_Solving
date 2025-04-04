@@ -2,13 +2,12 @@
 // 1. Basic Start Pattern
 
 // const printBasicPattern = (limit)=> {
+//     let starLimit = '*'.repeat(limit)
 //     for(let i = 0; i < limit; i++) {
-//         for(let j = 0; j < limit; j++) {
-//             process.stdout.write('*')
-//         }
+//         process.stdout.write(starLimit)
 //         console.log()
 //     }
 // }   
 
-// printBasicPattern(10)
+// printBasicPattern(5)
 // ________________________________________________________________
