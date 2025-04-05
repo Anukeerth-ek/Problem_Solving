@@ -91,3 +91,21 @@
 // };
 
 // invertedTriangleStart(5);
+
+// ________________________________________________________________
+
+// 6. Inverted Triangle Start Pattern
+
+// const invertedTriangleStart = (limit) => {
+     
+//     if(limit < 1) return;
+
+//     let limitController = limit + '';
+//     process.stdout.write(limitController.repeat(limit))
+//     console.log()
+//     invertedTriangleStart(limit - 1);
+// };
+
+// invertedTriangleStart(5);
+
+// ________________________________________________________________
