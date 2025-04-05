@@ -43,17 +43,24 @@
 
 // 4. Number Pattern Problem
 
-const printBasicNumberPattern = (limit)=> {
-    // First Approach
+const printBasicNumberPattern = (limit) => {
 
-    // let sum = ''
-    //   for(let i = 1; i <= limit; i++) {
-    //      for(let j = 1; j <= i; j++) {
-    //         sum += i+''
-    //     }
-    //     console.log(sum.trim())
-    //     sum = ''
-    //   }
+     // First Approach
+     // let sum = ''
+     //   for(let i = 1; i <= limit; i++) {
+     //      for(let j = 1; j <= i; j++) {
+     //         sum += i+''
+     //     }
+     //     console.log(sum.trim())
+     //     sum = ''
+     //   }
 
-}
-printBasicNumberPattern(5)
+     // Second Approach
+
+    //  for (let i = 1; i <= limit; i++) {
+    //       let limitController = i.toString();
+    //       process.stdout.write(limitController.repeat(i))
+    //       console.log()
+    //  }
+};
+printBasicNumberPattern(5);
