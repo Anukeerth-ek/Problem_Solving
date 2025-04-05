@@ -68,21 +68,26 @@
 
 // 5. Inverted Triangle Start Pattern
 
-const invertedTriangleStart = (limit) => {/
-    // FIRST APPROACH
-    //  for (let i = limit; i >= 1; --i) {
-    //       for (let j = i; j >= 1; --j) {
-    //            process.stdout.write("*");
-    //       }
-    //       console.log();
-    //  }
-    // SECOND APPROACH
-    //  for (let i = limit; i >= 1; --i) {
-    //       process.stdout.write("*".repeat(i));
-    //       console.log();
-    //  }
+const invertedTriangleStart = (limit) => {
+     // FIRST APPROACH
+     //  for (let i = limit; i >= 1; --i) {
+     //       for (let j = i; j >= 1; --j) {
+     //            process.stdout.write("*");
+     //       }
+     //       console.log();
+     //  }
+     // SECOND APPROACH
+     //  for (let i = limit; i >= 1; --i) {
+     //       process.stdout.write("*".repeat(i));
+     //       console.log();
+     //  }
 
-    // THIRD APPROACH
+     // THIRD APPROACH
+    //  if (limit < 1) return;
+
+    //  process.stdout.write("* ".repeat(limit));
+    //  console.log()
+    //  invertedTriangleStart(limit - 1);
 };
 
 invertedTriangleStart(5);
