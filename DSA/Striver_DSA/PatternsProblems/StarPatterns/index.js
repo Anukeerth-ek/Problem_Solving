@@ -76,7 +76,13 @@ const invertedTriangleStart = (limit) => {/
     //       }
     //       console.log();
     //  }
+    // SECOND APPROACH
+    //  for (let i = limit; i >= 1; --i) {
+    //       process.stdout.write("*".repeat(i));
+    //       console.log();
+    //  }
 
+    // THIRD APPROACH
 };
 
 invertedTriangleStart(5);
