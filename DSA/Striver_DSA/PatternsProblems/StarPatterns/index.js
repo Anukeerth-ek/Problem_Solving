@@ -43,24 +43,40 @@
 
 // 4. Number Pattern Problem
 
-const printBasicNumberPattern = (limit) => {
+// const printBasicNumberPattern = (limit) => {
 
-     // First Approach
-     // let sum = ''
-     //   for(let i = 1; i <= limit; i++) {
-     //      for(let j = 1; j <= i; j++) {
-     //         sum += i+''
-     //     }
-     //     console.log(sum.trim())
-     //     sum = ''
-     //   }
+// First Approach
+// let sum = ''
+//   for(let i = 1; i <= limit; i++) {
+//      for(let j = 1; j <= i; j++) {
+//         sum += i+''
+//     }
+//     console.log(sum.trim())
+//     sum = ''
+//   }
 
-     // Second Approach
+// Second Approach
 
-    //  for (let i = 1; i <= limit; i++) {
-    //       let limitController = i.toString();
-    //       process.stdout.write(limitController.repeat(i))
-    //       console.log()
+//  for (let i = 1; i <= limit; i++) {
+//       let limitController = i.toString();
+//       process.stdout.write(limitController.repeat(i))
+//       console.log()
+//  }
+// };
+// printBasicNumberPattern(5);
+// ________________________________________________________________
+
+// 5. Inverted Triangle Start Pattern
+
+const invertedTriangleStart = (limit) => {/
+    // FIRST APPROACH
+    //  for (let i = limit; i >= 1; --i) {
+    //       for (let j = i; j >= 1; --j) {
+    //            process.stdout.write("*");
+    //       }
+    //       console.log();
     //  }
+
 };
-printBasicNumberPattern(5);
+
+invertedTriangleStart(5);
