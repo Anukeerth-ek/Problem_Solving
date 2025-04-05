@@ -23,3 +23,37 @@
 
 // printBasicStarPattern(5);
 // ________________________________________________________________
+
+// 3. Third Number Pattern
+
+// const printNumberPatter = (limit) => {
+//      for (let i = 1; i <= limit; i++) {
+//           let row = "";
+//           for (let j = 1; j <= i; j++) {
+//                row += j ;
+//             //    console.log('row', row)
+//             }
+//             // console.log('seocnd row', row)
+//             console.log(row.trim() );
+//      }
+// };
+
+// printNumberPatter(5);
+// ________________________________________________________________
+
+// 4. Number Pattern Problem
+
+const printBasicNumberPattern = (limit)=> {
+    // First Approach
+
+    // let sum = ''
+    //   for(let i = 1; i <= limit; i++) {
+    //      for(let j = 1; j <= i; j++) {
+    //         sum += i+''
+    //     }
+    //     console.log(sum.trim())
+    //     sum = ''
+    //   }
+
+}
+printBasicNumberPattern(5)
