@@ -109,3 +109,20 @@
 // invertedTriangleStart(5);
 
 // ________________________________________________________________
+
+// 7. Center Triangle
+
+const centerTriangle = (limit)=> {
+    // ________FIRST APPROACH________
+    for(let i = 0; i < limit ; i++) {
+        for(let j = 1; j <= limit * 2 - 1; j++) {
+            if(j >= limit - i && j <= limit + i || j === limit) {
+                process.stdout.write('*')
+            }
+            else 
+            process.stdout.write('_')
+        }
+        console.log()
+    }
+}
+console.log(centerTriangle(5))
