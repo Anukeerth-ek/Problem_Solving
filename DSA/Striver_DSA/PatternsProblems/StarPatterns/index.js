@@ -112,17 +112,25 @@
 
 // 7. Center Triangle
 
-const centerTriangle = (limit)=> {
+// const centerTriangle = (limit)=> {
     // ________FIRST APPROACH________
-    for(let i = 0; i < limit ; i++) {
-        for(let j = 1; j <= limit * 2 - 1; j++) {
-            if(j >= limit - i && j <= limit + i || j === limit) {
-                process.stdout.write('*')
-            }
-            else 
-            process.stdout.write('_')
-        }
-        console.log()
-    }
-}
-console.log(centerTriangle(5))
+    // for(let i = 0; i < limit ; i++) {
+    //     for(let j = 1; j <= limit * 2 - 1; j++) {
+    //         if(j >= limit - i && j <= limit + i || j === limit) {
+    //             process.stdout.write('*')
+    //         }
+    //         else 
+    //         process.stdout.write('_')
+    //     }
+    //     console.log()
+    // }
+
+    // ________SECOND APPROACH________
+//     for(let i = 1; i <= limit; i++) {
+//         let spaces = '-'.repeat(limit - i);
+//         let stars = '*'.repeat(2 * i - 1);
+//         console.log(`${spaces}${stars}${spaces}`)
+//     }
+// }
+// centerTriangle(5)
+// ________________________________________________________________
