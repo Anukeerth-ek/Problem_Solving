@@ -139,23 +139,25 @@
 // 8. Center Inverted Triangle
 
 // const centerInvertedTriangle = (limit) => {
-     // ________FIRST APPROACH________
-     // for(let i = 0; i < limit; i++) {
-     //     let spaces = '-'.repeat(i );
-     //     let stars = '*'.repeat( (limit * 2 - 2*i) - 1 );
-     //     console.log(spaces + stars + spaces)
-     // }
+// ________FIRST APPROACH________
+// for(let i = 0; i < limit; i++) {
+//     let spaces = '-'.repeat(i );
+//     let stars = '*'.repeat( (limit * 2 - 2*i) - 1 );
+//     console.log(spaces + stars + spaces)
+// }
 
-     // ________SECOND APPROACH________
-    //  for (let i = 0; i < limit; i++) {
-    //       for (let j = 1; j <= limit * 2 - 1; j++) {
-    //            if ((j >= i + 1 && j <= (limit*2 - 1) - i) ) {
-    //                 process.stdout.write("*");
-    //            }
-    //            else process.stdout.write('_')
-    //       }
-    //       console.log();
-    //  }
+// ________SECOND APPROACH________
+//  for (let i = 0; i < limit; i++) {
+//       for (let j = 1; j <= limit * 2 - 1; j++) {
+//            if ((j >= i + 1 && j <= (limit*2 - 1) - i) ) {
+//                 process.stdout.write("*");
+//            }
+//            else process.stdout.write('_')
+//       }
+//       console.log();
+//  }
 // };
 // centerInvertedTriangle(5);
+// ________________________________________________________________
+
 // ________________________________________________________________
