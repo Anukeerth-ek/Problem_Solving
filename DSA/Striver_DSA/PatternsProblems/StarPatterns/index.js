@@ -138,7 +138,7 @@
 // ________________________________________________________________
 // 8. Center Inverted Triangle
 
-const centerInvertedTriangle = (limit) => {
+// const centerInvertedTriangle = (limit) => {
      // ________FIRST APPROACH________
      // for(let i = 0; i < limit; i++) {
      //     let spaces = '-'.repeat(i );
@@ -156,5 +156,6 @@ const centerInvertedTriangle = (limit) => {
     //       }
     //       console.log();
     //  }
-};
-centerInvertedTriangle(5);
+// };
+// centerInvertedTriangle(5);
+// ________________________________________________________________
