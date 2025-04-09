@@ -69,25 +69,25 @@
 // 5. Inverted Triangle Start Pattern
 
 // const invertedTriangleStart = (limit) => {
-     // FIRST APPROACH
-     //  for (let i = limit; i >= 1; --i) {
-     //       for (let j = i; j >= 1; --j) {
-     //            process.stdout.write("*");
-     //       }
-     //       console.log();
-     //  }
-     // SECOND APPROACH
-     //  for (let i = limit; i >= 1; --i) {
-     //       process.stdout.write("*".repeat(i));
-     //       console.log();
-     //  }
+// FIRST APPROACH
+//  for (let i = limit; i >= 1; --i) {
+//       for (let j = i; j >= 1; --j) {
+//            process.stdout.write("*");
+//       }
+//       console.log();
+//  }
+// SECOND APPROACH
+//  for (let i = limit; i >= 1; --i) {
+//       process.stdout.write("*".repeat(i));
+//       console.log();
+//  }
 
-     // THIRD APPROACH
-    //  if (limit < 1) return;
+// THIRD APPROACH
+//  if (limit < 1) return;
 
-    //  process.stdout.write("* ".repeat(limit));
-    //  console.log()
-    //  invertedTriangleStart(limit - 1);
+//  process.stdout.write("* ".repeat(limit));
+//  console.log()
+//  invertedTriangleStart(limit - 1);
 // };
 
 // invertedTriangleStart(5);
@@ -97,7 +97,7 @@
 // 6. Inverted Triangle Start Pattern
 
 // const invertedTriangleStart = (limit) => {
-     
+
 //     if(limit < 1) return;
 
 //     let limitController = limit + '';
@@ -113,19 +113,19 @@
 // 7. Center Triangle
 
 // const centerTriangle = (limit)=> {
-    // ________FIRST APPROACH________
-    // for(let i = 0; i < limit ; i++) {
-    //     for(let j = 1; j <= limit * 2 - 1; j++) {
-    //         if(j >= limit - i && j <= limit + i || j === limit) {
-    //             process.stdout.write('*')
-    //         }
-    //         else 
-    //         process.stdout.write('_')
-    //     }
-    //     console.log()
-    // }
+// ________FIRST APPROACH________
+// for(let i = 0; i < limit ; i++) {
+//     for(let j = 1; j <= limit * 2 - 1; j++) {
+//         if(j >= limit - i && j <= limit + i || j === limit) {
+//             process.stdout.write('*')
+//         }
+//         else
+//         process.stdout.write('_')
+//     }
+//     console.log()
+// }
 
-    // ________SECOND APPROACH________
+// ________SECOND APPROACH________
 //     for(let i = 1; i <= limit; i++) {
 //         let spaces = '-'.repeat(limit - i);
 //         let stars = '*'.repeat(2 * i - 1);
@@ -134,3 +134,27 @@
 // }
 // centerTriangle(5)
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 8. Center Inverted Triangle
+
+const centerInvertedTriangle = (limit) => {
+     // ________FIRST APPROACH________
+     // for(let i = 0; i < limit; i++) {
+     //     let spaces = '-'.repeat(i );
+     //     let stars = '*'.repeat( (limit * 2 - 2*i) - 1 );
+     //     console.log(spaces + stars + spaces)
+     // }
+
+     // ________SECOND APPROACH________
+    //  for (let i = 0; i < limit; i++) {
+    //       for (let j = 1; j <= limit * 2 - 1; j++) {
+    //            if ((j >= i + 1 && j <= (limit*2 - 1) - i) ) {
+    //                 process.stdout.write("*");
+    //            }
+    //            else process.stdout.write('_')
+    //       }
+    //       console.log();
+    //  }
+};
+centerInvertedTriangle(5);
