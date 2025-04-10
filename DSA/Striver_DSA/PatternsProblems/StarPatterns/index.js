@@ -182,7 +182,7 @@
 //      }
 
 //     //  ________SECOND APPROACH________
-    
+
 //     // for(let i = 0; i < limit * 2 - 1; ++i) {
 //     //     let spaces =
 //     // }
@@ -191,4 +191,23 @@
 // fullTriangleStar(5);
 // ________________________________________________________________
 
+// ________________________________________________________________
+
+// 10. SideTriangle
+
+// const sideTriangle = (limit) => {
+     // ________FIRST APPROACH________
+     // let k = 1;
+     // for(let i = 1; i <= limit * 2 - 1; i++) {
+     //     for(let j = 1; j <= limit; j++) {
+     //         if(j <= k) {
+     //             process.stdout.write('*')
+     //         }
+     //     }
+     //     console.log()
+     //     i >= limit ? k-- : k++;
+     // }
+// };
+
+// sideTriangle(5);
 // ________________________________________________________________
