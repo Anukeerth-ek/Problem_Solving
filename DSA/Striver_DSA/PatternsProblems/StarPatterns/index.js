@@ -196,18 +196,26 @@
 // 10. SideTriangle
 
 // const sideTriangle = (limit) => {
-     // ________FIRST APPROACH________
-     // let k = 1;
-     // for(let i = 1; i <= limit * 2 - 1; i++) {
-     //     for(let j = 1; j <= limit; j++) {
-     //         if(j <= k) {
-     //             process.stdout.write('*')
-     //         }
-     //     }
-     //     console.log()
-     //     i >= limit ? k-- : k++;
-     // }
+// ________FIRST APPROACH________
+// let k = 1;
+// for(let i = 1; i <= limit * 2 - 1; i++) {
+//     for(let j = 1; j <= limit; j++) {
+//         if(j <= k) {
+//             process.stdout.write('*')
+//         }
+//     }
+//     console.log()
+//     i >= limit ? k-- : k++;
+// }
 // };
+
+//  ________SECOND APPROACH________
+
+//  for (let i = 1; i <= limit * 2 - 1; i++) {
+//       const stars = i >= limit ? limit* 2 - i : i;
+
+//       console.log("*".repeat(stars));
+//  }
 
 // sideTriangle(5);
 // ________________________________________________________________
