@@ -164,20 +164,31 @@
 
 // 9. Full Triangle Start
 
-const fullTriangleStar = (limit) => {
-     let k = 0;
-     for (let i = 0; i < limit * 2 - 1; i++) {
-          for (let j = 1; j <= limit * 2 - 1; j++) {
-               if (j >= limit - k && j <= limit + k) {
-                    process.stdout.write("*");
-               } else {
-                    process.stdout.write("-");
-               }
-          }
+// const fullTriangleStar = (limit) => {
 
-          console.log();
-          i > limit - 2 ? k-- : k++;
-     }
-};
+//     // ________FIRST APPROACH________
+//      let k = 0;
+//      for (let i = 0; i < limit * 2 ; i++) {
+//           for (let j = 1; j <= limit * 2 - 1; j++) {
+//                if (j >= limit - k && j <= limit + k) {
+//                     process.stdout.write("*");
+//                } else {
+//                     process.stdout.write("-");
+//                }
+//           }
 
-fullTriangleStar(5);
+//           console.log();
+//           i > limit - 2 ? k-- : k++;
+//      }
+
+//     //  ________SECOND APPROACH________
+    
+//     // for(let i = 0; i < limit * 2 - 1; ++i) {
+//     //     let spaces =
+//     // }
+// };
+
+// fullTriangleStar(5);
+// ________________________________________________________________
+
+// ________________________________________________________________
