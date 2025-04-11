@@ -219,3 +219,18 @@
 
 // sideTriangle(5);
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 11. Print binary Numbers
+
+const printBinaryNumber = (n)=> {
+    let start = 1;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j <= i; j++) {
+            process.stdout.write(`${ start}`)
+              start = 1 - start;
+        }
+        console.log();
+      }
+}
+printBinaryNumber(5)
