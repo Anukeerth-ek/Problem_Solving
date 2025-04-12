@@ -237,3 +237,24 @@
 // };
 // printBinaryNumber(5);
 // ________________________________________________________________
+
+// ________________________________________________________________
+// 12. Twelfth problem
+
+const twelfthProblem = (limit)=> {
+    for(let i = 1; i <= limit; i++) {
+        let k = 1;
+
+        for(let j = 1; j <= limit * 2; j++) {
+            process.stdout.write(`${k} `);
+
+            j >= limit ? k-- : k++;
+
+        }
+        console.log()
+    }
+}
+
+twelfthProblem(4)
+
+// ____________________________________________
