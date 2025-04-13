@@ -268,16 +268,16 @@
 // ____________________________________________
 // 13. Thirteenth Problem
 
-const ThirteenthProblem = (limit)=> {
-    let k = 0;
+// const ThirteenthProblem = (limit)=> {
+//     let k = 0;
 
-    for(let i = 1; i <= limit; i++) {
-        for(let j = 1; j <= i; j++) {
-            k+=1
-            process.stdout.write(`${k} `)
-        }
-        console.log()
-    }
-}
-ThirteenthProblem(5)
+//     for(let i = 1; i <= limit; i++) {
+//         for(let j = 1; j <= i; j++) {
+//             k+=1
+//             process.stdout.write(`${k} `)
+//         }
+//         console.log()
+//     }
+// }
+// ThirteenthProblem(5)
 // ____________________________________________
