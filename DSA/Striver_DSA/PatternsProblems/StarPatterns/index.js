@@ -241,26 +241,26 @@
 // ________________________________________________________________
 // 12. Twelfth problem
 
-const twelfthProblem = (limit) => {
-     for (let i = 1; i <= limit; i++) {
-          let k = "";
+// const twelfthProblem = (limit) => {
+//      for (let i = 1; i <= limit; i++) {
+//           let k = "";
 
-          for (let j = 1; j <= i; j++) {
-               k += j;
-               // console.log(k)
-          }
+//           for (let j = 1; j <= i; j++) {
+//                k += j;
+//                // console.log(k)
+//           }
 
-          let spaces = (limit - i) * 2;
-          k += " ".repeat(spaces);
-          // console.log(spaces)
+//           let spaces = (limit - i) * 2;
+//           k += " ".repeat(spaces);
+//           // console.log(spaces)
 
-          for (let j = i; j >= 1; j--) {
-               k += j;
-          }
-          console.log(k);
-     }
-};
+//           for (let j = i; j >= 1; j--) {
+//                k += j;
+//           }
+//           console.log(k);
+//      }
+// };
 
-twelfthProblem(4);
+// twelfthProblem(4);
 
 // ____________________________________________
