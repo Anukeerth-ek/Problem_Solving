@@ -281,3 +281,19 @@
 // }
 // ThirteenthProblem(5)
 // ____________________________________________
+
+// ____________________________________________
+// 14.
+// const fourteenProblem = (limit) => {
+
+//      for (let i = 1; i <= limit; i++) {
+//           for (let j = 0; j < i; j++) {
+//                const alphabet = String.fromCharCode(97 + j).toUpperCase();
+//                process.stdout.write(`${alphabet} `);
+//           }
+//           console.log();
+//      }
+     
+// };
+// fourteenProblem(5);
+// ____________________________________________
