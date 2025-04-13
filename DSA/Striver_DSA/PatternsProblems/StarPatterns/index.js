@@ -242,54 +242,25 @@
 // 12. Twelfth problem
 
 const twelfthProblem = (limit) => {
-     // for(let i = 1; i <= limit; i++) {
-     //     let k = 1;
+     for (let i = 1; i <= limit; i++) {
+          let k = "";
 
-     //     for(let j = 1; j <= limit * 2; j++) {
-     //         process.stdout.write(`${k} `);
+          for (let j = 1; j <= i; j++) {
+               k += j;
+               // console.log(k)
+          }
 
-     //         j >= limit ? k-- : k++;
+          let spaces = (limit - i) * 2;
+          k += " ".repeat(spaces);
+          // console.log(spaces)
 
-     //     }
-     //     console.log()
-     // }
-    //  let k = 6;
-    //  for (let i = 1; i <= limit; i++) {
-    //     let j = 1;
-    //       let number = `${j++}`.repeat(i);
-    //       let spaces = "_".repeat( k);
-    //     //   console.log(spaces);
-    //       process.stdout.write(`${number}${spaces}${number}`);
-    //       k -= 2;
-    //       console.log();
-    //  }
+          for (let j = i; j >= 1; j--) {
+               k += j;
+          }
+          console.log(k);
+     }
 };
 
 twelfthProblem(4);
 
 // ____________________________________________
-
-function printPattern(n) {
-    for (let i = 1; i <= n; i++) {
-      let line = "";
-  
-      // Left side: increasing numbers
-      for (let j = 1; j <= i; j++) {
-        line += j;
-      }
-  
-      // Spaces (except for last row)
-      let spaces = (n - i) * 2;
-      line += " ".repeat(spaces);
-  
-      // Right side: decreasing numbers
-      for (let j = i; j >= 1; j--) {
-        line += j;
-      }
-  
-      console.log(line);
-    }
-  }
-  
-  printPattern(4);
-  
