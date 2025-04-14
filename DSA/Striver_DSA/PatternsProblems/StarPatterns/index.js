@@ -314,3 +314,19 @@
 
 // fifteenthProblem(5);
 // ____________________________________________
+
+// ____________________________________________
+// 16.
+// const sixTeenthProblem = (limit)=> {
+//     for(let i = 0; i < limit; i++) {
+//         let alphabeticController = 1;
+
+//         for(let j = 0; j <=i; j++) {
+//             process.stdout.write(String.fromCharCode(97 + i).toUpperCase())
+//         }
+//         console.log()
+//     }
+// }
+
+// sixTeenthProblem(5)
+// ____________________________________________
