@@ -293,7 +293,7 @@
 //           }
 //           console.log();
 //      }
-     
+
 // };
 // fourteenProblem(5);
 // ____________________________________________
@@ -329,4 +329,24 @@
 // }
 
 // sixTeenthProblem(5)
+// ____________________________________________
+
+// ____________________________________________
+// 17.
+const seventeenthProblem = (limit) => {
+     for (let i = 0; i < limit; i++) {
+          let alphabetController = 0;
+          for (let j = 1; j <= limit * 2 - 1; j++) {
+               if (j >= limit - i && j <= limit + i) {
+                    process.stdout.write(String.fromCharCode(97 + alphabetController).toUpperCase());
+                    if (j >= limit) alphabetController--;
+                    else alphabetController++;
+               } else {
+                    process.stdout.write("_");
+               }
+          }
+          console.log();
+     }
+};
+seventeenthProblem(4);
 // ____________________________________________
