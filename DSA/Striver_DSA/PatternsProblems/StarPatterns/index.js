@@ -297,17 +297,20 @@
 // };
 // fourteenProblem(5);
 // ____________________________________________
-// 15.
-const fifteenthProblem = (limit) => {
-    for (let i = 0; i < limit; i++) {
-         let alphabet = 0;
-          for (let j = limit - i; j >= 1; j--) {
-              let  new_alphabet = String.fromCharCode(97 + alphabet).toUpperCase();
-               process.stdout.write(`${ new_alphabet} `);
-               alphabet++;
-          }
-          console.log();
-     }
-};
 
-fifteenthProblem(5);
+// ____________________________________________
+// 15.
+// const fifteenthProblem = (limit) => {
+//     for (let i = 0; i < limit; i++) {
+//          let alphabet = 0;
+//           for (let j = limit - i; j >= 1; j--) {
+//               let  new_alphabet = String.fromCharCode(97 + alphabet).toUpperCase();
+//                process.stdout.write(`${ new_alphabet} `);
+//                alphabet++;
+//           }
+//           console.log();
+//      }
+// };
+
+// fifteenthProblem(5);
+// ____________________________________________
