@@ -352,17 +352,17 @@
 // ____________________________________________
 
 // ____________________________________________
-18. 
-const eighteenthProblem = (limit)=> {
-    let k;
-    for(let i = 0; i < limit; i++) {
-        k = limit - i;
-        for(let j = 0; j <= i; j++) {
-            process.stdout.write(`${String.fromCharCode(64+k)} `)
-            k++;
-        }
-        console.log()
-    }
-}
-eighteenthProblem(5)
+// 18. 
+// const eighteenthProblem = (limit)=> {
+//     let k;
+//     for(let i = 0; i < limit; i++) {
+//         k = limit - i;
+//         for(let j = 0; j <= i; j++) {
+//             process.stdout.write(`${String.fromCharCode(64+k)} `)
+//             k++;
+//         }
+//         console.log()
+//     }
+// }
+// eighteenthProblem(5)
 // ____________________________________________
