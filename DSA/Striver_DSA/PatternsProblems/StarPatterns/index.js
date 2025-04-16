@@ -383,3 +383,24 @@
 // };
 // nineteenthProblem(5);
 // ____________________________________________
+// 20.
+const twenteethProblem = (limit) => {
+    const totalRows = limit * 2;
+
+    for (let i = 1; i <= totalRows - 1; i++) {
+        let row = '';
+        const stars = i <= limit ? i : totalRows - i + 1;
+        const spaces = totalRows - stars * 2;
+
+        for (let j = 1; j <= stars + spaces + stars; j++) {
+            if (j <= stars || j > stars + spaces) {
+                row += '*';
+            } else {
+                row += ' ';
+            }
+        }
+        console.log(row);
+    }
+};
+
+twenteethProblem(5);
