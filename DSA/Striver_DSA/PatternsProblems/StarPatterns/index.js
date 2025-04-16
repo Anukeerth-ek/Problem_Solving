@@ -369,18 +369,17 @@
 
 // ____________________________________________
 // 19.
-const nineteenthProblem = (limit) => {
-     let spaceController, stars;
-     for (let i = 0; i < limit; i++) {
-          for (let j = 1; j <= limit * 2; j++) {
-               if(i >= limit +2) {
-                spaceController = "-".repeat(i * 2);
-                stars = "*".repeat(limit - i);
-               }
-          }
-          console.log(`${stars}${spaceController}${stars}`);
-     }
-};
-nineteenthProblem(5);
+// const nineteenthProblem = (limit) => {
+//      let spaceController, stars;
+//      for (let i = 0; i < limit; i++) {
+//           for (let j = 1; j <= limit * 2; j++) {
+//                if(i >= limit +2) {
+//                 spaceController = "-".repeat(i * 2);
+//                 stars = "*".repeat(limit - i);
+//                }
+//           }
+//           console.log(`${stars}${spaceController}${stars}`);
+//      }
+// };
+// nineteenthProblem(5);
 // ____________________________________________
- 
