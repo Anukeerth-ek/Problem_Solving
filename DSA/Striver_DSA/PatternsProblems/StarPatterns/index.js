@@ -437,3 +437,24 @@
 
 // twentyOne(5);
 // ____________________________________________
+
+// ____________________________________________
+// 22.
+
+const printPattern = (n) => {
+    const size = 2 * n - 1;
+
+    for (let i = 0; i < size; i++) {
+        let row = '';
+        for (let j = 0; j < size; j++) {
+            const min = Math.min(i, j, size - 1 - i, size - 1 - j);
+            // console.log("row", row)
+            row += (n - min) + ' ';
+        }
+        console.log(row);
+    }
+};
+
+printPattern(4);
+
+// ____________________________________________
