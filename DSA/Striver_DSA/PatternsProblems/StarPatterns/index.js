@@ -440,21 +440,18 @@
 
 // ____________________________________________
 // 22.
+// const patternTwentyTwo = (limit) => {
+//      const size = limit * 2 - 1;
 
-const printPattern = (n) => {
-    const size = 2 * n - 1;
+//      for (let i = 0; i < size; i++) {
+//           let row = "";
 
-    for (let i = 0; i < size; i++) {
-        let row = '';
-        for (let j = 0; j < size; j++) {
-            const min = Math.min(i, j, size - 1 - i, size - 1 - j);
-            // console.log("row", row)
-            row += (n - min) + ' ';
-        }
-        console.log(row);
-    }
-};
-
-printPattern(4);
-
+//           for (let j = 0; j < size; j++) {
+//                const min = Math.min(i, j, size - 1 - j, size - 1 - i);
+//                row += (limit - min)+' ';
+//           }
+//           console.log(`${row}`);
+//      }
+// };
+// patternTwentyTwo(4);
 // ____________________________________________
