@@ -383,24 +383,44 @@
 // };
 // nineteenthProblem(5);
 // ____________________________________________
+
+// ____________________________________________
 // 20.
-const twenteethProblem = (limit) => {
-    const totalRows = limit * 2;
+// const twenteethProblem = (limit) => {
+//     const totalRows = limit * 2;
 
-    for (let i = 1; i <= totalRows - 1; i++) {
-        let row = '';
-        const stars = i <= limit ? i : totalRows - i + 1;
-        const spaces = totalRows - stars * 2;
+//     for (let i = 1; i <= totalRows - 1; i++) {
+//         let row = '';
+//         const stars = i <= limit ? i : totalRows - i + 1;
+//         const spaces = totalRows - stars * 2;
 
-        for (let j = 1; j <= stars + spaces + stars; j++) {
-            if (j <= stars || j > stars + spaces) {
-                row += '*';
-            } else {
-                row += ' ';
-            }
-        }
-        console.log(row);
-    }
-};
+//         for (let j = 1; j <= stars + spaces + stars; j++) {
+//             if (j <= stars || j > stars + spaces) {
+//                 row += '*';
+//             } else {
+//                 row += '-';
+//             }
+//         }
+//         console.log(row);
+//     }
+// };
 
-twenteethProblem(5);
+// twenteethProblem(5);
+// ____________________________________________
+
+// ____________________________________________
+// 21.
+// const twentyOne = (limit)=> {
+//     for(let i = 1; i <= limit; i++) {
+//         for(let j = 1; j <= limit; j++) {
+//             if(i === limit || j=== limit || j===1 || i === 1) {
+//                 process.stdout.write('* ')
+//             }
+//             else {
+//                 process.stdout.write('- ')
+//             }
+//         }
+//         console.log()
+//     }
+// }
+// twentyOne(5)
