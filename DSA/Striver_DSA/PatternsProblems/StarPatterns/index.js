@@ -424,3 +424,16 @@
 //     }
 // }
 // twentyOne(5)
+
+// const twentyOne = (limit) => {
+//     for (let i = 1; i <= limit; i++) {
+//         let line = '';
+//         for (let j = 1; j <= limit; j++) {
+//             line += (i === 1 || i === limit || j === 1 || j === limit) ? '* ' : '- ';
+//         }
+//         console.log(line);
+//     }
+// };
+
+// twentyOne(5);
+// ____________________________________________
