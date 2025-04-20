@@ -30,3 +30,17 @@
 // };
 // reverseDigit(45678);
 // _________________________________________________________________________________
+
+// _________________________________________________________________________________
+// 3. Check if a number is Palindrome or Not
+
+const isPalindrome = (number) => {
+     // __________________FIRST APPROACH__________________
+     let numberHolder = number;
+
+     return number.toString().split("").reverse().join("") == numberHolder
+          ? `${number} is a palindrome number`
+          : `${number} is not a palindrome number`;
+};
+console.log(isPalindrome(2002));
+// _________________________________________________________________________________
