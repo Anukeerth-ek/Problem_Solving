@@ -26,16 +26,22 @@
 // s consists only of printable ASCII characters.
 
 var isPalindrome = function (s) {
+    // ____________________________First Approach____________________________
      // console.log("hello",s.replace(/[,; : ]/g, ''))
-     const initialPalindrome = s.replace(/[,; : ]/g, "").toLowerCase();
+    //  const initialPalindrome = s.replace(/[,; : ]/g, "").toLowerCase();
 
-    //  console.log(initialPalindrome.split("").reverse("").join(""));
+    // //  console.log(initialPalindrome.split("").reverse("").join(""));
 
-     const validPalindrome = initialPalindrome.split("").reverse("").join("");
-     if (initialPalindrome === validPalindrome) {
-        console.log('yehh its valid')
-    }
-    else console.log('nuhh its not valid')
+    //  const validPalindrome = initialPalindrome.split("").reverse("").join("");
+    //  if (initialPalindrome === validPalindrome) {
+    //     console.log('yehh its valid')
+    // }
+    // else console.log('nuhh its not valid')
+
+    // ____________________________Second Approach____________________________
+    const cleaned = s.replace(/[^a-z0-9]/gi, '').toLowerCase();
+
+    return cleaned === cleaned.split('').reverse().join('');
 };
 
 console.log(isPalindrome("A man, a plan, a canal: Panama"));
