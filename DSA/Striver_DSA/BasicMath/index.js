@@ -36,15 +36,48 @@
 
 // const isPalindrome = (number) => {
 
-    // __________________FIRST APPROACH__________________
-    //  let numberHolder = number;
+// __________________FIRST APPROACH__________________
+//  let numberHolder = number;
 
-    //  return number.toString().split("").reverse().join("") == numberHolder
-    //       ? `${number} is a palindrome number`
-    //       : `${number} is not a palindrome number`;
+//  return number.toString().split("").reverse().join("") == numberHolder
+//       ? `${number} is a palindrome number`
+//       : `${number} is not a palindrome number`;
 
-    // __________________SECOND APPROACH__________________
+// __________________SECOND APPROACH__________________
 
 // };
 // console.log(isPalindrome(2002));
+// _________________________________________________________________________________
+
+// _________________________________________________________________________________
+// Given two integers N1 and N2, find their greatest common divisor.
+// The Greatest Common Divisor of any two integers is the largest number that divides both integers.
+
+// Example 1:
+// Input:N1 = 9, N2 = 12
+// Output:3
+// Explanation:Factors of 9: 1, 3 and 9
+// Factors of 12: 1, 2, 3, 4, 6, 12
+// Common Factors: 1, 3 out of which 3 is the greatest hence it is the GCD.
+
+// Example 2:
+// Input:N1 = 20, N2 = 15
+// Output: 5
+// Explanation:Factors of 20: 1, 2, 4, 5
+// Factors of 15: 1, 3, 5
+// Common Factors: 1, 5 out of which 5 is the greatest hence it is the GCD.
+
+// ans:
+
+const findGCD = (num1, num2) => {
+     let largestNumber = num1 > num2 ? num1 : num2;
+     let gcd;
+     for (let i = 1; i < largestNumber; i++) {
+          if(num1 % i  === 0 && num2 % i === 0) {
+            gcd = i;
+          }
+         }
+         return gcd;
+};
+console.log(findGCD(9, 12));
 // _________________________________________________________________________________
