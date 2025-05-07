@@ -69,15 +69,15 @@
 
 // ans:
 
-const findGCD = (num1, num2) => {
-     let largestNumber = num1 > num2 ? num1 : num2;
-     let gcd;
-     for (let i = 1; i < largestNumber; i++) {
-          if(num1 % i  === 0 && num2 % i === 0) {
-            gcd = i;
-          }
-         }
-         return gcd;
-};
-console.log(findGCD(9, 12));
+// const findGCD = (num1, num2) => {
+//      let largestNumber = num1 > num2 ? num1 : num2;
+//      let gcd;
+//      for (let i = 1; i < largestNumber; i++) {
+//           if(num1 % i  === 0 && num2 % i === 0) {
+//             gcd = i;
+//           }
+//          }
+//          return gcd;
+// };
+// console.log(findGCD(9, 12));
 // _________________________________________________________________________________
