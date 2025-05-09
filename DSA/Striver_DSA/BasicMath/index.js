@@ -50,7 +50,7 @@
 // _________________________________________________________________________________
 
 // _________________________________________________________________________________
-// Given two integers N1 and N2, find their greatest common divisor.
+// 4. Given two integers N1 and N2, find their greatest common divisor.
 // The Greatest Common Divisor of any two integers is the largest number that divides both integers.
 
 // Example 1:
@@ -80,4 +80,29 @@
 //          return gcd;
 // };
 // console.log(findGCD(9, 12));
+// _________________________________________________________________________________
+
+// _________________________________________________________________________________
+// 5. Check if a number is Armstrong Number or not
+
+// Problem Statement: Given an integer N, return true it is an Armstrong number otherwise return false.
+
+// An Amrstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits
+
+const findArmstrongNumber = (number) => {
+     const numberLength = number.toString().length;
+     const numberToArray = number.toString().split("").join("");
+
+     let sum = 1;
+     let newSum = 0;
+     for (let i = 0; i < numberLength; i++) {
+          sum = 1;
+          for (let j = 0; j < numberLength; j++) {
+               sum *= Number(numberToArray[i]);
+          }
+          newSum += sum;
+     }
+     return number === newSum ? `The Given number(${number}) is Armstrong` : `Given number (${number}) is palindrome`;
+};
+console.log(findArmstrongNumber(153));
 // _________________________________________________________________________________
