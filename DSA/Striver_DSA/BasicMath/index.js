@@ -167,19 +167,19 @@
 
 // ans:
 
-const findPrimeNumber = (number)=> {
+// const findPrimeNumber = (number)=> {
     
-    if(number < 1) {console.log("Plese enter number greater than 1"); return false}
+//     if(number < 1) {console.log("Plese enter number greater than 1"); return false}
 
-    for(let i = 2; i < number; i++) {
-        if(number % i === 0) {
-            return false
-        }
+//     for(let i = 2; i < number; i++) {
+//         if(number % i === 0) {
+//             return false
+//         }
      
-    }
-    return true
-}
+//     }
+//     return true
+// }
 
-console.log(findPrimeNumber(8))
+// console.log(findPrimeNumber(8))
 
 // _________________________________________________________________________________
