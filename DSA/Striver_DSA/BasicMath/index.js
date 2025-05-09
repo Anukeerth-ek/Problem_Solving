@@ -157,3 +157,29 @@
 // getDivisor(36);
 
 // _________________________________________________________________________________
+
+// _________________________________________________________________________________
+
+// 7. Check if a number is prime or not
+
+// Problem Statement: Given an integer N, check whether it is prime or not. A prime number is a number that is only divisible by 1 and itself and 
+// the total number of divisors is 2.
+
+// ans:
+
+const findPrimeNumber = (number)=> {
+    
+    if(number < 1) {console.log("Plese enter number greater than 1"); return false}
+
+    for(let i = 2; i < number; i++) {
+        if(number % i === 0) {
+            return false
+        }
+     
+    }
+    return true
+}
+
+console.log(findPrimeNumber(8))
+
+// _________________________________________________________________________________
