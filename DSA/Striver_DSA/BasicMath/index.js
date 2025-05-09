@@ -132,17 +132,28 @@
 // A divisor of an integer N is a positive integer that divides N without leaving a remainder. In other words, if N is divisible by another integer
 // without any remainder, then that integer is considered a divisor of N.
 
-const getDivisor = (integer) => {
-     const integerArray = [];
+// const getDivisor = (n) => {
+     //  const integerArray = [];
 
-     for (let i = 1; i <= integer; i++) {
-          if (integer % i === 0) {
-               integerArray.push(i);
-          }
-     }
-     return integerArray;
-};
+     //  for (let i = 1; i <= integer; i++) {
+     //       if (integer % i === 0) {
+     //            integerArray.push(i);
+     //       }
+     //  }
+     //  return integerArray;
 
-console.log(getDivisor(36));
+//      const divisors = new Set();
+
+//      for (let i = 1; i * i <= n; i++) {
+//           if (n % i === 0) {
+//                divisors.add(i);
+//                divisors.add(n / i); // Include the paired divisor
+//           }
+//      }
+
+//      return Array.from(divisors).sort((a, b) => a - b);
+// };
+
+// getDivisor(36);
 
 // _________________________________________________________________________________
