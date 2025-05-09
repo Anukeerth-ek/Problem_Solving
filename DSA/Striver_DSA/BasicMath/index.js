@@ -89,20 +89,37 @@
 
 // An Amrstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits
 
-const findArmstrongNumber = (number) => {
-     const numberLength = number.toString().length;
-     const numberToArray = number.toString().split("").join("");
+// const findArmstrongNumber = (number) => {
+       // ___________First Approach___________
+    //  const numberLength = number.toString().length;
+    //  const numberToArray = number.toString().split("").join("");
 
-     let sum = 1;
-     let newSum = 0;
-     for (let i = 0; i < numberLength; i++) {
-          sum = 1;
-          for (let j = 0; j < numberLength; j++) {
-               sum *= Number(numberToArray[i]);
-          }
-          newSum += sum;
-     }
-     return number === newSum ? `The Given number(${number}) is Armstrong` : `Given number (${number}) is palindrome`;
-};
-console.log(findArmstrongNumber(153));
+    //  let sum = 1;
+    //  let newSum = 0;
+    //  for (let i = 0; i < numberLength; i++) {
+    //       sum = 1;
+    //       for (let j = 0; j < numberLength; j++) {
+    //            sum *= Number(numberToArray[i]);
+    //       }
+    //       newSum += sum;
+    //  }
+    //  return number === newSum ? `The Given number(${number}) is Armstrong` : `Given number (${number}) is palindrome`;
+
+    // ___________Second Approach___________
+//     const numStr = number.toString();
+//     const numDigits = numStr.length;
+//     console.log('numstr',typeof numStr)
+//     // Calculate sum of each digit raised to power of number of digits
+//     let sum = 0;
+//     for (let i = 0; i < numDigits; i++) {
+//       const digit = parseInt(numStr[i]);
+//       sum += Math.pow(digit, numDigits);
+//     }
+    
+//     // Check if the number is equal to the sum
+//     return number === sum ? 
+//       `The given number (${number}) is an Armstrong number` : 
+//       `The given number (${number}) is not an Armstrong number`;
+// };
+// console.log(findArmstrongNumber(153));
 // _________________________________________________________________________________
