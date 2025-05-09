@@ -90,22 +90,22 @@
 // An Amrstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits
 
 // const findArmstrongNumber = (number) => {
-       // ___________First Approach___________
-    //  const numberLength = number.toString().length;
-    //  const numberToArray = number.toString().split("").join("");
+// ___________First Approach___________
+//  const numberLength = number.toString().length;
+//  const numberToArray = number.toString().split("").join("");
 
-    //  let sum = 1;
-    //  let newSum = 0;
-    //  for (let i = 0; i < numberLength; i++) {
-    //       sum = 1;
-    //       for (let j = 0; j < numberLength; j++) {
-    //            sum *= Number(numberToArray[i]);
-    //       }
-    //       newSum += sum;
-    //  }
-    //  return number === newSum ? `The Given number(${number}) is Armstrong` : `Given number (${number}) is palindrome`;
+//  let sum = 1;
+//  let newSum = 0;
+//  for (let i = 0; i < numberLength; i++) {
+//       sum = 1;
+//       for (let j = 0; j < numberLength; j++) {
+//            sum *= Number(numberToArray[i]);
+//       }
+//       newSum += sum;
+//  }
+//  return number === newSum ? `The Given number(${number}) is Armstrong` : `Given number (${number}) is palindrome`;
 
-    // ___________Second Approach___________
+// ___________Second Approach___________
 //     const numStr = number.toString();
 //     const numDigits = numStr.length;
 //     console.log('numstr',typeof numStr)
@@ -115,10 +115,10 @@
 //       const digit = parseInt(numStr[i]);
 //       sum += Math.pow(digit, numDigits);
 //     }
-    
+
 //     // Check if the number is equal to the sum
-//     return number === sum ? 
-//       `The given number (${number}) is an Armstrong number` : 
+//     return number === sum ?
+//       `The given number (${number}) is an Armstrong number` :
 //       `The given number (${number}) is not an Armstrong number`;
 // };
 // console.log(findArmstrongNumber(153));
@@ -129,21 +129,20 @@
 
 // Problem Statement: Given an integer N, return all divisors of N.
 
-// A divisor of an integer N is a positive integer that divides N without leaving a remainder. In other words, if N is divisible by another integer 
+// A divisor of an integer N is a positive integer that divides N without leaving a remainder. In other words, if N is divisible by another integer
 // without any remainder, then that integer is considered a divisor of N.
 
+const getDivisor = (integer) => {
+     const integerArray = [];
 
-const getDivisor = (integer)=> {
-    const integerArray = []
+     for (let i = 1; i <= integer; i++) {
+          if (integer % i === 0) {
+               integerArray.push(i);
+          }
+     }
+     return integerArray;
+};
 
-    for(let i = 1; i <= integer; i++) {
-        if(integer % i === 0) {
-            integerArray.push(i)
-        }
-    }
-
-}
-
-console.log(getDivisor(36))
+console.log(getDivisor(36));
 
 // _________________________________________________________________________________
