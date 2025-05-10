@@ -133,14 +133,14 @@
 // without any remainder, then that integer is considered a divisor of N.
 
 // const getDivisor = (n) => {
-     //  const integerArray = [];
+//  const integerArray = [];
 
-     //  for (let i = 1; i <= integer; i++) {
-     //       if (integer % i === 0) {
-     //            integerArray.push(i);
-     //       }
-     //  }
-     //  return integerArray;
+//  for (let i = 1; i <= integer; i++) {
+//       if (integer % i === 0) {
+//            integerArray.push(i);
+//       }
+//  }
+//  return integerArray;
 
 //      const divisors = new Set();
 
@@ -162,20 +162,20 @@
 
 // 7. Check if a number is prime or not
 
-// Problem Statement: Given an integer N, check whether it is prime or not. A prime number is a number that is only divisible by 1 and itself and 
+// Problem Statement: Given an integer N, check whether it is prime or not. A prime number is a number that is only divisible by 1 and itself and
 // the total number of divisors is 2.
 
 // ans:
 
 // const findPrimeNumber = (number)=> {
-    
+
 //     if(number < 1) {console.log("Plese enter number greater than 1"); return false}
 
 //     for(let i = 2; i < number; i++) {
 //         if(number % i === 0) {
 //             return false
 //         }
-     
+
 //     }
 //     return true
 // }
