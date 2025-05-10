@@ -183,3 +183,32 @@
 // console.log(findPrimeNumber(8))
 
 // _________________________________________________________________________________
+
+// ______________________
+// 1. Recurrsion
+// let number = 1
+// const printUptoMax = (max)=> {
+//     if(number > max) return
+
+//     console.log(number)
+
+//     number ++;
+
+//     printUptoMax(max)
+
+// }
+// printUptoMax(5)
+
+// ______________________
+
+// 2. Print Name maxTimes using Recurrsion
+
+// const printName = (name, maxTime) => {
+//      if (maxTime <= 0) return;
+
+//      console.log(name);
+
+//      printName(name, maxTime - 1);
+// };
+
+// printName("Anukeerth", 5);
