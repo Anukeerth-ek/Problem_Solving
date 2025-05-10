@@ -217,15 +217,34 @@
 
 // 3. Print 1 to N using Recursion
 
-let num = 0;
-const handlePrint1toN = (number) => {
-    let subractor = 1
-     if (number < 1) return;
-    num++
-     console.log(num);
-     
-     handlePrint1toN(number - subractor);
-};
+// ______________________
+// let num = 0;
+// const handlePrint1toN = (number) => {
+//     let subractor = 1
+//      if (number < 1) return;
+//     num++
+//      console.log(num);
 
-handlePrint1toN(5);
+//      handlePrint1toN(number - subractor);
+// };
 
+// handlePrint1toN(5);
+//  ______________________
+
+// const handlePrint1toN = (target, maxNumber)=> {
+
+// }
+
+// handlePrint1toN(1, 5)
+
+//  ______________________
+// 4. Print N to 1 using Recursion
+
+// const printNto1 = (number, target) => {
+//      if (number < 1) return;
+
+//      console.log(number);
+//      printNto1(number - target, target);
+// };
+// printNto1(5, 1);
+//  ______________________
