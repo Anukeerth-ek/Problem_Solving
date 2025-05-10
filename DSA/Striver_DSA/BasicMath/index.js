@@ -212,3 +212,20 @@
 // };
 
 // printName("Anukeerth", 5);
+
+// ______________________
+
+// 3. Print 1 to N using Recursion
+
+let num = 0;
+const handlePrint1toN = (number) => {
+    let subractor = 1
+     if (number < 1) return;
+    num++
+     console.log(num);
+     
+     handlePrint1toN(number - subractor);
+};
+
+handlePrint1toN(5);
+
