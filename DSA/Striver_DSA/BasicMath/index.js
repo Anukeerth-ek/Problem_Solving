@@ -259,6 +259,15 @@
 // };
 
 // console.log(handleSumOfNaturalNumber(5));
+//  ______________________
 
+//  ______________________
+// Factorial of a Number : Iterative and Recursive
+// ans:
+// const handleFactorial = (number) => {
 
-Factorial of a Number : Iterative and Recursive
+//     if(number === 0) return 1
+//     return number * handleFactorial(number - 1)
+// };
+// console.log(handleFactorial(5));
+//  ______________________
