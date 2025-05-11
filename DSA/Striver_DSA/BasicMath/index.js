@@ -248,3 +248,17 @@
 // };
 // printNto1(5, 1);
 //  ______________________
+
+// 5. Sum of first N Natural Numbers
+
+// let sum = 0;
+// const handleSumOfNaturalNumber = (number) => {
+//      if (number < 1) return 0;
+
+//      return number + handleSumOfNaturalNumber(number - 1);
+// };
+
+// console.log(handleSumOfNaturalNumber(5));
+
+
+Factorial of a Number : Iterative and Recursive
