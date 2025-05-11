@@ -276,14 +276,13 @@
 // 6. Reverse a given Array
 // ans:
 // let newArr = [];
-// const handleReverseArray = (arr, arrayLength) => {
-//      if (arrayLength === 0) return;
-
-//      newArr[arrayLength - arrayLength - 1] = arr[arrayLength - 1];
-//      //   console.log(  newArr[arrayLength - 1] = arr[arrayLength - 1])
-//      console.log(newArr);
-//      handleReverseArray(arr, arrayLength - 1);
+// const handleReverseArray = (arr) => {
+//     if (arr.length === 0) return [];
+//     return [arr[arr.length - 1]].concat(handleReverseArray(arr.slice(0, arr.length - 1)));
 // };
+
+// console.log(handleReverseArray([1, 3, 5, 7])); 
+
 // console.log(newArr);
 // console.log(handleReverseArray([1, 3, 5, 7], 4));
 //  ______________________
