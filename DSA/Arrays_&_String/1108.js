@@ -15,12 +15,12 @@
 
 // The given address is a valid IPv4 address.
 
-const findValidIp = (ipValue) => {
-     let resultValue = [];
-     for (let i = 0; i < ipValue.length; i++) {
-        resultValue.push(ipValue[i].replace('.','[.]'))
-     }
-     return resultValue.join('')
-};
+// const findValidIp = (ipValue) => {
+//      let resultValue = [];
+//      for (let i = 0; i < ipValue.length; i++) {
+//         resultValue.push(ipValue[i].replace('.','[.]'))
+//      }
+//      return resultValue.join('')
+// };
 
-console.log(findValidIp("1.1.1.1"));
+// console.log(findValidIp("1.1.1.1"));
