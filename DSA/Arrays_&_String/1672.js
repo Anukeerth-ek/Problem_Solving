@@ -36,15 +36,15 @@
 // 1 <= m, n <= 50
 // 1 <= accounts[i][j] <= 100
 
-const handleFindRichest = (totalRichest)=> {
-    let eachPersonWealt = [];
+// const handleFindRichest = (totalRichest)=> {
+//     let eachPersonWealt = [];
 
-    for(let i = 0; i < totalRichest.length; i++) {
-        // console.log(totalRichest[i].reduce((acc, curr) => acc + curr, 0));
-        eachPersonWealt.push(totalRichest[i].reduce((acc, curr) => acc + curr, 0))
-    }
-    // console.log(eachPersonWealt.sort((a, b)=> b -a))
-    return eachPersonWealt.sort((a, b)=> b -a)[0]
-}
+//     for(let i = 0; i < totalRichest.length; i++) {
+//         // console.log(totalRichest[i].reduce((acc, curr) => acc + curr, 0));
+//         eachPersonWealt.push(totalRichest[i].reduce((acc, curr) => acc + curr, 0))
+//     }
+//     // console.log(eachPersonWealt.sort((a, b)=> b -a))
+//     return eachPersonWealt.sort((a, b)=> b -a)[0]
+// }
 
-console.log(handleFindRichest([[1,2,3],[3,2,5]]))
+// console.log(handleFindRichest([[1,2,3],[3,2,5]]))
