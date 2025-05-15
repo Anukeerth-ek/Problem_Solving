@@ -24,29 +24,27 @@
 // 1 <= nums.length <= 1000
 // 1 <= nums[i] <= 105
 
-const handleLeftAndRightSumDiffernce = (arr) => {
-     let leftSum = 0;
+// const handleLeftAndRightSumDiffernce = (arr) => {
+//      let leftSum = 0;
 
-     let leftSumArr = [];
-     let rightSumArr = [];
-     let resultantArr = [];
-     for (let i = 0; i < arr.length; i++) {
-          let rightSum = 0;
-          leftSum += arr[i] + arr[i - 1] ? arr[i - 1] : 0;
-          leftSumArr.push(leftSum);
+//      let leftSumArr = [];
+//      let rightSumArr = [];
+//      let resultantArr = [];
+//      for (let i = 0; i < arr.length; i++) {
+//           let rightSum = 0;
+//           leftSum += arr[i] + arr[i - 1] ? arr[i - 1] : 0;
+//           leftSumArr.push(leftSum);
 
-          for (let j = i + 1; j < arr.length; j++) {
-               rightSum += arr[j];
-          }
-          rightSumArr.push(rightSum);
-     }
+//           for (let j = i + 1; j < arr.length; j++) {
+//                rightSum += arr[j];
+//           }
+//           rightSumArr.push(rightSum);
+//      }
 
-     for (let i = 0; i < arr.length; i++) {
-          resultantArr.push(Math.abs(leftSumArr[i] - rightSumArr[i]));
-     }
-     console.log("final", resultantArr);
-     console.log("leftSumArr", leftSumArr);
-     console.log("rightSumArr", rightSumArr);
-     return resultantArr;
-};
-console.log(handleLeftAndRightSumDiffernce([10, 4, 8, 3]));
+//      for (let i = 0; i < arr.length; i++) {
+//           resultantArr.push(Math.abs(leftSumArr[i] - rightSumArr[i]));
+//      }
+
+//      return resultantArr;
+// };
+// console.log(handleLeftAndRightSumDiffernce([10, 4, 8, 3]));
