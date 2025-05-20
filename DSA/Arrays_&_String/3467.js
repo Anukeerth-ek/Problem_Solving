@@ -31,18 +31,18 @@
 // 1 <= nums.length <= 100
 // 1 <= nums[i] <= 1000
 
-const handleTransformArrayParity = (arrayParity) => {
-     let newArr = [];
-     for (let i = 0; i < arrayParity.length; i++) {
-        if(arrayParity[i] % 2 === 0) {
-            newArr.push(0)
-        }
-         else {
-            newArr.push(1)
-         }
-         newArr.sort()
-     }
-     return newArr;
-};
+// const handleTransformArrayParity = (arrayParity) => {
+//      let newArr = [];
+//      for (let i = 0; i < arrayParity.length; i++) {
+//         if(arrayParity[i] % 2 === 0) {
+//             newArr.push(0)
+//         }
+//          else {
+//             newArr.push(1)
+//          }
+//          newArr.sort()
+//      }
+//      return newArr;
+// };
 
-console.log(handleTransformArrayParity([1,5,1,4,2]));
+// console.log(handleTransformArrayParity([1,5,1,4,2]));
