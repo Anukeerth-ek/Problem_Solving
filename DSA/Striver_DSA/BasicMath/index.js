@@ -306,18 +306,18 @@
 // Explanation: String when reversed is not the same as string.
 
 // ans:
-const handleStringPalindrome = (str) => {
+// const handleStringPalindrome = (str) => {
     
-    const checkPalindrome = (s, start, end)=> {
+//     const checkPalindrome = (s, start, end)=> {
 
-        if(start > end) return true;
+//         if(start > end) return true;
 
-        if(s[start] !== s[end]) return false;
+//         if(s[start] !== s[end]) return false;
 
-        return checkPalindrome(str, start +1, end - 1)
-    }
+//         return checkPalindrome(str, start +1, end - 1)
+//     }
 
-    return checkPalindrome(str, 0, str?.length - 1) ? 'Palindrome' : 'Not a Palindrome'
-};
-console.log(handleStringPalindrome("ABCDXBA"));
+//     return checkPalindrome(str, 0, str?.length - 1) ? 'Palindrome' : 'Not a Palindrome'
+// };
+// console.log(handleStringPalindrome("ABCDXBA"));
 //  ______________________
