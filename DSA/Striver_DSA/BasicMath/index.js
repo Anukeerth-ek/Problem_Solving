@@ -281,8 +281,43 @@
 //     return [arr[arr.length - 1]].concat(handleReverseArray(arr.slice(0, arr.length - 1)));
 // };
 
-// console.log(handleReverseArray([1, 3, 5, 7])); 
+// console.log(handleReverseArray([1, 3, 5, 7]));
 
 // console.log(newArr);
 // console.log(handleReverseArray([1, 3, 5, 7], 4));
+//  ______________________
+
+//  ______________________
+// 7. Check if the given String is Palindrome or not
+
+// Problem Statement: "Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of
+// the string is the same as the string.
+
+// Examples:
+
+// Example 1:
+// Input: Str =  “ABCDCBA”
+// Output: Palindrome
+// Explanation: String when reversed is the same as string.
+
+// Example 2:
+// Input: Str = “TAKE U FORWARD”
+// Output: Not Palindrome
+// Explanation: String when reversed is not the same as string.
+
+// ans:
+const handleStringPalindrome = (str) => {
+    
+    const checkPalindrome = (s, start, end)=> {
+
+        if(start > end) return true;
+
+        if(s[start] !== s[end]) return false;
+
+        return checkPalindrome(str, start +1, end - 1)
+    }
+
+    return checkPalindrome(str, 0, str?.length - 1) ? 'Palindrome' : 'Not a Palindrome'
+};
+console.log(handleStringPalindrome("ABCDXBA"));
 //  ______________________
