@@ -32,8 +32,8 @@
 
 // ans:
 
-const handleReverseString = (word) => {
-    console.log(word.split(' ').reverse().join(' '))
-};
+// const handleReverseString = (word) => {
+//     console.log(word.split(' ').reverse().join(' '))
+// };
 
-console.log(handleReverseString("the sky is blue"));
+// console.log(handleReverseString("the sky is blue"));
