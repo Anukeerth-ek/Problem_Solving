@@ -55,45 +55,45 @@
 
 
 
-const handleMaxProfile = (prices) => {
-    // 1. Handle edge cases: If prices array is empty or has only one element, no profit can be made.
-    if (!prices || prices.length < 2) {
-        return 0;
-    }
+// const handleMaxProfile = (prices) => {
+//     // 1. Handle edge cases: If prices array is empty or has only one element, no profit can be made.
+//     if (!prices || prices.length < 2) {
+//         return 0;
+//     }
 
-    // Initialize stockBUy to the first day's price. This assumes we might buy on day 0.
-    // This variable will now track the 'minimum price seen so far'.
-    let stockBUy = prices[0]; // This is now our 'minPrice' tracker
-    let maxOverallProfit = 0; // This will store the maximum profit found across all buy/sell pairs.
+//     // Initialize stockBUy to the first day's price. This assumes we might buy on day 0.
+//     // This variable will now track the 'minimum price seen so far'.
+//     let stockBUy = prices[0]; // This is now our 'minPrice' tracker
+//     let maxOverallProfit = 0; // This will store the maximum profit found across all buy/sell pairs.
 
-    // Iterate through the prices starting from the second day (index 1)
-    // because we've already considered prices[0] as a potential buy point.
-    for (let i = 1; i < prices.length; i++) {
-        const currentPrice = prices[i]; // The price on the current day
+//     // Iterate through the prices starting from the second day (index 1)
+//     // because we've already considered prices[0] as a potential buy point.
+//     for (let i = 1; i < prices.length; i++) {
+//         const currentPrice = prices[i]; // The price on the current day
 
-        // Calculate the profit if we were to buy at the lowest price seen so far (stockBUy)
-        // and sell at the current price (currentPrice).
-        let currentPotentialProfit = currentPrice - stockBUy;
+//         // Calculate the profit if we were to buy at the lowest price seen so far (stockBUy)
+//         // and sell at the current price (currentPrice).
+//         let currentPotentialProfit = currentPrice - stockBUy;
 
-        // Update maxOverallProfit if the current potential profit is higher.
-        // This effectively finds the maximum difference (sell - buy) encountered.
-        if (currentPotentialProfit > maxOverallProfit) {
-            maxOverallProfit = currentPotentialProfit;
-        }
+//         // Update maxOverallProfit if the current potential profit is higher.
+//         // This effectively finds the maximum difference (sell - buy) encountered.
+//         if (currentPotentialProfit > maxOverallProfit) {
+//             maxOverallProfit = currentPotentialProfit;
+//         }
 
-        // If the current price is lower than our current 'stockBUy' (minPrice),
-        // then this current price becomes our new best potential buying point for future days.
-        if (currentPrice < stockBUy) {
-            stockBUy = currentPrice;
-        }
-    }
-    // After iterating through all prices, maxOverallProfit will hold the greatest profit.
-    return maxOverallProfit;
-};
-console.log(handleMaxProfile([7, 6, 4, 3, 1])); // Expected: 0 (Correctly handled by the fixed logic)
-console.log(handleMaxProfile([7, 1, 5, 3, 6, 4])); // Expected: 5
-console.log(handleMaxProfile([2, 4, 1]));       // Expected: 2
-console.log(handleMaxProfile([1, 2]));           // Expected: 1
-console.log(handleMaxProfile([3, 3, 5, 0, 0, 3, 1, 4])); // Expected: 4
-console.log(handleMaxProfile([]));               // Expected: 0
-console.log(handleMaxProfile([1]));              // Expected: 0
+//         // If the current price is lower than our current 'stockBUy' (minPrice),
+//         // then this current price becomes our new best potential buying point for future days.
+//         if (currentPrice < stockBUy) {
+//             stockBUy = currentPrice;
+//         }
+//     }
+//     // After iterating through all prices, maxOverallProfit will hold the greatest profit.
+//     return maxOverallProfit;
+// };
+// console.log(handleMaxProfile([7, 6, 4, 3, 1])); // Expected: 0 (Correctly handled by the fixed logic)
+// console.log(handleMaxProfile([7, 1, 5, 3, 6, 4])); // Expected: 5
+// console.log(handleMaxProfile([2, 4, 1]));       // Expected: 2
+// console.log(handleMaxProfile([1, 2]));           // Expected: 1
+// console.log(handleMaxProfile([3, 3, 5, 0, 0, 3, 1, 4])); // Expected: 4
+// console.log(handleMaxProfile([]));               // Expected: 0
+// console.log(handleMaxProfile([1]));              // Expected: 0
