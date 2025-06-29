@@ -97,3 +97,25 @@
 // console.log(handleMaxProfile([3, 3, 5, 0, 0, 3, 1, 4])); // Expected: 4
 // console.log(handleMaxProfile([]));               // Expected: 0
 // console.log(handleMaxProfile([1]));              // Expected: 0
+
+
+
+
+function merge(nums1, m, nums2, n) {
+  
+ let splittedNum1 = nums1.slice(0, m)
+ let splittedNum2 = nums2.slice(0, n)
+ let mergedArray = [...splittedNum1, ...splittedNum2]
+  let resultArr = []
+
+  for(let i = 0; i < m+n; i++) {
+    resultArr.push(mergedArray[i])
+  }
+//   console.log('result', resultArr.sort())
+
+return resultArr.sort()
+}
+
+console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 3, 4], 3))
+console.log(merge([1], 1, [], 0))
+console.log(merge([0], 0, [1], 1))
