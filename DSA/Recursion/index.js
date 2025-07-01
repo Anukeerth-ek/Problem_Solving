@@ -116,7 +116,16 @@
 // ans:
 
 const handleRemoveLinkedList = (head, value)=> {
-    console.log("heade", head)
+
+    let result = []
+    for(let i = 0; i < head.length; i++) {
+        if(head[i] !== value) {
+            result.push(head[i])
+        }
+    }
+    console.log('res', result)
 }
 
 console.log(handleRemoveLinkedList([1,2,6,3,4,5,6], 6))
+console.log(handleRemoveLinkedList([], 1))
+console.log(handleRemoveLinkedList([6,6,6], 6))
