@@ -13,5 +13,14 @@
 // Output: Not Palindrome
 // Explanation: String when reversed is not the same as string.
 
-
 // ans:
+
+const handleStringReverse = (string)=> {
+
+    const checkerString = string;
+
+    
+
+}
+console.log(handleStringReverse("ABCDCBA"))
+console.log(handleStringReverse("TAKE U FORWARD"))
