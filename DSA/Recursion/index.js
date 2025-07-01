@@ -77,14 +77,14 @@
 // Output: Not Palindrome
 // Explanation: String when reversed is not the same as string.
 
-const handlePalindrome = (palindromeString)=> {
+// const handlePalindrome = (palindromeString)=> {
 
-    const palindromeChecker = palindromeString;
+//     const palindromeChecker = palindromeString;
 
-    return handlePalindrome()
+//     return handlePalindrome()
 
-}
-console.log(handlePalindrome("ABCDCBA"))
+// }
+// console.log(handlePalindrome("ABCDCBA"))
 
 // ________________________________________________________________________________________
 
