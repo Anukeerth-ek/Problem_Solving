@@ -75,3 +75,12 @@
 // Input: Str = “TAKE U FORWARD”
 // Output: Not Palindrome
 // Explanation: String when reversed is not the same as string.
+
+const handlePalindrome = (palindromeString)=> {
+
+    const palindromeChecker = palindromeString;
+
+    return handlePalindrome()
+
+}
+console.log(handlePalindrome("ABCDCBA"))
