@@ -60,6 +60,7 @@
 
 // console.log(handleRecusion([3, 5, 6, 7], 9));
 
+// ________________________________________________________________________________________
 
 // 2. Problem Statement: "Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse 
 // of the string is the same as the string.
@@ -84,3 +85,7 @@ const handlePalindrome = (palindromeString)=> {
 
 }
 console.log(handlePalindrome("ABCDCBA"))
+
+// ________________________________________________________________________________________
+
+// 3. 
