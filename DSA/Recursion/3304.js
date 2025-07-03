@@ -38,3 +38,20 @@
 
 // 1 <= k <= 500
 
+
+// ans:
+// var kthCharacter = function(k) {
+//     const nextChar = (c) => String.fromCharCode(((c.charCodeAt(0) - 97 + 1) % 26) + 97);
+
+//   let word = 'a';
+
+//   while (word.length < k) {
+//     let nextPart = '';
+//     for (let i = 0; i < word.length; i++) {
+//       nextPart += nextChar(word[i]);
+//     }
+//     word += nextPart;
+//   }
+
+//   return word[k - 1];
+// };
