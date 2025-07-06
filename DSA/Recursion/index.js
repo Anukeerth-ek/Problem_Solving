@@ -115,17 +115,40 @@
 
 // ans:
 
-const handleRemoveLinkedList = (head, value)=> {
+// const handleRemoveLinkedList = (head, value)=> {
 
-    let result = []
-    for(let i = 0; i < head.length; i++) {
-        if(head[i] !== value) {
-            result.push(head[i])
-        }
-    }
-    console.log('res', result)
-}
+//     let result = []
+//     for(let i = 0; i < head.length; i++) {
+//         if(head[i] !== value) {
+//             result.push(head[i])
+//         }
+//     }
+//     console.log('res', result)
+// }
 
-console.log(handleRemoveLinkedList([1,2,6,3,4,5,6], 6))
-console.log(handleRemoveLinkedList([], 1))
-console.log(handleRemoveLinkedList([6,6,6], 6))
+// console.log(handleRemoveLinkedList([1,2,6,3,4,5,6], 6))
+// console.log(handleRemoveLinkedList([], 1))
+// console.log(handleRemoveLinkedList([6,6,6], 6))
+
+// ________________________________________________________________________________________
+
+// 4. Print Name 5 times
+
+// const userName = "Anukeerth EK"
+
+// let noOfTimesPrint = 0;
+// const handlePrintName = ()=> {
+
+//     if(noOfTimesPrint === 5) return 
+//     else {
+//         console.log(`My name is ${userName}`)
+//         noOfTimesPrint ++;
+//         handlePrintName()
+//     }
+// }
+
+// function main() {
+//     handlePrintName()
+// }
+
+// main()
