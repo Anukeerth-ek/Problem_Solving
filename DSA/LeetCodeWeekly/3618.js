@@ -41,10 +41,25 @@
 // -109 <= nums[i] <= 109
 
 var splitArray = function (nums) {
-     const primeNumber = [2, 3, 5, 7, 11, 13, 17, 19];
+     const primeNumber = [];
 
      let arrayA = [];
      let arrayB = [];
+
+     for (let i = 2; i < nums.length; i++) {
+          let isPrime = true;
+
+          for (let j = 2; j <= Math.sqrt(i); j++) {
+               if (i % j === 0) {
+                    isPrime = false;
+                    break;
+               }
+          }
+
+          if (isPrime) {
+               primeNumber.push(i);
+          }
+     }
 
      for (let num = 0; num < nums.length; num++) {
           if (primeNumber.includes(num)) {
@@ -56,7 +71,7 @@ var splitArray = function (nums) {
      const sumOfA = arrayA.reduce((acc, red) => acc + red, 0);
      const sumOfB = arrayB.reduce((acc, red) => acc + red, 0);
 
-     const result = sumOfA - sumOfB
+     const result = sumOfA - sumOfB;
      return Math.abs(result);
 };
 
