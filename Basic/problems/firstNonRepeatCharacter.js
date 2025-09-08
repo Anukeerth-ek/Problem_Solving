@@ -1,16 +1,13 @@
 // Problem: Find the first non-repeating character in a string.
 
-// const handleFindNonRepeatCharacter = (characterArr) => {
-//      const character = characterArr.split("");
+const handleFindNonRepeatCharacter = (characterArr) => {
+   
 
-//      for (let i = 0; i < character.length; i++) {
-//           for (let j = 0; j < character.length; j++) {
-//                if()
-//           }
-//      }
-// };
+    console.log("char", characterArr)
 
-// console.log(handleFindNonRepeatCharacter("aabbcc")); // A
-// console.log(handleFindNonRepeatCharacter("leetcode")); // l
-// // console.log(handleFindNonRepeatCharacter("loveleetcode")); // v
-// // console.log(handleFindNonRepeatCharacter("aabb")); // 0
+};
+
+console.log(handleFindNonRepeatCharacter("aabbcc")); // 0
+console.log(handleFindNonRepeatCharacter("leetcode")); // l
+// console.log(handleFindNonRepeatCharacter("loveleetcode")); // v
+// console.log(handleFindNonRepeatCharacter("aabb")); // 0
