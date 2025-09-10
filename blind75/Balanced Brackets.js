@@ -28,23 +28,22 @@ const balancedBrackets = (str) => {
           ")": "(",
           "}": "{",
           "]": "[",
-    };
-    
-    for (let string of str) {
-        if (string === '(' || string === '{' || string === '[') {
-            stack.push(string)
-        }
-        else if (string === ')' || string === '}' || string === ']') {
-            if (stack.length === 0 || stack.pop()!== brackets[string]) {
-                return false
-            }
-        }
-    }
-    return stack.length === 0;
+     };
+
+     for (let string of str) {
+          if (string === "(" || string === "{" || string === "[") {
+               stack.push(string);
+          } else if (string === ")" || string === "}" || string === "]") {
+               if (stack.length === 0 || stack.pop() !== brackets[string]) {
+                    return false;
+               }
+          }
+     }
+     return stack.length === 0;
 };
 
 console.log(balancedBrackets("([)]"));
 console.log(balancedBrackets("([]){}"));
 console.log(balancedBrackets("[]"));
 
-console.log()
+console.log();
