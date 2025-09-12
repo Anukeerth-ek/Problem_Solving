@@ -1,4 +1,4 @@
-// Given an array of integers numbers, determine whether the array contains any duplicate values.A duplicate is defined as any number
+// Given an array of integers numbers, determine whether the array contains any duplicate values. A duplicate is defined as any number
 // that appears more than once in the array.
 
 // Input
@@ -17,4 +17,20 @@
 // 1 <= numbers.length <= 10,000
 // -1,000,000 <= numbers[i] <= 1,000,000
 
+const findDuplicateElements = (arr) => { 
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] === arr[i + 1
+            
+        ]) {
+            break;
+            
+        }
+        console.log('hey', i)
+    }
+
+}
+
+console.log(findDuplicateElements( [5,7,5,3]))
 
