@@ -17,20 +17,16 @@
 // 1 <= numbers.length <= 10,000
 // -1,000,000 <= numbers[i] <= 1,000,000
 
-const findDuplicateElements = (arr) => { 
+const findDuplicateElements = (arr) => {
+     let seen = new Set();
 
-    for (let i = 0; i < arr.length; i++) {
+     for (let i = 0; i < arr.length; i++) {
+          if (seen.has(arr[i])) {
+               return true;
+          }
+          seen.add(arr[i]);
+     }
+     return false;
+};
 
-        if (arr[i] === arr[i + 1
-            
-        ]) {
-            break;
-            
-        }
-        console.log('hey', i)
-    }
-
-}
-
-console.log(findDuplicateElements( [5,7,5,3]))
-
+console.log(findDuplicateElements([5, 7, 5, 3]));
