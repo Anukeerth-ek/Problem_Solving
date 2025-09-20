@@ -15,3 +15,25 @@
 // Constraints
 // 1 <= n <= 10,000
 // 0 <= numbers[i] <= n
+
+const findMissingNumber = (numbers) => {
+ 
+    // const missingNumbers = numbers.map((item, index) => {
+    //         console.log(numbers.includes(index+1))
+    //     })
+
+    for (let i = 1; i <= numbers.length; i++) {
+        // console.log("checker", numbers.includes(i))
+        // console.log("i", i)
+        if (numbers.includes(i)) {
+           continue
+        }
+        else {
+            return i
+        }
+    }
+}
+
+// console.log(findMissingNumber([1, 3, 0]))
+console.log(findMissingNumber([0]))
+// console.log(findMissingNumber([3,0,4,2,1]))
