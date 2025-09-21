@@ -1,39 +1,39 @@
-// Given an array numbers of size n storing n different integers which fall within the range [0, n], implement a function to identify the missing element in the array. All numbers except one are present in the array. Find the missing number.
+// // Given an array numbers of size n storing n different integers which fall within the range [0, n], implement a function to identify the missing element in the array. All numbers except one are present in the array. Find the missing number.
 
-// Input
-// numbers: number[]: An array of integers
-// Examples
-// Input: numbers = [1,3,0]
-// Output: 2
-// Explanation: The array has a size of 3, and within the range from 0 to 3, the number 2 is missing from the array
-// Input: numbers = [1]
-// Output: 0
-// Explanation: The array has a size of 1, and within the range from 0 to 1, the number 0 is missing from the array
-// Input: numbers = [3,0,4,2,1]
-// Output: 5
-// Explanation: The array has a size of 5, and within the range from 0 to 5, the number 5 is missing from the array
-// Constraints
-// 1 <= n <= 10,000
-// 0 <= numbers[i] <= n
+// // Input
+// // numbers: number[]: An array of integers
+// // Examples
+// // Input: numbers = [1,3,0]
+// // Output: 2
+// // Explanation: The array has a size of 3, and within the range from 0 to 3, the number 2 is missing from the array
+// // Input: numbers = [1]
+// // Output: 0
+// // Explanation: The array has a size of 1, and within the range from 0 to 1, the number 0 is missing from the array
+// // Input: numbers = [3,0,4,2,1]
+// // Output: 5
+// // Explanation: The array has a size of 5, and within the range from 0 to 5, the number 5 is missing from the array
+// // Constraints
+// // 1 <= n <= 10,000
+// // 0 <= numbers[i] <= n
 
-const findMissingNumber = (numbers) => {
+// const findMissingNumber = (numbers) => {
  
-    // const missingNumbers = numbers.map((item, index) => {
-    //         console.log(numbers.includes(index+1))
-    //     })
+//     // const missingNumbers = numbers.map((item, index) => {
+//     //         console.log(numbers.includes(index+1))
+//     //     })
 
-    for (let i = 1; i <= numbers.length; i++) {
-        // console.log("checker", numbers.includes(i))
-        // console.log("i", i)
-        if (numbers.includes(i)) {
-           continue
-        }
-        else {
-            return i
-        }
-    }
-}
+//     for (let i = 1; i <= numbers.length; i++) {
+//         // console.log("checker", numbers.includes(i))
+//         // console.log("i", i)
+//         if (numbers.includes(i)) {
+//            continue
+//         }
+//         else {
+//             return i
+//         }
+//     }
+// }
 
-// console.log(findMissingNumber([1, 3, 0]))
-console.log(findMissingNumber([0]))
-// console.log(findMissingNumber([3,0,4,2,1]))
+// // console.log(findMissingNumber([1, 3, 0]))
+// console.log(findMissingNumber([0]))
+// // console.log(findMissingNumber([3,0,4,2,1]))
