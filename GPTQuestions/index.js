@@ -64,7 +64,7 @@
 
 // const removeDuplicates = (arr) => {
 //     // lets find duplicates here
-    
+
 //     if (!Array.isArray(arr) || arr.length <= 0) {
 //         return "Please enter a valid array"
 //     }
@@ -72,14 +72,30 @@
 //      const seen = new Set();
 //      let newArr = [];
 
-    
 //     for (let element = 0; element < arr.length; element++) {
 //         if (!seen.has(arr[element])) {
-//             seen.add(arr[element]) 
+//             seen.add(arr[element])
 //             newArr.push(arr[element])
 //         }
 //     }
 //     return newArr
 // };
 // console.log(removeDuplicates([1, 2, 5, 8, 10, 24, 8, 1]));
+// _____________________________________________________
+
+// _____________________________________________________
+// 5. Check if two strings are anagrams
+
+const checkAnagram = (string1, string2) => {
+     const splitedString1 = string1.split("").sort().join("");
+     const splitedString2 = string2.split("").sort().join("");
+
+     if (splitedString1 === splitedString2) {
+          return "anagram";
+     } else {
+          return "not a angaram";
+     }
+};
+console.log(checkAnagram("listen", "silent"));
+
 // _____________________________________________________
