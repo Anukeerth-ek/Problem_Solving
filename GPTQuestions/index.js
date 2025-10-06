@@ -86,16 +86,16 @@
 // _____________________________________________________
 // 5. Check if two strings are anagrams
 
-const checkAnagram = (string1, string2) => {
-     const splitedString1 = string1.split("").sort().join("");
-     const splitedString2 = string2.split("").sort().join("");
+// const checkAnagram = (string1, string2) => {
+//      const splitedString1 = string1.split("").sort().join("");
+//      const splitedString2 = string2.split("").sort().join("");
 
-     if (splitedString1 === splitedString2) {
-          return "anagram";
-     } else {
-          return "not a angaram";
-     }
-};
-console.log(checkAnagram("listen", "silent"));
+//      if (splitedString1 === splitedString2) {
+//           return "anagram";
+//      } else {
+//           return "not a angaram";
+//      }
+// };
+// console.log(checkAnagram("listen", "silent"));
 
 // _____________________________________________________
