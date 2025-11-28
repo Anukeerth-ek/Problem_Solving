@@ -14,13 +14,13 @@
 
 // mean([]); // => NaN
 
-const findMean = (arr) => {
+// const findMean = (arr) => {
     
-    const sum = arr.reduce((acc, num)=> acc + num, 0)
+//     const sum = arr.reduce((acc, num)=> acc + num, 0)
 
-    return sum / arr.length
-}
+//     return sum / arr.length
+// }
 
-console.log(findMean([4, 2, 8, 6]))
-console.log(findMean([1, 2, 3, 4]))
-console.log(findMean([1, 2, 2]))
+// console.log(findMean([4, 2, 8, 6]))
+// console.log(findMean([1, 2, 3, 4]))
+// console.log(findMean([1, 2, 2]))
