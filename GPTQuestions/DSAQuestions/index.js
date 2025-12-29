@@ -17,24 +17,25 @@
 // 3. Find Duplicates Element in the array
 
 
-const findDuplicates = (arr) => {
-    if (arr.length === 0) return false;
+// const findDuplicates = (arr) => {
+//     if (arr.length === 0) return false;
 
-    let map = new Map();
+//     let map = new Map();
     
      
-    for (let i = 0; i < arr.length; i++) {
-        if (map.has(arr[i])) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (map.has(arr[i])) {
             
-            return true
+//             return true
             
-        }
-        else {
-            map.set(arr[i], true)
-           continue
-        }
-    }
-    return false;
-}
-console.log(findDuplicates([1, 2, 1, 3, 4]))
-console.log(findDuplicates([3, 4, 5, 7, 10]))
+//         }
+//         else {
+//             map.set(arr[i], true)
+//            continue
+//         }
+//     }
+//     return false;
+// }
+// console.log(findDuplicates([1, 2, 1, 3, 4]))
+// console.log(findDuplicates([3, 4, 5, 7, 10]))
+// _________________________________________________
