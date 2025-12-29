@@ -92,3 +92,20 @@
 
 // console.log(findDuplicates([1,2,2,3,4,4,5]))
 // _________________________________________________
+
+// 6. Count Frequency of Elements
+
+// const findFrequency = (arr) => {
+    
+//     if (arr.length === 0) return [];
+
+//     let result = Object.create(null);
+
+//     for (const num of arr) {
+//         result[num] = (result[num] || 0) + 1
+//     }
+//     return result;
+
+// }
+
+// console.log(findFrequency(["a","b","a","c","b","a"])) // Output: { a: 3, b: 2, c: 1 }
