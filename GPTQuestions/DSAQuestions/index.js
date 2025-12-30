@@ -142,3 +142,35 @@
 // Input: [10, 5, 8, 20, 2]
 // Output: 10
 // _________________________________________________
+
+// 8. Move All Zeros to End
+
+// const MoveZerosToEnd = (arr) => {
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError("please provide an array")
+//     }
+
+//     // return arr.sort((a, b)=> b-a)
+
+//     let shiftingIndex = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== 0) {
+//             arr[shiftingIndex] = arr[i];
+//             shiftingIndex++
+//         }
+//     }
+
+//     while (shiftingIndex < arr.length) {
+//         arr[shiftingIndex] = 0;
+//         shiftingIndex++
+//     }
+//     return arr;
+// }
+
+// console.log(MoveZerosToEnd([0,1,0,3,12]))
+// console.log(MoveZerosToEnd([0,0,0,3,12]))
+// console.log(MoveZerosToEnd([0,1,0,0]))
+// console.log(MoveZerosToEnd("Array"))
+// Input: [0,1,0,3,12]
+// Output: [1,3,12,0,0]
