@@ -69,7 +69,7 @@
 // 5. Remove Duplicates from Array
 
 // const findDuplicates = (array) => {
-    
+
 //     if (!Array.isArray(array)) {
 //         throw new TypeError("Expecting Array")
 //     }
@@ -96,7 +96,7 @@
 // 6. Count Frequency of Elements
 
 // const findFrequency = (arr) => {
-    
+
 //     if (arr.length === 0) return [];
 
 //     let result = Object.create(null);
@@ -109,3 +109,35 @@
 // }
 
 // console.log(findFrequency(["a","b","a","c","b","a"])) // Output: { a: 3, b: 2, c: 1 }
+// _________________________________________________
+
+// 7. Find Second Largest Number
+
+const findSecondLargest = (arr) => {
+     let largestElement = -Infinity;
+     let secondLargestElement = -Infinity;
+
+
+    for (let i = 0; i < arr.length; i++) {
+         
+          if (arr[i] > largestElement) {
+              secondLargestElement = largestElement;
+              largestElement = arr[i];
+
+          } else if(arr[i] < largestElement && arr[i] > secondLargestElement){
+               secondLargestElement = arr[i]
+          }
+    }
+    
+    if (secondLargestElement === -Infinity) {
+        throw new TypeError("No distint element")
+    }
+     return secondLargestElement;
+};
+
+console.log(findSecondLargest([10, 5, 8, 20, 2]));
+console.log(findSecondLargest([10, 10, 2]));
+console.log(findSecondLargest([1, 10, 2, 2]));
+
+// Input: [10, 5, 8, 20, 2]
+// Output: 10
