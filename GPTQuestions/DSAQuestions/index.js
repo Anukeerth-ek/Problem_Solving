@@ -113,31 +113,32 @@
 
 // 7. Find Second Largest Number
 
-const findSecondLargest = (arr) => {
-     let largestElement = -Infinity;
-     let secondLargestElement = -Infinity;
+// const findSecondLargest = (arr) => {
+//      let largestElement = -Infinity;
+//      let secondLargestElement = -Infinity;
 
 
-    for (let i = 0; i < arr.length; i++) {
+//     for (let i = 0; i < arr.length; i++) {
          
-          if (arr[i] > largestElement) {
-              secondLargestElement = largestElement;
-              largestElement = arr[i];
+//           if (arr[i] > largestElement) {
+//               secondLargestElement = largestElement;
+//               largestElement = arr[i];
 
-          } else if(arr[i] < largestElement && arr[i] > secondLargestElement){
-               secondLargestElement = arr[i]
-          }
-    }
+//           } else if(arr[i] < largestElement && arr[i] > secondLargestElement){
+//                secondLargestElement = arr[i]
+//           }
+//     }
     
-    if (secondLargestElement === -Infinity) {
-        throw new TypeError("No distint element")
-    }
-     return secondLargestElement;
-};
+//     if (secondLargestElement === -Infinity) {
+//         throw new TypeError("No distint element")
+//     }
+//      return secondLargestElement;
+// };
 
-console.log(findSecondLargest([10, 5, 8, 20, 2]));
-console.log(findSecondLargest([10, 10, 2]));
-console.log(findSecondLargest([1, 10, 2, 2]));
+// console.log(findSecondLargest([10, 5, 8, 20, 2]));
+// console.log(findSecondLargest([10, 10, 2]));
+// console.log(findSecondLargest([1, 10, 2, 2]));
 
 // Input: [10, 5, 8, 20, 2]
 // Output: 10
+// _________________________________________________
