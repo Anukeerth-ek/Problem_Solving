@@ -177,38 +177,38 @@
 
 // 9. Group By Property
 
-const users = [
-     { name: "Kevin", role: "admin" },
-     { name: "Benz", role: "user" },
-     { name: "Caroline", role: "admin" },
-];
+// const users = [
+//      { name: "Kevin", role: "admin" },
+//      { name: "Benz", role: "user" },
+//      { name: "Caroline", role: "admin" },
+// ];
 
-const groupBy = (users, key) => {
+// const groupBy = (users, key) => {
    
-    if (!Array.isArray(users)) {
-        throw new TypeError("Expecting an array")
-    }
+//     if (!Array.isArray(users)) {
+//         throw new TypeError("Expecting an array")
+//     }
 
-    if (!typeof(key) === 'string') {
-        throw new TypeError('Expecting the type should be string')
-    }
+//     if (!typeof(key) === 'string') {
+//         throw new TypeError('Expecting the type should be string')
+//     }
 
-    const result = Object.create(null);
+//     const result = Object.create(null);
 
-    for (let user of users) {
+//     for (let user of users) {
         
-        const groupKey = user.role;
+//         const groupKey = user.role;
       
-        if (!result[groupKey]) {
-            result[groupKey] = []
-        }
+//         if (!result[groupKey]) {
+//             result[groupKey] = []
+//         }
 
-        result[groupKey].push({name: user.name})
-    }
-    return result
-};
+//         result[groupKey].push({name: user.name})
+//     }
+//     return result
+// };
 
-console.log(groupBy(users, 'role'));
+// console.log(groupBy(users, 'role'));
 
 // // Output:
 // {
