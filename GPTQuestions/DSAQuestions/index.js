@@ -219,5 +219,22 @@
 
 // 10. Flatten Nested Array
 
+const flattenArray = (arr) => {
+
+    if (!Array.isArray(arr)) {
+        throw new TypeError("arr is not an array")
+    }
+
+    return arr.reduce((accumulator, currentValue) => {
+        if (Array.isArray(currentValue)) {
+            accumulator?.push(...flattenArray(currentValue))
+        }
+        else {
+            accumulator.push(currentValue)
+        }
+        return accumulator;
+    }, [])
+}
+console.log(flattenArray([1, [2, [3, 4], 5]]))
 // Input: [1, [2, [3, 4], 5]]
 // Output: [1,2,3,4,5]
