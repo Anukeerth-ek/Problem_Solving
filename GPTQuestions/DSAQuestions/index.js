@@ -117,9 +117,8 @@
 //      let largestElement = -Infinity;
 //      let secondLargestElement = -Infinity;
 
-
 //     for (let i = 0; i < arr.length; i++) {
-         
+
 //           if (arr[i] > largestElement) {
 //               secondLargestElement = largestElement;
 //               largestElement = arr[i];
@@ -128,7 +127,7 @@
 //                secondLargestElement = arr[i]
 //           }
 //     }
-    
+
 //     if (secondLargestElement === -Infinity) {
 //         throw new TypeError("No distint element")
 //     }
@@ -174,3 +173,45 @@
 // console.log(MoveZerosToEnd("Array"))
 // Input: [0,1,0,3,12]
 // Output: [1,3,12,0,0]
+// _________________________________________________
+
+// 9. Group By Property
+
+const users = [
+     { name: "Kevin", role: "admin" },
+     { name: "Benz", role: "user" },
+     { name: "Caroline", role: "admin" },
+];
+
+const groupBy = (users, key) => {
+   
+    if (!Array.isArray(users)) {
+        throw new TypeError("Expecting an array")
+    }
+
+    if (!typeof(key) === 'string') {
+        throw new TypeError('Expecting the type should be string')
+    }
+
+    const result = Object.create(null);
+
+    for (let user of users) {
+        
+        const groupKey = user.role;
+      
+        if (!result[groupKey]) {
+            result[groupKey] = []
+        }
+
+        result[groupKey].push({name: user.name})
+    }
+    return result
+};
+
+console.log(groupBy(users, 'role'));
+
+// // Output:
+// {
+//   admin: [{...}, {...}],
+//   user: [{...}]
+// }
