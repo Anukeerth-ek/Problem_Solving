@@ -239,3 +239,28 @@
 // Input: [1, [2, [3, 4], 5]]
 // Output: [1,2,3,4,5]
 // _________________________________________________
+
+// _____________Shallow Copy____________________
+
+// const originalObj = { a: 1, b: { c: 2 } };
+
+// const shallowCopy = Object.assign({}, originalObj)
+
+// shallowCopy.b.c = 3;
+
+// console.log("original hi",  originalObj)
+
+// console.log("shallow hi", shallowCopy)
+
+// _____________Deep Copy____________________
+
+// const originalObj = { a: 1, b: { c: 2 } };
+
+// const deepCopy = JSON.parse(JSON.stringify(originalObj));
+
+// deepCopy.b.c = 3;
+
+// console.log("original", originalObj);
+// console.log("deep", deepCopy)
+
+// _________________________________________________
