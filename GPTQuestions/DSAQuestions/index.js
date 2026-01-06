@@ -264,3 +264,33 @@
 // console.log("deep", deepCopy)
 
 // _________________________________________________
+
+// function deepClone(obj, seen = new WeakMap()) {
+//   if (obj === null || typeof obj !== "object") {
+//     return obj;
+//   }
+
+//   if (seen.has(obj)) {
+//     return seen.get(obj);
+//   }
+
+//   const clone = Array.isArray(obj) ? [] : {};
+//   seen.set(obj, clone);
+
+//   for (const key in obj) {
+//     clone[key] = deepClone(obj[key], seen);
+//   }
+
+//   return clone;
+// }
+
+// const obj = { a: 1, b: { c: 2 } };
+
+// const clonedObj = deepClone(obj);
+
+// clonedObj.b.c = 99;
+
+// console.log(clonedObj); // { a: 1, b: { c: 99 } }
+// console.log(obj);       // { a: 1, b: { c: 2 } }
+// _________________________________________________
+
