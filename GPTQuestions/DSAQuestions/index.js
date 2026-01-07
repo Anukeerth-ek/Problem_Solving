@@ -294,3 +294,36 @@
 // console.log(obj);       // { a: 1, b: { c: 2 } }
 // _________________________________________________
 
+
+function deepClone(obj) {
+    console.log("obj", obj)
+  // Handle primitives and null
+  if (obj === null || typeof obj !== 'object') {
+    return obj;
+  }
+
+  // Handle Arrays
+  if (Array.isArray(obj)) {
+    return obj.map(item => deepClone(item)); // Recursively clone each item
+  }
+
+  // Handle Objects
+  const clonedObj = {};
+    for (const key in obj) {
+      console.log("key", key)
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      clonedObj[key] = deepClone(obj[key]); // Recursively clone properties
+    }
+  }
+  return clonedObj;
+}
+
+const originalComplex = { name: 'Alice', dob: new Date(), details: { age: 30 } };
+const clonedComplex = deepClone(originalComplex);
+
+
+
+
+// // Test: Changing nested object in clone doesn't affect original
+// clonedComplex.details.age = 31;
+// console.log(originalComplex.details.age); // 30 (Original unchanged)
