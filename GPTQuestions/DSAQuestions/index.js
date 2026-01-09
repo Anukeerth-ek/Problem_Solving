@@ -184,7 +184,7 @@
 // ];
 
 // const groupBy = (users, key) => {
-   
+
 //     if (!Array.isArray(users)) {
 //         throw new TypeError("Expecting an array")
 //     }
@@ -196,9 +196,9 @@
 //     const result = Object.create(null);
 
 //     for (let user of users) {
-        
+
 //         const groupKey = user.role;
-      
+
 //         if (!result[groupKey]) {
 //             result[groupKey] = []
 //         }
@@ -294,36 +294,73 @@
 // console.log(obj);       // { a: 1, b: { c: 2 } }
 // _________________________________________________
 
+// function deepClone(obj) {
+//     console.log("obj", obj)
+//   // Handle primitives and null
+//   if (obj === null || typeof obj !== 'object') {
+//     return obj;
+//   }
 
-function deepClone(obj) {
-    console.log("obj", obj)
-  // Handle primitives and null
-  if (obj === null || typeof obj !== 'object') {
-    return obj;
-  }
+//   // Handle Arrays
+//   if (Array.isArray(obj)) {
+//     return obj.map(item => deepClone(item)); // Recursively clone each item
+//   }
 
-  // Handle Arrays
-  if (Array.isArray(obj)) {
-    return obj.map(item => deepClone(item)); // Recursively clone each item
-  }
+//   // Handle Objects
+//   const clonedObj = {};
+//     for (const key in obj) {
+//       console.log("key", key)
+//     if (Object.prototype.hasOwnProperty.call(obj, key)) {
+//       clonedObj[key] = deepClone(obj[key]); // Recursively clone properties
+//     }
+//   }
+//   return clonedObj;
+// }
 
-  // Handle Objects
-  const clonedObj = {};
-    for (const key in obj) {
-      console.log("key", key)
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      clonedObj[key] = deepClone(obj[key]); // Recursively clone properties
-    }
-  }
-  return clonedObj;
-}
-
-const originalComplex = { name: 'Alice', dob: new Date(), details: { age: 30 } };
-const clonedComplex = deepClone(originalComplex);
-
-
-
+// const originalComplex = { name: 'Alice', dob: new Date(), details: { age: 30 } };
+// const clonedComplex = deepClone(originalComplex);
 
 // // Test: Changing nested object in clone doesn't affect original
 // clonedComplex.details.age = 31;
 // console.log(originalComplex.details.age); // 30 (Original unchanged)
+
+// const flattenArray = (arr) => {
+//     const result= arr.reduce((acc, curr) => {
+//           if (Array.isArray(curr)) {
+//                acc.push(...flattenArray(curr))
+//           } else {
+//                acc?.push(curr);
+//        }
+//        return acc
+//     }, []);
+//   return result
+// };
+
+// console.log(flattenArray([1, [2, [3, 4], 5]]));
+
+// Input: [1, [2, [3, 4], 5]]
+// Output: [1,2,3,4,5]
+
+// const deepCopy = (value) => {
+//      if (typeof value !== "object" || value === null) {
+//           return value;
+//      }
+
+//      if (Array.isArray(value)) {
+//           return value.map((item) => deepCopy(item));
+//      }
+
+//      const result = Object.fromEntries(Object.entries(value).map(([key, value]) => [key, deepCopy(value)]));
+
+//      return result;
+// };
+
+// const original = {
+//      name: "Alice",
+//      details: {
+//           age: 30,
+//           hobbies: ["coding", "hiking"],
+//      },
+// };
+
+// const duplicate = deepCopy(original);
