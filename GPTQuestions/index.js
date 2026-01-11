@@ -115,3 +115,26 @@
 // _____________________________________________________
 
 // Q2: Remove duplicates
+
+const removeDuplicates = (arr) => {
+
+    if (!Array.isArray(arr)) {
+         throw new TypeError("Please provide an array")
+    }
+
+    const set = new Set()
+    let result = []
+
+    for (let i = 0; i < arr.length; i++) {
+        
+        if (!set.has(arr[i])) {
+            set.add(arr[i])
+            result.push(arr[i])
+
+        }
+    }
+    return result;
+
+ }
+console.log(removeDuplicates([1,2,2,3,4,4,5]))
+// → [1,2,3,4,5]
