@@ -452,3 +452,17 @@
 // console.log(checkPalindrome("madam")); //true
 // console.log(checkPalindrome("racecar")); //true
 // console.log(checkPalindrome("hello")); //false
+// _________________________________________________
+
+// function greet(city) {
+//   console.log(this.name, city);
+// }
+
+// const user = { name: "Anu" };
+
+// greet.call(user, "Bangalore");
+// greet.apply(user, ["Bangalore"]);
+
+// const newFn = greet.bind(user);
+// newFn("Bangalore");
+// _________________________________________________
