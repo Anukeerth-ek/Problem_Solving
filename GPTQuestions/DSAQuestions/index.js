@@ -424,31 +424,31 @@
 // console.log(maxAdjascentSum([1, 2, 3, 4]))
 // _________________________________________________
 
-const checkPalindrome = (string) => {
-     if (!typeof string === "string") {
-          throw new TypeError("Please provide a string");
-     }
+// const checkPalindrome = (string) => {
+//      if (!typeof string === "string") {
+//           throw new TypeError("Please provide a string");
+//      }
 
-     const splitedTerm = string.split("");
+//      const splitedTerm = string.split("");
 
-     let left = 0;
+//      let left = 0;
 
-     let right = splitedTerm.length - 1;
+//      let right = splitedTerm.length - 1;
 
-     while (left < right) {
-          [splitedTerm[left], splitedTerm[right]] = [splitedTerm[right], splitedTerm[left]];
+//      while (left < right) {
+//           [splitedTerm[left], splitedTerm[right]] = [splitedTerm[right], splitedTerm[left]];
 
-          left++;
-          right--;
-     }
+//           left++;
+//           right--;
+//      }
 
-     if (splitedTerm.join("") === string) {
-          return true;
-     } else {
-          return false;
-     }
-};
+//      if (splitedTerm.join("") === string) {
+//           return true;
+//      } else {
+//           return false;
+//      }
+// };
 
-console.log(checkPalindrome("madam")); //true
-console.log(checkPalindrome("racecar")); //true
-console.log(checkPalindrome("hello")); //false
+// console.log(checkPalindrome("madam")); //true
+// console.log(checkPalindrome("racecar")); //true
+// console.log(checkPalindrome("hello")); //false
