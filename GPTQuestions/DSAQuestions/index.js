@@ -364,3 +364,26 @@
 // };
 
 // const duplicate = deepCopy(original);
+
+// _________________________________________________
+
+// const reverseArray = (arr) => {
+
+//     if (!Array.isArray(arr) || arr.length === 0) {
+//         throw new TypeError("please provide an array")
+//     }
+    
+//     // ______________________First Approach___________________________
+    
+//     // let result = []
+
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     result[arr.length - 1 - i] = arr[i];
+
+//     // }
+//     // return result;
+
+// }
+
+// console.log(reverseArray([1, 2, 3, 4]))
+// console.log(reverseArray([10, 20, 30]))
