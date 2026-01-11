@@ -99,3 +99,19 @@
 // console.log(checkAnagram("listen", "silent"));
 
 // _____________________________________________________
+
+// Q1: Convert this array to object
+// const users = [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" }
+// ];
+
+
+// const result = users.reduce((acc, curr) => {
+//     acc[curr.id] = curr
+//     return acc
+// }, {})
+// console.log(result)
+// _____________________________________________________
+
+// Q2: Remove duplicates
