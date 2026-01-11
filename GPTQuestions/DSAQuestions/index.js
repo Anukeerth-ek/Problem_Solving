@@ -372,9 +372,9 @@
 //     if (!Array.isArray(arr) || arr.length === 0) {
 //         throw new TypeError("please provide an array")
 //     }
-    
+
 //     // ______________________First Approach___________________________
-    
+
 //     // let result = []
 
 //     // for (let i = 0; i < arr.length; i++) {
@@ -383,6 +383,19 @@
 //     // }
 //     // return result;
 
+//     // ______________________Second Approach___________________________
+
+//     let left = 0;
+
+//     let right = arr.length - 1;
+
+//     while (left < right) {
+//         [arr[left], arr[right]] = [arr[right], arr[left]]
+
+//         left++;
+//         right--;
+//     }
+//     return arr;
 // }
 
 // console.log(reverseArray([1, 2, 3, 4]))
