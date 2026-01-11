@@ -400,3 +400,26 @@
 
 // console.log(reverseArray([1, 2, 3, 4]))
 // console.log(reverseArray([10, 20, 30]))
+// _________________________________________________
+
+// 11. const maxAdjascentSum = (arr) => {
+
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError("please provide an array")
+//     }
+
+//     let maxSum = arr[0] + arr[1];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let sum = arr[i] + arr[i + 1];
+
+//         if (sum > maxSum) {
+//             maxSum = sum
+//         }
+//     }
+//     return maxSum;
+
+//  }
+
+// console.log(maxAdjascentSum([1, 2, 3, 4]))
+// _________________________________________________
