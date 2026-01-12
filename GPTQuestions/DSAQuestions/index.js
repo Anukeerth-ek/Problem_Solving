@@ -425,7 +425,7 @@
 // _________________________________________________
 
 // const checkPalindrome = (strValue) => {
-//      if (!typeof strValue === "string") {
+//      if (typeof strValue !== "string") {
 //           throw new TypeError("Please provide a string");
 //      }
 
@@ -460,4 +460,31 @@
 
 // const newFn = greet.bind(user);
 // newFn("Bangalore");
+// _________________________________________________
+
+// 13. Find the First Non-Repeating Character
+
+// const findFirstNonRepeating = (str) => {
+//      if (typeof str !== "string") {
+//           throw new TypeError("Please provide a string!");
+//      }
+
+//     let charObj = {};
+
+//     for (let value of str) {
+//         charObj[value] = (charObj[value] || 0) + 1
+//     }
+   
+//     for (let value of str) {
+//         if (charObj[value] === 1) {
+//             return value;
+//         }
+      
+//     }
+//     return null;
+// };
+
+// console.log(findFirstNonRepeating("aabbccd")); // "d"
+// console.log(findFirstNonRepeating("aabbcc")); // null
+// console.log(findFirstNonRepeating("leetcode")); // l
 // _________________________________________________
