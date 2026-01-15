@@ -106,7 +106,6 @@
 //   { id: 2, name: "B" }
 // ];
 
-
 // const result = users.reduce((acc, curr) => {
 //     acc[curr.id] = curr
 //     return acc
@@ -126,7 +125,7 @@
 //     let result = []
 
 //     for (let i = 0; i < arr.length; i++) {
-        
+
 //         if (!set.has(arr[i])) {
 //             set.add(arr[i])
 //             result.push(arr[i])
@@ -138,4 +137,37 @@
 //  }
 // console.log(removeDuplicates([1,2,2,3,4,4,5]))
 // → [1,2,3,4,5]
+// _____________________________________________________
+
+// 9. Two Sum
+
+// const twoSum = (arr, target) => {
+//      if (!Array.isArray(arr)) {
+//           throw new TypeError("Please provide an array");
+//      }
+
+//      let result = {};
+
+//      for (let i = 0; i < arr.length; i++) {
+//           let current = arr[i];
+//           let needed = (target = current);
+
+//           if (result.hasOwnProperty(needed)) {
+//                return [result[current], i];
+//           }
+//           result[current] = i;
+//      }
+//      return null;
+// };
+
+// console.log(twoSum([3, 3], 6));
+
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]   // because 2 + 7 = 9
+
+// Input: [3,2,4], target = 6
+// Output: [1,2]
+
+// Input: [3,3], target = 6
+// Output: [0,1]
 // _____________________________________________________
