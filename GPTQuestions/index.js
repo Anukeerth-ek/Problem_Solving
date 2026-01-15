@@ -171,3 +171,22 @@
 // Input: [3,3], target = 6
 // Output: [0,1]
 // _____________________________________________________
+
+// 10.  Problem: Maximum Subarray Sum (Kadane’s Algorithm)
+
+// const maxSubArray = (nums) => {
+
+//     let largestNumber = nums[0]
+//     let globalNumber = nums[0]
+
+//     for (let i = 1; i < nums.length; i++) {
+//         largestNumber = Math.max(globalNumber, largestNumber + nums[i])
+        
+//         globalNumber = Math.max(largestNumber, globalNumber)
+//     }
+//     return globalNumber;
+// }
+
+// console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+// console.log(maxSubArray([5,4,-1,7,8]))
+// _____________________________________________________
