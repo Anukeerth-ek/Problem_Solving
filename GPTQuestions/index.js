@@ -190,3 +190,36 @@
 // console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 // console.log(maxSubArray([5,4,-1,7,8]))
 // _____________________________________________________
+
+// _____________________________________________________
+
+// 11. Move Zeroes
+
+// const moveZeros = (arr) => {
+    
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError("Please provide an array!")
+//     }
+
+//     let insertPos = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== 0) {
+//             arr[insertPos] = arr[i]
+//             insertPos++
+//         }
+//     }
+
+//     while (insertPos < arr.length) {
+//         arr[insertPos] = 0;
+//         insertPos++
+//     }
+
+//     return arr;
+// }
+
+// console.log(moveZeros([0,1,0,2,0,4, 1]))
+// Input: [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+
+// _____________________________________________________
