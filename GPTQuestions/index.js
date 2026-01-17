@@ -181,7 +181,7 @@
 
 //     for (let i = 1; i < nums.length; i++) {
 //         largestNumber = Math.max(globalNumber, largestNumber + nums[i])
-        
+
 //         globalNumber = Math.max(largestNumber, globalNumber)
 //     }
 //     return globalNumber;
@@ -196,7 +196,7 @@
 // 11. Move Zeroes
 
 // const moveZeros = (arr) => {
-    
+
 //     if (!Array.isArray(arr)) {
 //         throw new TypeError("Please provide an array!")
 //     }
@@ -230,28 +230,58 @@
 
 // ans:
 // const removeDuplicates = (arr) => {
-    
+
 //     // let result = [];
 
 //     // for (let i = 0; i < arr.length; i++) {
 //     //     if (!result.includes(arr[i])) {
-//     //         result.push(arr[i]) 
+//     //         result.push(arr[i])
 //     //     }
 //     // }
 //     // return result;
-    
+
 //     let set = new Set();
 //     let result = [];
 
 //     for (let i = 0; i < arr.length; i++) {
 //         if (!set.has(arr[i])) {
-//             set.add(arr[i]) 
+//             set.add(arr[i])
 //             result.push(arr[i])
 //         }
 //     }
-    
+
 //     return result;
 // }
 
 // console.log(removeDuplicates([1,1,2,2,3]))
+// _____________________________________________________
+
+// _____________________________________________________
+// 13. Best Time to Buy and Sell Stock
+
+// const maxProfit = (arr) => {
+  
+//     let minProfit = arr[0];
+//     let maximumProfit = 0;
+
+//     for (let i = 1; i < arr.length; i++) {
+
+//         if (arr[i] < minProfit) {
+//             minProfit = arr[i];
+//         }
+
+//         else {
+//             let profit = arr[i] - minProfit;
+
+//             maximumProfit = Math.max(maximumProfit, profit)
+//         }
+
+//     }
+//     return maximumProfit
+
+// };
+// console.log(maxProfit( [2, 8, 1, 4]));
+
+// let arr = [2, 8, 1, 4]
+
 // _____________________________________________________
