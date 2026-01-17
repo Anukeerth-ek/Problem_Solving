@@ -223,3 +223,35 @@
 // Output: [1,3,12,0,0]
 
 // _____________________________________________________
+
+// _____________________________________________________
+
+// 12. Remove Duplicates from Sorted Array
+
+// ans:
+// const removeDuplicates = (arr) => {
+    
+//     // let result = [];
+
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     if (!result.includes(arr[i])) {
+//     //         result.push(arr[i]) 
+//     //     }
+//     // }
+//     // return result;
+    
+//     let set = new Set();
+//     let result = [];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!set.has(arr[i])) {
+//             set.add(arr[i]) 
+//             result.push(arr[i])
+//         }
+//     }
+    
+//     return result;
+// }
+
+// console.log(removeDuplicates([1,1,2,2,3]))
+// _____________________________________________________
