@@ -285,3 +285,33 @@
 // let arr = [2, 8, 1, 4]
 
 // _____________________________________________________
+
+// _____________________________________________________
+// 14. Valid Parentheses
+
+// const validParentheses = (s) => {
+//       const stack = [];
+//     const map = {
+//         ")": "(",
+//         "]": "[",
+//         "}": "{"
+//     };
+
+//     for (let ch of s) {
+//         if (ch === "(" || ch === "[" || ch === "{") {
+//             stack.push(ch);
+//             console.log(stack)
+//         } else {
+//             if (stack.length === 0) return false;
+
+//             const top = stack.pop();
+//             console.log(top)
+//             if (top !== map[ch]) return false;
+//         }
+//     }
+
+//     return stack.length === 0;
+// }
+
+// console.log(validParentheses("()[]{}"))
+// _____________________________________________________
