@@ -488,3 +488,26 @@
 // console.log(findFirstNonRepeating("aabbcc")); // null
 // console.log(findFirstNonRepeating("leetcode")); // l
 // _________________________________________________
+
+// _________________________________________________
+
+// 14. Flatten Nested Array
+
+// const flattenNestedArray = (arr) => {
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError("Please provide an array")
+//     }
+
+//     return arr.reduce((acc, curr) => {
+//         if (Array.isArray(curr)) {
+//             acc.push(...flattenNestedArray(curr))
+//         }
+//         else {
+//             acc.push(curr)
+//         }
+//         return acc
+//     }, [])
+// }
+
+// console.log(flattenNestedArray([1,[2,[3,[4]],5]]))
+// _________________________________________________
