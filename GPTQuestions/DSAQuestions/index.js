@@ -474,12 +474,12 @@
 //     for (let value of str) {
 //         charObj[value] = (charObj[value] || 0) + 1
 //     }
-   
+
 //     for (let value of str) {
 //         if (charObj[value] === 1) {
 //             return value;
 //         }
-      
+
 //     }
 //     return null;
 // };
@@ -510,4 +510,23 @@
 // }
 
 // console.log(flattenNestedArray([1,[2,[3,[4]],5]]))
+// _________________________________________________
+
+// const moveZeros = (arr) => {
+//      if (!Array.isArray(arr)) {
+//           throw new TypeError("please provide an array");
+//      }
+
+//      let result = [];
+
+//      for (let item = 0; item < arr.length; item++) {
+//           if (arr[item] !== 0) {
+//                result.push(arr[item]);
+//          }
+       
+//      }
+// return result
+// };
+
+// console.log(moveZeros([1, 0, 2, 0, 10]));
 // _________________________________________________
