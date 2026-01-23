@@ -530,3 +530,33 @@
 
 // console.log(moveZeros([1, 0, 2, 0, 10]));
 // _________________________________________________
+
+// _________________________________________________
+
+// 16. Return an array where each element is the product of all elements in the original array except itself.
+
+// const findProductExceptItself = (arr) => {
+
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError("Please provide an array!")
+//     }
+
+//     let result = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let finalRes = 1;
+//         for (let j = 0; j < arr.length; j++) {
+//             if (i !== j) {
+//                 finalRes*=arr[j]
+//             }
+//         }
+//         result.push(finalRes)
+//     }
+
+//     console.log('result', result)
+// }
+
+// const arr = [1, 2, 3, 4]
+
+// console.log(findProductExceptItself(arr))
+// _________________________________________________
