@@ -571,10 +571,21 @@
 //     pin: 560001
 //   }
 // };
-
+ 
 // const deepClone = (value) => {
 
+//     if (value === null || typeof value !== 'object') {
+//         return value
+//     }
 
+//     if (Array.isArray(value)) {
+//          return value.map((item) => (
+//             deepClone(item)
+//         ))
+//     }
+
+//    const result = Object.fromEntries(Object.entries(value).map(([key, value])=> [key, deepClone(value)]))
+//     return result;
 // }
 
 // const copy = deepClone(original);
