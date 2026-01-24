@@ -560,3 +560,63 @@
 
 // console.log(findProductExceptItself(arr))
 // _________________________________________________
+
+// _________________________________________________
+
+// const original = {
+//   name: "Anu",
+//   skills: ["JS", "React"],
+//   address: {
+//     city: "Bangalore",
+//     pin: 560001
+//   }
+// };
+
+// const deepClone = (value) => {
+
+
+// }
+
+// const copy = deepClone(original);
+// console.log(copy)
+
+// copy.address.city = "Mumbai";
+
+// console.log(original.address.city); // "Bangalore" ✅ (should NOT change)
+// _________________________________________________
+
+// _________________________________________________
+
+// const flattenArray = (arr) => {
+
+//     if (!Array.isArray(arr)) {
+//         return "Please provide an array"
+//     }
+
+//     if (arr.length === 0) {
+//         return "Array is empty"
+//     }
+
+//     const result = arr.reduce((acc, curr) => {
+//         if (Array.isArray(curr)) {
+//            acc.push(...flattenArray(curr))
+//         }
+//         else {
+//             acc.push(curr)
+//         }
+
+//         return acc;
+//     }, [])
+
+//     // console.log(result)
+
+//     return result;
+
+//  }
+
+
+// console.log(flattenArray([1, [2, [3, 4], 5]]))
+// // Input: [1, [2, [3, 4], 5]]
+// // Output: [1,2,3,4,5]
+
+// _________________________________________________
