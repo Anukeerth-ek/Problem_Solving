@@ -523,7 +523,7 @@
 //           if (arr[item] !== 0) {
 //                result.push(arr[item]);
 //          }
-       
+
 //      }
 // return result
 // };
@@ -571,7 +571,7 @@
 //     pin: 560001
 //   }
 // };
- 
+
 // const deepClone = (value) => {
 
 //     if (value === null || typeof value !== 'object') {
@@ -625,9 +625,37 @@
 
 //  }
 
-
 // console.log(flattenArray([1, [2, [3, 4], 5]]))
 // // Input: [1, [2, [3, 4], 5]]
 // // Output: [1,2,3,4,5]
 
+// _________________________________________________
+
+// _________________________________________________
+
+// const findFirstNonRepeating = (str) => {
+
+//     if (typeof str !== 'string') {
+//         return "please provide a string"
+//     }
+
+//     let result = {}
+
+//     for (let value of str) {
+//         result[value] = (result[value] || 0) + 1
+//         // console.log(result[value])
+//     }
+
+//     for (let value of str) {
+//         if (result[value] === 1) {
+//             return value
+//         }
+//     }
+//     return null
+  
+// };
+
+// console.log(findFirstNonRepeating("aabbccd")); // "d"
+// console.log(findFirstNonRepeating("aabbcc")); // null
+// console.log(findFirstNonRepeating("leetcode")); // l
 // _________________________________________________
