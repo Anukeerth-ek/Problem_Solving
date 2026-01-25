@@ -662,7 +662,7 @@
 
 // _________________________________________________
 
-const twoSumProblem = (arr, target) => {
+// const twoSumProblem = (arr, target) => {
 
     // if (!Array.isArray(arr)) {
     //     throw new TypeError("please provide an array!")
@@ -685,10 +685,21 @@ const twoSumProblem = (arr, target) => {
 
     // _________________________________
 
+    // let resultObj = {};
+    // let arrlen = arr.length;
 
-    
-}
+    // for (let i = 0; i < arrlen; i++) {
+    //     let currentNum=  arr[i]
 
-console.log(twoSumProblem([1, 2, 3, 4, 5], 9)) // 4, 5
+    //     if (target - currentNum in resultObj) {
+    //         return [resultObj[target - currentNum], i]
+    //     }
+
+    //     resultObj[currentNum] = i
+    // }
+// return resultObj
+// }
+
+// console.log(twoSumProblem([3, 8, 10, 22, 1], 9)) // 1, 4
 
 // _________________________________________________
