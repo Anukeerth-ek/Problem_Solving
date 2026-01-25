@@ -659,3 +659,32 @@
 // console.log(findFirstNonRepeating("aabbcc")); // null
 // console.log(findFirstNonRepeating("leetcode")); // l
 // _________________________________________________
+
+// _________________________________________________
+
+const twoSumProblem = (arr, target) => {
+
+    if (!Array.isArray(arr)) {
+        throw new TypeError("please provide an array!")
+    }
+
+    let map = new Map();
+
+    for (let i = 0; i < arr.length; i++) {
+
+        let needed = target - arr[i];
+
+        if (map.has(needed)) {
+            return [needed, arr[i]]
+        }
+
+        map.set(arr[i], i)
+    }
+
+    // map.set(8, 1)
+    console.log(map)
+}
+
+console.log(twoSumProblem([1, 2, 3, 4, 5], 9)) // 4, 5
+
+// _________________________________________________
