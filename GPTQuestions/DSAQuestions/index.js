@@ -706,6 +706,14 @@
 
 // _________________________________________________
 // 21. Find Missing Number in sequence
+// Given an array numbers of size n storing n different integers which fall within the range[0, n], implement a function to identify the 
+// missing element in the array.All numbers except one are present in the array.Find the missing number.
+
+// Input
+// numbers: number[]: An array of integers
+// Examples
+// Input: numbers = [1,3,0]
+// Output: 2
 // _________________________________________________
 
 // _________________________________________________
