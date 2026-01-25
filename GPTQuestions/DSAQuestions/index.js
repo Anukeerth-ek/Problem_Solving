@@ -707,3 +707,15 @@
 // _________________________________________________
 // 21. Find Missing Number in sequence
 // _________________________________________________
+
+// _________________________________________________
+// 22. Most common element in an array
+// Given an array of integers numbers and a number k, find the k most frequent numbers in the array.Here, k represents the number of elements 
+// that should be returned, which are the ones that appear the most frequently.The order of the result does not matter.
+
+// Input
+// numbers: number[]: An array of integers
+// k: An integer
+// Input: numbers = [4,4,4,6,6,5,5,5], k = 2
+// Output: [4,5]
+// _________________________________________________
