@@ -753,3 +753,31 @@
 // Input: numbers = [4,4,4,6,6,5,5,5], k = 2
 // Output: [4,5]
 // _________________________________________________
+
+
+const findMostFreqElement = (arr, k) => {
+
+    if (!Array.isArray(arr)) {
+        throw new TypeError("Please provide an array")
+    }
+
+    if (typeof k !== 'number') {
+        throw new TypeError("Please provide value to K")
+    }
+
+    let map = new Map();
+
+    for (let item of arr) {
+        map.set(item,( map.get(item) || 0) + 1)
+    }
+
+
+    return map.entries([...map])
+}
+
+
+const arr = [4, 4, 4, 6, 6, 5, 5, 5];
+let k = 2;
+console.log(findMostFreqElement(arr, k));
+
+
