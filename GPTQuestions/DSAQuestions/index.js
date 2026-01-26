@@ -652,7 +652,7 @@
 //         }
 //     }
 //     return null
-  
+
 // };
 
 // console.log(findFirstNonRepeating("aabbccd")); // "d"
@@ -664,39 +664,39 @@
 
 // const twoSumProblem = (arr, target) => {
 
-    // if (!Array.isArray(arr)) {
-    //     throw new TypeError("please provide an array!")
-    // }
+// if (!Array.isArray(arr)) {
+//     throw new TypeError("please provide an array!")
+// }
 
-    // let map = new Map();
+// let map = new Map();
 
-    // for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 
-    //     let needed = target - arr[i];
+//     let needed = target - arr[i];
 
-    //     if (map.has(needed)) {
-    //         return [needed, arr[i]]
-    //     }
+//     if (map.has(needed)) {
+//         return [needed, arr[i]]
+//     }
 
-    //     map.set(arr[i], i)
-    // }
+//     map.set(arr[i], i)
+// }
 
-    // return map;
+// return map;
 
-    // _________________________________
+// _________________________________
 
-    // let resultObj = {};
-    // let arrlen = arr.length;
+// let resultObj = {};
+// let arrlen = arr.length;
 
-    // for (let i = 0; i < arrlen; i++) {
-    //     let currentNum=  arr[i]
+// for (let i = 0; i < arrlen; i++) {
+//     let currentNum=  arr[i]
 
-    //     if (target - currentNum in resultObj) {
-    //         return [resultObj[target - currentNum], i]
-    //     }
+//     if (target - currentNum in resultObj) {
+//         return [resultObj[target - currentNum], i]
+//     }
 
-    //     resultObj[currentNum] = i
-    // }
+//     resultObj[currentNum] = i
+// }
 // return resultObj
 // }
 
@@ -706,19 +706,45 @@
 
 // _________________________________________________
 // 21. Find Missing Number in sequence
-// Given an array numbers of size n storing n different integers which fall within the range[0, n], implement a function to identify the 
-// missing element in the array.All numbers except one are present in the array.Find the missing number.
+// Given an array numbers of size n storing n different integers which fall within the range[0, n], implement a function to identify the
+// missing element in the array. All numbers except one are present in the array.Find the missing number.
 
 // Input
 // numbers: number[]: An array of integers
 // Examples
 // Input: numbers = [1,3,0]
 // Output: 2
+
+// const findMissingNumbers = (arr) => {
+    //  if (!Array.isArray(arr)) {
+    //       throw new TypeError("Please provide an array");
+    //  }
+
+    //  let map = new Set(arr);
+
+    //  const arrLength = arr.length;
+
+    //  for (let i = 0; i <= arrLength; i++) {
+    //       if (!map.has(i)) return i;
+    // }
+    
+     //  _______________________
+
+//      let res = arr.length;
+
+//      for (let i = 0; i < arr.length; i++) {
+//           res += i - arr[i];
+//      }
+
+//      return res;
+// };
+
+// console.log(findMissingNumbers([0, 1]));
 // _________________________________________________
 
 // _________________________________________________
 // 22. Most common element in an array
-// Given an array of integers numbers and a number k, find the k most frequent numbers in the array.Here, k represents the number of elements 
+// Given an array of integers numbers and a number k, find the k most frequent numbers in the array.Here, k represents the number of elements
 // that should be returned, which are the ones that appear the most frequently.The order of the result does not matter.
 
 // Input
