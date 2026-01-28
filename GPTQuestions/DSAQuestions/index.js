@@ -716,19 +716,19 @@
 // Output: 2
 
 // const findMissingNumbers = (arr) => {
-    //  if (!Array.isArray(arr)) {
-    //       throw new TypeError("Please provide an array");
-    //  }
+//  if (!Array.isArray(arr)) {
+//       throw new TypeError("Please provide an array");
+//  }
 
-    //  let map = new Set(arr);
+//  let map = new Set(arr);
 
-    //  const arrLength = arr.length;
+//  const arrLength = arr.length;
 
-    //  for (let i = 0; i <= arrLength; i++) {
-    //       if (!map.has(i)) return i;
-    // }
-    
-     //  _______________________
+//  for (let i = 0; i <= arrLength; i++) {
+//       if (!map.has(i)) return i;
+// }
+
+//  _______________________
 
 //      let res = arr.length;
 
@@ -754,30 +754,28 @@
 // Output: [4,5]
 // _________________________________________________
 
+// const findMostFreqElement = (arr, k) => {
+//      if (!Array.isArray(arr)) {
+//           throw new TypeError("Please provide an array");
+//      }
 
-const findMostFreqElement = (arr, k) => {
+//      if (typeof k !== "number") {
+//           throw new TypeError("Please provide value to K");
+//      }
 
-    if (!Array.isArray(arr)) {
-        throw new TypeError("Please provide an array")
-    }
+//      let hashMap = new Map();
 
-    if (typeof k !== 'number') {
-        throw new TypeError("Please provide value to K")
-    }
+//      for (let item of arr) {
+//           hashMap.set(item, (hashMap.get(item) || 0) + 1);
+//     }
 
-    let map = new Map();
+//     const sorted = [...hashMap].sort((a, b)=> b[1] - a[1])
 
-    for (let item of arr) {
-        map.set(item,( map.get(item) || 0) + 1)
-    }
+//    return sorted.slice(0, k).map(([item])=> item)
+    
+// };
 
-
-    return map.entries([...map])
-}
-
-
-const arr = [4, 4, 4, 6, 6, 5, 5, 5];
-let k = 2;
-console.log(findMostFreqElement(arr, k));
-
-
+// const arr = [4, 4, 4, 6, 6, 5, 5, 5];
+// let k = 2;
+// console.log(findMostFreqElement(arr, k)); // [4, 5]
+// _________________________________________________
