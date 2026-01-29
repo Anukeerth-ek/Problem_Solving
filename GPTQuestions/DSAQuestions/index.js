@@ -782,26 +782,38 @@
 
 // 23. Reverse an array
 
-const reverseArray = (arr) => {
+// const reverseArray = (arr) => {
+     //  if (!Array.isArray(arr)) {
+     //       throw new TypeError(`Expected array instead got ${typeof arr}`);
+     //  }
 
-     if (!Array.isArray(arr)) {
-          throw new TypeError(`Expected array instead got ${typeof arr}`);
-     }
+     //  let result = [];
 
-     let result = [];
+     //  for (let i = arr.length - 1; i >= 0; i--) {
+     //       result.push(arr[i]);
+     //  }
+     // return result;
 
-     for (let i = arr.length - 1; i >= 0; i--) {
-          result.push(arr[i]);
-     }
-    return result;
+     // ____________________________________
+
+//      if (!Array.isArray(arr)) {
+//           throw new TypeError(`Expected array got ${typeof arr} instead`);
+//     }
+
+//     let left = 0;
+//     let right = arr.length - 1;
+
+//     while (left < right) {
+//         [arr[left], arr[right]] = [arr[right], arr[left]]
+//         left++;
+//         right--;
+//     }
     
-    // ____________________________________
-    
+//     return arr;
+// };
 
-};
+// const arr = [1, 2, 3, 4, 5];
 
-const arr = [1, 2, 3, 4, 5];
-
-console.log(reverseArray(arr));
+// console.log(reverseArray(arr));
 
 // _________________________________________________
