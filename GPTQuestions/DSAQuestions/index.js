@@ -772,10 +772,36 @@
 //     const sorted = [...hashMap].sort((a, b)=> b[1] - a[1])
 
 //    return sorted.slice(0, k).map(([item])=> item)
-    
+
 // };
 
 // const arr = [4, 4, 4, 6, 6, 5, 5, 5];
 // let k = 2;
 // console.log(findMostFreqElement(arr, k)); // [4, 5]
+// _________________________________________________
+
+// 23. Reverse an array
+
+const reverseArray = (arr) => {
+
+     if (!Array.isArray(arr)) {
+          throw new TypeError(`Expected array instead got ${typeof arr}`);
+     }
+
+     let result = [];
+
+     for (let i = arr.length - 1; i >= 0; i--) {
+          result.push(arr[i]);
+     }
+    return result;
+    
+    // ____________________________________
+    
+
+};
+
+const arr = [1, 2, 3, 4, 5];
+
+console.log(reverseArray(arr));
+
 // _________________________________________________
