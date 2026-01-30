@@ -783,18 +783,18 @@
 // 23. Reverse an array
 
 // const reverseArray = (arr) => {
-     //  if (!Array.isArray(arr)) {
-     //       throw new TypeError(`Expected array instead got ${typeof arr}`);
-     //  }
+//  if (!Array.isArray(arr)) {
+//       throw new TypeError(`Expected array instead got ${typeof arr}`);
+//  }
 
-     //  let result = [];
+//  let result = [];
 
-     //  for (let i = arr.length - 1; i >= 0; i--) {
-     //       result.push(arr[i]);
-     //  }
-     // return result;
+//  for (let i = arr.length - 1; i >= 0; i--) {
+//       result.push(arr[i]);
+//  }
+// return result;
 
-     // ____________________________________
+// ____________________________________
 
 //      if (!Array.isArray(arr)) {
 //           throw new TypeError(`Expected array got ${typeof arr} instead`);
@@ -808,7 +808,7 @@
 //         left++;
 //         right--;
 //     }
-    
+
 //     return arr;
 // };
 
@@ -816,4 +816,24 @@
 
 // console.log(reverseArray(arr));
 
+// _________________________________________________
+
+// _________________________________________________
+// 24. Reverse String
+
+// const reverseString = (string) => {
+//      if (typeof string !== "string") {
+//           throw new TypeError(`Expected string got ${typeof string} instead`);
+//      }
+
+//      let result = "";
+
+//      for (let i = string.length - 1; i >= 0; i--) {
+//           result += string[i];
+//      }
+//      return result;
+// };
+
+// const str = "Hello";
+// console.log(reverseString(str)); // "olleH"
 // _________________________________________________
