@@ -837,3 +837,29 @@
 // const str = "Hello";
 // console.log(reverseString(str)); // "olleH"
 // _________________________________________________
+
+// _________________________________________________
+// 25. Longest Substring Without Repeating Characters
+
+// const findLongestSubString = (str) => {
+//      let map = {};
+//      let left = 0;
+//      let maxLen = 0;
+
+//      for (let right = 0; right < str.length; right++) {
+//           if (map[str[right]] >= left) {
+//                console.log("left", left)
+//                left = map[str[right]] + 1;
+//           }
+
+//           map[str[right]] = right;
+//           maxLen = Math.max(maxLen, right - left + 1);
+//      }
+
+//      return maxLen;
+// };
+
+// console.log(findLongestSubString("abcabcbb")) // 3
+// console.log(findLongestSubString("bbbbb")) // 3
+// console.log(findLongestSubString("pwwkew")); // 3
+// _________________________________________________
