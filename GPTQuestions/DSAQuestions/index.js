@@ -863,3 +863,50 @@
 // console.log(findLongestSubString("bbbbb")) // 3
 // console.log(findLongestSubString("pwwkew")); // 3
 // _________________________________________________
+
+// _________________________________________________
+
+// 26. Find Duplicates inside an array
+
+// const findDuplicates = (arr) => {
+
+//     if (!Array.isArray(arr)) {
+//         throw new TypeError(`Expected an array got ${typeof arr} instead`)
+//     }
+
+//     let map = new Set();
+
+//     for (let item of arr) {
+//         if (map.has(item)) {
+//             return true
+//         }
+//         map.add(item)
+//     }
+//     return false;
+
+//  }
+
+// console.log(findDuplicates([10,7,0,9]))
+// _________________________________________________
+
+// _________________________________________________
+// 27. Find Missing Number in Sequence
+
+// const findMissingNumbers = (numbers) => {
+//      if (!Array.isArray(numbers)) {
+//           throw new TypeError(`Expected an array, got ${typeof numbers}`);
+//      }
+
+//      const seen = new Set(numbers);
+//      const numbersLength = numbers.length;
+
+//      for (let number = 1; number <= numbersLength; number++) {
+//           if (!seen.has(number)) {
+//                return number;
+//           }
+//      }
+// };
+
+// console.log(findMissingNumbers([0, 2, 1, 4])); // 0 - 4
+
+// _________________________________________________
